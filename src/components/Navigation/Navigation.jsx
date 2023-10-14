@@ -16,7 +16,8 @@ const Navigation = () => {
             <Row className='navi justify-content-between align-items-center'>
                 <Col xs='2' lg='3' >
                     <div className='nav-my-name'>
-                        <a href="#intro-blank-section"> <h3>IRENE BUCETA</h3></a>
+                        <a href="#intro-blank-section">
+                            <img src="imagenes/logo.png" alt="logo" className='logo' /> </a>
                     </div>
                 </Col>
                 <Col xs='8' lg='6' >

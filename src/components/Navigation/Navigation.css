@@ -50,7 +50,7 @@ h1 {
     z-index: 200;
 }
 
-/* .menu-icon:checked+label:before,
+.menu-icon:checked+label:before,
 .menu-icon:not(:checked)+label:before {
     position: absolute;
     content: '';
@@ -67,10 +67,10 @@ h1 {
         height 100ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
         background-color 200ms ease,
         transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-} */
+}
 
 
-/* Modificar aqui para la animación de la raya----------------------*/
+/* Modificar aqui para la animación de la raya del CENTRO----------------------*/
 .menu-icon:checked+label:after,
 .menu-icon:not(:checked)+label:after {
     position: absolute;
@@ -89,18 +89,22 @@ h1 {
         transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-/* .menu-icon:checked+label:before {
+/* modifica al hacer click en la raya */
+
+.menu-icon:checked+label:before {
     top: 10px;
     transform: rotate(45deg);
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
+    /* Cambia el color a blanco */
     border-width: 0;
     transition: border-width 100ms 340ms ease,
         top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
         height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
         background-color 200ms 500ms ease,
         transform 200ms 1200ms cubic-bezier(0.23, 1, 0.32, 1);
-} */
+}
+
 
 
 /* Modificar aqui para la animación de después de hacer click en la raya----------------------*/
@@ -115,6 +119,27 @@ h1 {
         transform 200ms 1200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+/*cuadrado rosa*/
+.menu-icon:checked+label:after {
+    position: absolute;
+    transform: none;
+    content: '';
+    display: block;
+    width: 37px;
+    height: 37px;
+    z-index: 199;
+    /* Ajusta el índice z si es necesario */
+    top: 31px;
+    left: 31px;
+    background-color: #F85786;
+    /* Ajusta el color a rosa */
+    border-radius: 5px;
+    /* Ajusta el radio de borde si es necesario */
+    transition: width 100ms ease,
+        right 100ms ease,
+        margin-top 100ms 500ms ease,
+        transform 200ms 1200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
 
 
 /* Modificar aqui para la animación del menú hacía el centro de la pantalla----------------------*/
@@ -258,36 +283,36 @@ h1 {
     transition-delay: 640ms;
 }
 
-
-.nav-my-name h3 {
-    font-family: 'Newake', sans-serif;
-    font-weight: 400;
-    font-size: 2.3em;
+.navi {
     padding-top: 53px;
     padding-bottom: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 0 0 20px 20px;
     color: #715AFF;
     background: #E1DDF9;
-    width: 100vw;
-    height: 120px;
-    padding-left: 100px;
-    margin: 0;
-
-}
-
-.navi {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    height: 133px;
     z-index: 100;
     margin: 0;
     opacity: 0.9;
     backdrop-filter: blur(40px);
 
 }
+
+.nav-my-name {
+    position: absolute;
+    width: 126.79px;
+    height: 60px;
+    top: 39px;
+    left: 18px;
+}
+
+
+
+
 
 .navi a {
     text-decoration: none;
@@ -348,12 +373,6 @@ h1 {
         display: visible;
     }
 
-    .nav-my-name h3 {
-        font-size: 24px;
-        padding-left: 10px;
-        padding-top: 53px;
-        padding-bottom: 20px;
-    }
 
     .nav-sections {
         padding-top: 2px;
