@@ -1,9 +1,11 @@
 import './Footer.css'
+
 const Footer = () => {
     return (
-        <>
-            footer
-        </>
+        <footer className="mt-5" style={{ textAlign: 'center' }}>
+            <p>© All rights reserved.</p>
+        </footer>
     )
 }
-export default Footer
+
+export default Footer;
