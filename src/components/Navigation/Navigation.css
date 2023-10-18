@@ -1,8 +1,8 @@
-
 .nav-my-name h3 {
     font-family: 'Newake', sans-serif;
     font-weight: 400;
     font-size: 2.3em;
+}
 
 .navi {
 
@@ -33,3 +33,4 @@
         padding-top: 53px;
         padding-bottom: 20px;
     }
+}
