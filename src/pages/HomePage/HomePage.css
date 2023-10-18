@@ -1,6 +1,7 @@
 .hero-background {
     background-image: url('./../../img/HOMEPAGE_BACKGROUND.png');
-    width: 100vw;
+    background-size: cover;
+    min-width: 100vw;
     min-height: 100vh;
     font-family: 'Newake';
 }
