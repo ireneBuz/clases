@@ -1,0 +1,32 @@
+.hero-init {
+    margin-left: 21px;
+}
+
+.hero-first-title {
+    color: #003ECA;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.hero-second-title {
+    margin-bottom: 7px;
+}
+
+.hero-second-title p {
+    font-size: 14px;
+    margin: 0;
+    color: #688FE9;
+}
+
+.hero-second-title-color-change {
+    color: #FFCB21;
+}
+
+.hero-third-title p {
+    font-size: 12px;
+    color: #F85786;
+}
+
+.hero-third-title-color-change {
+    color: #688FE9
+}

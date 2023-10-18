@@ -1,0 +1,14 @@
+.hero-background {
+    background-image: url('./../../../public/img/HOMEPAGE_BACKGROUND.png');
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Newake';
+}
+
+#hero {
+    padding-top: 159px;
+}
+
+#hero-cards {
+    margin-bottom: 50px;
+}
