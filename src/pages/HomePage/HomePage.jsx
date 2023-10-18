@@ -15,7 +15,6 @@ const HomePage = () => {
                         <HeroCards />
                     </div>
                 </Container>
-
             </div>
         </>
     )
