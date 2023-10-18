@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Newake';
-  src: url('./../src/assets/fonts/Newake.otf') format('otf');
+  src: url('./../../src/assets/fonts/Newake.otf') format('otf');
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('./../src//assets/fonts/OpenSans.ttf') format('ttf');
+  src: url('./../../src/assets/fonts/OpenSans.ttf') format('ttf');
 }
