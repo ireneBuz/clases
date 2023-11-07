@@ -158,8 +158,12 @@ nav .contacto a {
     }
 
     .menu-icon.with-shadow {
-        border-radius: 5.77px;
-        background: #FFFFFF;
+        position: fixed;
+        top: 35px;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
         box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);
     }
 
