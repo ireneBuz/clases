@@ -17,7 +17,10 @@
 
 #app {
   max-width: 1440px;
-  margin: 0 auto;
 
-  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }

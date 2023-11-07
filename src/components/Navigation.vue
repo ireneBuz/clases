@@ -1,27 +1,71 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import { RouterLink } from 'vue-router';
+import menuIcon from './../../public/menuicon.svg'
+import menuIconClose from './../../public/menuiconclose.svg'
 
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value;
+};
+
+const menuIconSource = computed(() => {
+    return isMenuOpen.value ? menuIconClose : menuIcon
+});
+const closeMenu = () => {
+    isMenuOpen.value = false;
+};
 </script>
+
 
 <template>
     <header>
         <nav class="nav-container">
-            <div class="title">
-                <p>IRENE BUCETA</p>
+            <div class="nav-container-mini">
+                <div class="title">
+                    <p>IRENE BUCETA</p>
+                </div>
+                <div class="menu-icon" :class="{ 'with-shadow': isMenuOpen }" @click="toggleMenu">
+                    <img :src="menuIconSource" alt="Hamburger Menu">
+                </div>
             </div>
+
             <div class="nav-links">
-                <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }">Inicio</RouterLink>
-                <RouterLink to="/clases-horarios" :class="{ 'active-link': $route.path === '/clases-horarios' }">Horarios
+                <RouterLink to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }">Inicio</RouterLink>
+                <RouterLink to="/clases-horarios" @click="closeMenu"
+                    :class="{ 'active-link': $route.path === '/clases-horarios' }">Horarios
                 </RouterLink>
-                <RouterLink to="/cursos" :class="{ 'active-link': $route.path === '/cursos' }">Cursos (Proximamente)
+                <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/cursos' }">
+                    Cursos
                 </RouterLink>
             </div>
+
             <div class="contacto">
-                <RouterLink to="/contacto" :class="{ 'active-link': $route.path === '/contact' }">Contacto</RouterLink>
+                <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contact' }">
+                    Contacto</RouterLink>
             </div>
         </nav>
+
+        <div class="mobile-menu" v-if="isMenuOpen">
+            <RouterLink to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }">Inicio</RouterLink>
+            <RouterLink to="/clases-horarios" @click="closeMenu"
+                :class="{ 'active-link': $route.path === '/clases-horarios' }">Horarios
+            </RouterLink>
+            <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/cursos' }">Cursos
+            </RouterLink>
+            <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contact' }">Contacto
+            </RouterLink>
+        </div>
+
+
+
+
     </header>
 </template>
+
+
+
 
 
 
@@ -39,10 +83,13 @@ import { RouterLink } from 'vue-router'
     text-align: center;
     justify-content: center;
     width: 100vw;
+    height: 124px;
 }
 
-.title {
-    width: 20%;
+.nav-container-mini {
+    text-align: start;
+    margin-left: 5%;
+    width: 30%;
 }
 
 .title p {
@@ -60,26 +107,23 @@ import { RouterLink } from 'vue-router'
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    width: 60%;
+    justify-content: space-evenly;
+    width: 40%;
 
 }
 
-.nav-links a {
-    margin-left: 32px;
-    margin-right: 32px;
-}
 
-nav a {
+nav a,
+.mobile-menu a {
     color: #1E1E1E;
     font-family: 'Founders-Grotesk';
     font-size: 20px;
     text-decoration: none;
-
 }
 
 nav .contacto {
+    text-align: end;
+    margin-right: 5%;
     width: 20%;
 }
 
@@ -89,5 +133,59 @@ nav .contacto a {
     padding: 10px 15px;
     border-radius: 30px;
     background: var(--main-colors-gradient, linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%));
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 47px;
+}
+
+@media (max-width: 745px) {
+
+    .nav-container-mini {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .title p {
+        padding-left: 30px;
+
+
+    }
+
+    .menu-icon {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .menu-icon.with-shadow {
+        border-radius: 5.77px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links,
+    .contacto {
+        display: none;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 80px;
+        right: 0;
+        display: flex;
+        width: 40%;
+        padding: 50px 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        border-radius: 24px;
+        background: #FFF;
+        box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.10), 0px 36px 36px 0px rgba(0, 0, 0, 0.09), 0px 81px 48px 0px rgba(0, 0, 0, 0.05), 0px 143px 57px 0px rgba(0, 0, 0, 0.01), 0px 224px 63px 0px rgba(0, 0, 0, 0.00);
+    }
 }
 </style>
