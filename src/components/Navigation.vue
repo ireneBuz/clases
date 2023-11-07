@@ -158,9 +158,7 @@ nav .contacto a {
     }
 
     .menu-icon.with-shadow {
-        position: fixed;
-        top: 35px;
-        right: 0;
+
         width: 50px;
         height: 50px;
         border-radius: 6px;
@@ -173,9 +171,8 @@ nav .contacto a {
     }
 
     .mobile-menu {
-        position: fixed;
-        top: 80px;
-        right: 0;
+        transform: translateY(-40px);
+        margin-left: auto;
         display: flex;
         width: 40%;
         padding: 50px 30px;
