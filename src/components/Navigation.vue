@@ -151,11 +151,6 @@ nav .contacto a {
         width: 100vw;
     }
 
-    .title p {
-        padding-left: 30px;
-
-
-    }
 
     .menu-icon {
         display: block;
@@ -186,6 +181,16 @@ nav .contacto a {
         border-radius: 24px;
         background: #FFF;
         box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.10), 0px 36px 36px 0px rgba(0, 0, 0, 0.09), 0px 81px 48px 0px rgba(0, 0, 0, 0.05), 0px 143px 57px 0px rgba(0, 0, 0, 0.01), 0px 224px 63px 0px rgba(0, 0, 0, 0.00);
+    }
+}
+
+@media (max-width: 420px) {
+    .menu-icon {
+        margin-right: 20px;
+    }
+
+    .nav-container {
+        height: 90px;
     }
 }
 </style>
