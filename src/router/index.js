@@ -15,6 +15,11 @@ const router = createRouter({
       name: 'horarios',
       component: () => import('../views/ScheduleView.vue')
     },
+    {
+      path: '/clases-piano',
+      name: 'clases-piano',
+      component: () => import('../views/PianoClassesView.vue')
+    },
     // {
     //   path: '/cursos',
     //   name: 'cursos',

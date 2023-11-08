@@ -16,7 +16,8 @@ import homeCards2 from '/homeCards2.png'
                 </div>
                 <p>La teoria proporciona el marco necesario para comprender la musica.</p>
                 <div class="info">
-                    <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contacto' }">
+                    <RouterLink to="/clases-teoria-musical" @click="closeMenu"
+                        :class="{ 'active-link': $route.path === '/clases-teoria-musical' }">
                         Ver opciones </RouterLink>
                     <img :src="homeCardsButton" alt="">
                 </div>
@@ -30,7 +31,8 @@ import homeCards2 from '/homeCards2.png'
                 <p>El piano, con su expresividad y versatilidad, es una puerta de entrada al universo de la musica.</p>
 
                 <div class="info">
-                    <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contacto' }">
+                    <RouterLink to="/clases-piano" @click="closeMenu"
+                        :class="{ 'active-link': $route.path === '/clases-piano' }">
                         Ver opciones </RouterLink>
                     <img :src="homeCardsButton" alt="">
                 </div>
