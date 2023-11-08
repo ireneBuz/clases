@@ -140,7 +140,7 @@ import homeCards2 from '/homeCards2.png'
 
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
 
     .home-cards {
         display: flex;

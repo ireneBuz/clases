@@ -135,7 +135,7 @@ import heroImg from '/heroimg.png'
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
     .hero .hero-text h1 {
         font-size: 32px;
 
