@@ -186,7 +186,7 @@ nav .contacto a {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
     .menu-icon {
         margin-right: 20px;
     }
