@@ -172,8 +172,11 @@ nav .contacto a {
     }
 
     .mobile-menu {
+        position: absolute;
+        z-index: 1;
         transform: translateY(-40px);
         margin-left: auto;
+        right: 0;
         display: flex;
         width: 40%;
         padding: 50px 30px;
