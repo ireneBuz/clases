@@ -1,5 +1,5 @@
 <script setup>
-import heroImg from './../../public/heroimg.png'
+import heroImg from '/heroimg.png'
 
 
 </script>
@@ -36,19 +36,20 @@ import heroImg from './../../public/heroimg.png'
 <style scoped>
 .hero {
     font-family: 'Founders-Grotesk';
-    margin-left: 100px;
-    margin-right: 100px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .hero .hero-text {
     flex-direction: column;
 }
 
-.hero .hero-img {
-    text-align: end;
+.hero .hero-img img {
     margin-left: 40px;
+    width: 90%;
+
 }
 
 .hero .hero-text h1 {
@@ -83,20 +84,15 @@ import heroImg from './../../public/heroimg.png'
     width: fit-content;
 }
 
-.hero .hero-img img {
-    width: 100%;
-}
 
 .hero .hero-text,
 .hero .hero-img {
-    width: 50%;
+    width: 43%;
 }
 
 
 @media (max-width: 745px) {
     .hero {
-        margin-left: 10px;
-        margin-right: 10px;
         align-items: center;
         flex-direction: column-reverse;
         text-align: center;

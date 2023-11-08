@@ -1,8 +1,8 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { RouterLink } from 'vue-router';
-import menuIcon from './../../public/menuicon.svg'
-import menuIconClose from './../../public/menuiconclose.svg'
+import menuIcon from '/menuicon.svg'
+import menuIconClose from '/menuiconclose.svg'
 
 const isMenuOpen = ref(false);
 
