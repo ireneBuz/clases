@@ -1,6 +1,8 @@
 <script setup>
-// import WelcomeItem from './WelcomeItem.vue' BORRAR
+import Hero from './Hero.vue'
 
 </script>
 
-<template></template>
+<template>
+    <Hero />
+</template>

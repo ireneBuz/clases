@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import { ref, computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import menuIcon from './../../public/menuicon.svg'
 import menuIconClose from './../../public/menuiconclose.svg'
@@ -42,7 +42,7 @@ const closeMenu = () => {
             </div>
 
             <div class="contacto">
-                <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contact' }">
+                <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contacto' }">
                     Contacto</RouterLink>
             </div>
         </nav>
@@ -100,6 +100,7 @@ const closeMenu = () => {
     line-height: 23.5px;
     padding: 10px;
     background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
+    width: fit-content;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
