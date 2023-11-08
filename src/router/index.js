@@ -10,11 +10,11 @@ const router = createRouter({
       name: 'inicio',
       component: HomePageView
     },
-    // {
-    //   path: '/clases-horarios',
-    //   name: 'horarios',
-    //   component: () => import('../views/ScheduleView.vue')
-    // },
+    {
+      path: '/clases-horarios',
+      name: 'horarios',
+      component: () => import('../views/ScheduleView.vue')
+    },
     // {
     //   path: '/cursos',
     //   name: 'cursos',

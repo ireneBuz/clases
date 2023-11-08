@@ -147,7 +147,7 @@ import homeCards2 from '/homeCards2.png'
         flex-direction: column;
         gap: 0px;
         margin-top: 40px;
-        margin-bottom: 0px;
+        margin-bottom: 30px;
     }
 
     .home-cards .home-cards-single {
