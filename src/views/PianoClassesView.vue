@@ -58,8 +58,11 @@ import pianoImg from '/pianoImg.svg'
 }
 
 .piano-classes-img {
-  width: 40%;
   margin-left: 70px;
+}
+
+.piano-classes-img img {
+  width: 100%;
 }
 
 .piano-classes-info h2 {
