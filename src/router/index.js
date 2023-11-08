@@ -17,14 +17,19 @@ const router = createRouter({
     },
     {
       path: '/clases-piano',
-      name: 'clases-piano',
+      name: 'piano classes',
       component: () => import('../views/PianoClassesView.vue')
     },
-    // {
-    //   path: '/cursos',
-    //   name: 'cursos',
-    //   component: () => import('../views/CoursesView.vue')
-    // },
+    {
+      path: '/clases-teoria-musical',
+      name: 'musical theory classes',
+      component: () => import('../views/MusicalTheoryClassesView.vue')
+    },
+    {
+      path: '/cursos',
+      name: 'courses',
+      component: () => import('../views/CoursesView.vue')
+    },
     // {
     //   path: '/contacto',
     //   name: 'contacto',
