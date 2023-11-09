@@ -139,7 +139,6 @@ const closeModal = () => {
 .hero .hero-text .info {
     margin-top: 55px;
     margin-bottom: 50px;
-    margin-left: 10px;
 
 }
 
