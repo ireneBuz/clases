@@ -123,6 +123,8 @@ const closeModal = () => {
     border-radius: 30px;
     background: var(--main-colors-gradient, linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%));
     font-size: 20px;
+    cursor: pointer;
+
 }
 
 .hero .hero-text .info a:hover {

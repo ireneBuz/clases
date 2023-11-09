@@ -166,7 +166,6 @@ const closeModal = () => {
 
 .nav-links a {
     padding: 10px 20px 10px 20px;
-
 }
 
 .nav-links a:hover:not(.active-link) {
@@ -197,6 +196,7 @@ nav .contacto a {
     padding: 8px 15px;
     border-radius: 30px;
     background: var(--main-colors-gradient, linear-gradient(30deg, #3D73EB 13.4%, #DE8FFF 86.6%));
+    cursor: pointer;
 
 
 }
