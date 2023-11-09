@@ -295,6 +295,11 @@ nav .contacto a:hover {
 }
 
 @media (max-width: 440px) {
+
+    .title p {
+        font-size: 28px;
+    }
+
     .modal-content {
         width: 21.5rem;
     }
