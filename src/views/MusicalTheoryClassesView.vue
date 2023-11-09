@@ -187,8 +187,23 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
     padding-top: 0px;
   }
 
+
+  .musical-classes-info .musical-classes-info-button .musical-classes-info-button-presential a {
+    padding-left: 97px;
+    padding-right: 97px;
+
+
+  }
+
+  .musical-classes-info .musical-classes-info-button .musical-classes-info-button-remote a {
+    padding-left: 110px;
+    padding-right: 110px;
+
+  }
+
+
   .musical-classes-info .musical-classes-info-button .musical-classes-info-button-remote {
-    margin-top: 15px;
+    margin-top: 25px;
   }
 }
 </style>

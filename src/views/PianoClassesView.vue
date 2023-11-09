@@ -176,14 +176,26 @@ import pianoImg from '/pianoImg.svg'
   }
 
   .piano-classes-info .piano-classes-info-button {
-    display: block;
     text-align: center;
-
+    display: block;
   }
 
 
+  .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a {
+    padding-left: 97px;
+    padding-right: 97px;
+
+
+  }
+
+  .piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote a {
+    padding-left: 110px;
+    padding-right: 110px;
+
+  }
+
   .piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote {
-    margin-top: 15px;
+    margin-top: 25px;
   }
 }
 </style>
