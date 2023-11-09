@@ -30,10 +30,10 @@ import linkedInIcon from '/linkedInIcon.svg'
 
 <style scoped>
 .footer {
+
     font-family: 'Founders-Grotesk';
     width: 100%;
     color: #000;
-    bottom: 0;
     font-size: 20px;
     display: flex;
     justify-content: center;

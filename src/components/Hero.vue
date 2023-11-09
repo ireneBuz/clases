@@ -71,18 +71,25 @@ import heroImg from '/heroimg.png'
 .hero .hero-text .info a {
     text-decoration: none;
     color: #FFFFFF;
-}
-
-.hero .hero-text .info {
-    margin-top: 35px;
-    margin-bottom: 50px;
-    margin-left: 10px;
     padding: 10px 19px;
     border-radius: 30px;
     background: var(--main-colors-gradient, linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%));
     font-size: 20px;
-    width: fit-content;
 }
+
+.hero .hero-text .info a:hover {
+    background: var(--main-colors-gradient, linear-gradient(30deg, #1f53c3 13.4%, #cd59ff 75.6%));
+}
+
+
+
+.hero .hero-text .info {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+
+}
+
 
 
 .hero .hero-text,

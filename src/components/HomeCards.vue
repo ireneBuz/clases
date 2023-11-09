@@ -108,6 +108,10 @@ import homeCards2 from '/homeCards2.png'
     width: fit-content;
 }
 
+.home-cards .home-cards-single a:hover {
+    background: var(--main-colors-gradient, linear-gradient(30deg, #1f53c3 13.4%, #cd59ff 75.6%));
+}
+
 .home-cards .home-cards-single .info {}
 
 .home-cards .home-cards-single .info img {
