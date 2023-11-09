@@ -138,7 +138,7 @@ import homeInfo3 from '/homeInfo3.svg'
 }
 
 
-@media (max-width: 745px) {
+@media (max-width: 870px) {
     .home-info .home-info-title {
         width: 80%;
         margin-bottom: 25px;
