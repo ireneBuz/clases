@@ -44,7 +44,8 @@
 
 <style scoped>
 .contact-title,
-.form-group h4 {
+.form-group h4,
+.contact-btn {
     font-family: 'Founders-Grotesk';
     font-weight: 500;
     font-style: normal;
@@ -117,12 +118,10 @@ input,
 textarea {
     padding-right: 0 !important;
     padding-left: 0 !important;
+    text-indent: 10px
 }
 
-input::placeholder,
-textarea::placeholder {
-    padding-left: 10px !important;
-}
+
 
 .contact-email {
     text-align: start;

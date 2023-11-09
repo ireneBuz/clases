@@ -27,6 +27,11 @@ const openModal = () => {
 const closeModal = () => {
     showModal.value = false;
 }
+
+const handleButtonClick = () => {
+    openModal()
+    closeMenu()
+}
 </script>
 
 
@@ -80,8 +85,8 @@ const closeModal = () => {
             </RouterLink>
             <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/cursos' }">Cursos
             </RouterLink>
-            <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contact' }">Contacto
-            </RouterLink>
+            <a @click="handleButtonClick" :class="{ 'active-link': $route.path === '/contact' }">
+                Contacto</a>
         </div>
     </header>
 </template>
@@ -180,6 +185,8 @@ nav a,
     font-family: 'Founders-Grotesk';
     font-size: 20px;
     text-decoration: none;
+    cursor: pointer;
+
 }
 
 
@@ -197,9 +204,9 @@ nav .contacto a {
     border-radius: 30px;
     background: var(--main-colors-gradient, linear-gradient(30deg, #3D73EB 13.4%, #DE8FFF 86.6%));
     cursor: pointer;
-
-
 }
+
+
 
 nav .contacto a:hover {
     background: var(--main-colors-gradient, linear-gradient(30deg, #1f53c3 13.4%, #cd59ff 75.6%));
