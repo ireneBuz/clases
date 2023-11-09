@@ -187,6 +187,20 @@ nav .contacto a {
         background: #FFF;
         box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.10), 0px 36px 36px 0px rgba(0, 0, 0, 0.09), 0px 81px 48px 0px rgba(0, 0, 0, 0.05), 0px 143px 57px 0px rgba(0, 0, 0, 0.01), 0px 224px 63px 0px rgba(0, 0, 0, 0.00);
     }
+
+    .mobile-menu a {
+        display: flex;
+        width: 90%;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mobile-menu a:hover {
+        border-radius: 10px;
+        background: rgba(183, 149, 255, 0.60);
+    }
 }
 
 @media (max-width: 440px) {
