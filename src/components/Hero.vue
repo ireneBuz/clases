@@ -92,6 +92,7 @@ const closeModal = () => {
 
 .hero .hero-text {
     flex-direction: column;
+    align-items: center;
 }
 
 .hero .hero-img img {
@@ -139,6 +140,7 @@ const closeModal = () => {
 .hero .hero-text .info {
     margin-top: 55px;
     margin-bottom: 50px;
+    margin-left: 10px;
 
 }
 
@@ -225,7 +227,6 @@ const closeModal = () => {
 
     .hero .hero-text .info {
         text-align: center;
-        width: 90%;
         padding-top: 5px;
         margin-top: 35px;
         margin-left: 0;
