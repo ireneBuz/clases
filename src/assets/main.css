@@ -1,0 +1,29 @@
+@import './base.css';
+
+@font-face {
+  font-family: 'Newake';
+  src: url('./../../fonts/Newake.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./../../fonts/OpenSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Founders-Grotesk';
+  src: url('./../../fonts/FoundersGrotesk.otf') format('opentype');
+}
+
+#app {
+  /* max-width: 1440px; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
