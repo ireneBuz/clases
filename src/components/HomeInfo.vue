@@ -10,7 +10,7 @@ import homeInfo3 from '/homeInfo3.svg'
     <header>
         <div class="home-info">
             <div class="home-info-title">
-                <h2>¡Aprender musica ahora es muy facil!
+                <h2>¡Aprender música ahora es muy fácil!
                     Solo tienes que...</h2>
             </div>
             <div class="home-info-points">
@@ -22,7 +22,7 @@ import homeInfo3 from '/homeInfo3.svg'
                         <h3>1. Elige la modalidad que prefieras</h3>
                     </div>
                     <div class="home-info-points-item-p">
-                        <p>Online o presencial, elige la forma que mas se adapte a ti.</p>
+                        <p>Online o presencial, elige la forma que más se adapte a ti.</p>
                     </div>
                 </div>
                 <div class="home-info-points-item">
@@ -33,8 +33,8 @@ import homeInfo3 from '/homeInfo3.svg'
                         <h3>2. Contacta y fija los días y horas </h3>
                     </div>
                     <div class="home-info-points-item-p">
-                        <p>Elige que dias a la semana (de lunes a viernes)
-                            y cuantas horas quieres tener clase. </p>
+                        <p>Elige que días a la semana (de lunes a viernes)
+                            y cuántas horas quieres tener clase. </p>
                     </div>
 
                 </div>
@@ -46,14 +46,14 @@ import homeInfo3 from '/homeInfo3.svg'
                         <h3>3. Aprende y ¡disfruta!</h3>
                     </div>
                     <div class="home-info-points-item-p">
-                        <p>Practica y envuelvete en el mundo
-                            de la musica.</p>
+                        <p>Practica y envuélvete en el mundo
+                            de la música.</p>
                     </div>
                 </div>
             </div>
             <div class="home-info-paragraph">
-                <p>Sumergirse en el mundo de las clases de piano y la teoria musical es una experiencia enriquecedora que va
-                    mas
+                <p>Sumergirse en el mundo de las clases de piano y la teoría musical es una experiencia enriquecedora que va
+                    más
                     alla de aprender a tocar un instrumento.</p>
             </div>
 
@@ -69,7 +69,7 @@ import homeInfo3 from '/homeInfo3.svg'
 
 <style scoped>
 .home-info {
-    font-family: 'Founders-Grotesk';
+    font-family: 'Founders-Grotesk-medium';
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,6 +82,7 @@ import homeInfo3 from '/homeInfo3.svg'
 .home-info .home-info-title {
     width: 55%;
     text-align: center;
+
 }
 
 
@@ -114,13 +115,15 @@ import homeInfo3 from '/homeInfo3.svg'
 }
 
 .home-info .home-info-points .home-info-points-item .home-info-points-item-h3 {
+    font-family: 'Founders-Grotesk-regular';
     height: 60px;
     font-size: 25px;
     font-weight: 500;
     line-height: 25.5px;
 }
 
-.home-info .home-info-points .home-info-points-item .home-info-points-p {
+.home-info .home-info-points .home-info-points-item .home-info-points-item-p {
+    font-family: 'Founders-Grotesk-regular';
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -129,6 +132,8 @@ import homeInfo3 from '/homeInfo3.svg'
 
 
 .home-info .home-info-paragraph {
+    font-family: 'Founders-Grotesk-medium';
+
     text-align: center;
     margin-top: 40px;
     width: 75%;

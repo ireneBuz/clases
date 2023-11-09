@@ -4,7 +4,7 @@
 </script>
 <template>
     <div class="contact-title">
-        <h3>Contacto</h3>
+        <h3 data-text="Contacto">Contacto</h3>
         <p>Por favor, completa la información requerida para ponerte en contacto</p>
     </div>
     <form action="https://formspree.io/f/xzblydjk" method="POST" class="form-group">
@@ -43,37 +43,34 @@
 </template>
 
 <style scoped>
-.contact-title,
-.form-group h4,
-.contact-btn {
-    font-family: 'Founders-Grotesk';
-    font-weight: 500;
-    font-style: normal;
-}
-
 .contact-title {
     text-align: center;
 
 }
 
 .contact-title h3 {
+    font-family: 'Founders-Grotesk-regular';
     font-size: 70px;
-    background: var(--main-colors-gradient, linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%));
+    background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 100%;
-    background-size: 70%;
+    line-height: 120%;
     margin-top: 20px;
     margin-bottom: 35px;
 }
 
+
+
+
+
+
 .contact-title p {
+    font-family: 'Founders-Grotesk-medium';
     color: #DE8FFF;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 100%;
-
 }
 
 .form-group {
@@ -95,16 +92,18 @@
     border-radius: 7.715px;
     border: 1px solid #697077;
     background: #FFF;
-    font-family: 'Founders-Grotesk';
+    font-family: 'Founders-Grotesk-light';
+    font-size: 16px;
     width: 100%;
 
 }
 
 .form-group h4 {
+    font-family: 'Founders-Grotesk-medium';
     color: #DE8FFF;
-    font-size: 19px;
+    font-size: 21px;
     line-height: 140%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .contact-name,
@@ -116,6 +115,7 @@
 
 input,
 textarea {
+
     padding-right: 0 !important;
     padding-left: 0 !important;
     text-indent: 10px
@@ -143,7 +143,8 @@ textarea {
 .contact-btn {
     font-size: 20px;
     color: #FFFFFF;
-    padding: 8px 15px;
+    padding: 13px 19px 8px 19px;
+    font-family: 'Founders-Grotesk-medium';
     border-radius: 30px;
     border: none;
     cursor: pointer;

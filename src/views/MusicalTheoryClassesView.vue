@@ -73,7 +73,12 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
   letter-spacing: -0.48px;
 }
 
+.musical-classes-info h3 {
+  font-size: 22px;
+}
+
 .musical-classes-info p {
+  font-family: 'Founders-Grotesk-medium';
   margin: 0;
   margin-top: 30px;
   font-size: 20px;
@@ -88,7 +93,7 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
 }
 
 .musical-classes-info .musical-classes-info-button .musical-classes-info-button-presential a {
-  padding: 3.086px 12.344px 6px 12.344px;
+  padding: 8px 12.344px 6px 12.344px;
   border-radius: 18.517px;
   border: 1.003px solid #A392F6;
   background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
@@ -98,7 +103,7 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
 }
 
 .musical-classes-info .musical-classes-info-button .musical-classes-info-button-remote a {
-  padding: 4px 12.344px 7px 12.344px;
+  padding: 9px 12.344px 7px 12.344px;
   border-radius: 18.517px;
   background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
 }
