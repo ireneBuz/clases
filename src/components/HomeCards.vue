@@ -18,7 +18,7 @@ import homeCards2 from '/homeCards2.png'
                 <div class="info">
                     <RouterLink to="/clases-teoria-musical" @click="closeMenu"
                         :class="{ 'active-link': $route.path === '/clases-teoria-musical' }">
-                        Ver opciones </RouterLink>
+                        Ver opciones <img :src="homeCardsButton" alt=""></RouterLink>
                     <img :src="homeCardsButton" alt="">
                 </div>
             </div>
@@ -33,8 +33,8 @@ import homeCards2 from '/homeCards2.png'
                 <div class="info">
                     <RouterLink to="/clases-piano" @click="closeMenu"
                         :class="{ 'active-link': $route.path === '/clases-piano' }">
-                        Ver opciones </RouterLink>
-                    <img :src="homeCardsButton" alt="">
+                        Ver opciones <img :src="homeCardsButton" alt=""></RouterLink>
+
                 </div>
             </div>
         </div>
@@ -96,9 +96,6 @@ import homeCards2 from '/homeCards2.png'
 .home-cards .home-cards-single a {
     text-decoration: none;
     color: #FFFFFF;
-}
-
-.home-cards .home-cards-single .info {
     display: flex;
     margin-top: 35px;
     padding-bottom: 6px;
@@ -111,7 +108,10 @@ import homeCards2 from '/homeCards2.png'
     width: fit-content;
 }
 
+.home-cards .home-cards-single .info {}
+
 .home-cards .home-cards-single .info img {
+    z-index: 2;
     width: 15px;
 }
 

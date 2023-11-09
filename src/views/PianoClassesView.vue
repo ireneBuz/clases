@@ -88,7 +88,7 @@ import pianoImg from '/pianoImg.svg'
   gap: 12px;
 }
 
-.piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential {
+.piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a {
   padding: 3.086px 12.344px 6px 12.344px;
   border-radius: 18.517px;
   border: 1.003px solid #A392F6;
@@ -98,13 +98,14 @@ import pianoImg from '/pianoImg.svg'
   -webkit-text-fill-color: transparent;
 }
 
-.piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote {
-  padding: 3px 12.344px 6px 12.344px;
+.piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote a {
+  padding: 4px 12.344px 7px 12.344px;
   border-radius: 18.517px;
   background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
 }
 
-.piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential,
+
+.piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a,
 .piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote a {
   text-decoration: none;
   color: #FFF;
