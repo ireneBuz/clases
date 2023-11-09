@@ -20,12 +20,12 @@ const closeModal = () => {
     <header>
         <div class="hero">
             <div class="hero-text">
-                <h1>La nueva forma de tomar clases de musica</h1>
-                <p>Aprende a tocar el piano y todo sobre teoria musical con clases adaptadas a ti, a tus nociones y tus
-                    gustos.<span> Online o presencial,</span> elige la opcion que mas se adapte a ti.</p>
+                <h1>La nueva forma de tomar clases de música</h1>
+                <p>Aprende a tocar el piano y todo sobre teoría musical con clases adaptadas a ti, a tus nociones y tus
+                    gustos.<span> Online o presencial,</span> elige la opción que más se adapte a ti.</p>
                 <div class="info">
                     <a @click="openModal">
-                        Mas info</a>
+                        Más info</a>
                 </div>
             </div>
 
@@ -108,6 +108,7 @@ const closeModal = () => {
 
 .hero .hero-text p {
     font-size: 25px;
+    font-family: 'Founders-Grotesk-medium';
     font-weight: 500;
     line-height: 120%;
 }
@@ -119,8 +120,10 @@ const closeModal = () => {
 .hero .hero-text .info a {
     text-decoration: none;
     color: #FFFFFF;
-    padding: 10px 19px;
+    padding: 13px 19px 8px 19px;
     border-radius: 30px;
+    font-family: 'Founders-Grotesk-medium';
+
     background: var(--main-colors-gradient, linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%));
     font-size: 20px;
     cursor: pointer;

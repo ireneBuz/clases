@@ -31,7 +31,7 @@ import linkedInIcon from '/linkedInIcon.svg'
 <style scoped>
 .footer {
 
-    font-family: 'Founders-Grotesk';
+    font-family: 'Founders-Grotesk-regular';
     width: 100%;
     color: #000;
     font-size: 20px;

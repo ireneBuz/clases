@@ -12,14 +12,13 @@ import homeCards2 from '/homeCards2.png'
             <div class="home-cards-single">
                 <img :src="homeCards1" alt="">
                 <div class="home-cards-single-h4">
-                    <h4>¿Quieres aprender teoria musical?</h4>
+                    <h4>¿Quieres aprender teoría musical?</h4>
                 </div>
-                <p>La teoria proporciona el marco necesario para comprender la musica.</p>
+                <p> La teoría proporciona el marco necesario para comprender la música.</p>
                 <div class="info">
                     <RouterLink to="/clases-teoria-musical" @click="closeMenu"
                         :class="{ 'active-link': $route.path === '/clases-teoria-musical' }">
                         Ver opciones <img :src="homeCardsButton" alt=""></RouterLink>
-                    <img :src="homeCardsButton" alt="">
                 </div>
             </div>
             <div class="home-cards-single">
@@ -28,7 +27,7 @@ import homeCards2 from '/homeCards2.png'
                     <h4>¿Quieres aprender a tocar el piano?</h4>
                 </div>
 
-                <p>El piano, con su expresividad y versatilidad, es una puerta de entrada al universo de la musica.</p>
+                <p>El piano, con su expresividad y versatilidad, es una puerta de entrada al universo de la música.</p>
 
                 <div class="info">
                     <RouterLink to="/clases-piano" @click="closeMenu"
@@ -79,6 +78,8 @@ import homeCards2 from '/homeCards2.png'
 }
 
 .home-cards .home-cards-single h4 {
+    font-family: 'Founders-Grotesk-medium';
+
     font-size: 25px;
     font-weight: 500;
     line-height: 23.702px;
@@ -86,6 +87,8 @@ import homeCards2 from '/homeCards2.png'
 }
 
 .home-cards .home-cards-single p {
+    font-family: 'Founders-Grotesk-regular';
+
     font-size: 16px;
     font-weight: 400;
     line-height: 18.5px;
@@ -94,12 +97,13 @@ import homeCards2 from '/homeCards2.png'
 
 
 .home-cards .home-cards-single a {
+    font-family: 'Founders-Grotesk-light';
     text-decoration: none;
     color: #FFFFFF;
     display: flex;
     margin-top: 35px;
-    padding-bottom: 6px;
-    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-top: 8px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 30px;
@@ -112,9 +116,9 @@ import homeCards2 from '/homeCards2.png'
     background: var(--main-colors-gradient, linear-gradient(30deg, #1f53c3 13.4%, #cd59ff 75.6%));
 }
 
-.home-cards .home-cards-single .info {}
 
 .home-cards .home-cards-single .info img {
+    transform: translateY(-2px);
     z-index: 2;
     width: 15px;
 }

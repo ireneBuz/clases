@@ -170,13 +170,15 @@ const handleButtonClick = () => {
 }
 
 .nav-links a {
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px 10px 20px;
+    font-family: 'Founders-Grotesk-medium';
+
 }
 
 .nav-links a:hover:not(.active-link) {
     border-radius: 10px;
     background: rgba(183, 149, 255, 0.60);
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px 10px 20px;
 }
 
 nav a,
@@ -200,7 +202,8 @@ nav .contacto {
 nav .contacto a {
     color: #FFFFFF;
     width: 78px;
-    padding: 8px 15px;
+    padding: 13px 19px 8px 19px;
+    font-family: 'Founders-Grotesk-medium';
     border-radius: 30px;
     background: var(--main-colors-gradient, linear-gradient(30deg, #3D73EB 13.4%, #DE8FFF 86.6%));
     cursor: pointer;

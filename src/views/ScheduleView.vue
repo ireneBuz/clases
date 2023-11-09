@@ -48,10 +48,10 @@ import scheduleBackground2 from '/scheduleBackground2.svg'
   font-size: 48px;
   font-weight: 600;
   line-height: 56px;
-  letter-spacing: -0.48px;
 }
 
 .schedule-info p {
+  font-family: 'Founders-Grotesk-medium';
   margin: 0;
   margin-top: 30px;
   font-size: 20px;
