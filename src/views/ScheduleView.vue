@@ -72,6 +72,7 @@ import scheduleBackground2 from '/scheduleBackground2.svg'
   display: flex;
   flex-direction: column;
   align-items: end;
+  margin-top: 50px;
 }
 
 .schedule-info-background .schedule-info-background-img1 {
