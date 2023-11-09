@@ -119,7 +119,7 @@ import homeCards2 from '/homeCards2.png'
     width: 15px;
 }
 
-@media (max-width: 745px) {
+@media (max-width: 870px) {
     .home-cards .home-cards-single {
         width: 31%;
         height: 325px;

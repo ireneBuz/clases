@@ -114,7 +114,7 @@ import pianoImg from '/pianoImg.svg'
 
 
 
-@media (max-width: 745px) {
+@media (max-width: 870px) {
   .piano-classes {
     flex-direction: column-reverse;
     margin-top: 20px;

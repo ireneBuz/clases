@@ -115,7 +115,7 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
 }
 
 
-@media (max-width: 745px) {
+@media (max-width: 870px) {
   .musical-classes {
     flex-direction: column-reverse;
     margin-top: 0px;

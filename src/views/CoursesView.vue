@@ -25,7 +25,6 @@ import comingSoonImg from '/comingSoonImg.svg'
 }
 
 
-@media (max-width: 745px) {}
 
 @media (max-width: 440px) {
   .courses {

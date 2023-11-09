@@ -56,7 +56,7 @@ import linkedInIcon from '/linkedInIcon.svg'
 
 
 
-@media (max-width: 745px) {
+@media (max-width: 870px) {
     .footer {
         font-size: 14px;
     }

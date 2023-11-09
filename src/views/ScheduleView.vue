@@ -81,7 +81,7 @@ import scheduleBackground2 from '/scheduleBackground2.svg'
   margin-top: -30px;
 }
 
-@media (max-width: 745px) {
+@media (max-width: 870px) {
 
   .schedule-info {
     margin-left: 5%;
