@@ -15,7 +15,7 @@ const formData = {
 
 const submitForm = async () => {
     try {
-        await axios.post('https://formspree.io/f/xzblydjk', {
+        await axios.post('https://formspree.io/f/xnqkryva', {
             name: formData.name,
             email: formData.email,
             phone: formData.phone,
