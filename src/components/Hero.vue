@@ -1,5 +1,5 @@
 <script setup>
-import heroImg from '/heroimg.png'
+import heroImg from '/heroimg.webp'
 import closeModalIcon from '/closeModal.svg'
 import ContactForm from './ContactForm.vue'
 import { ref } from 'vue';

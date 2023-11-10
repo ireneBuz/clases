@@ -1,7 +1,7 @@
 <script setup>
-import homeCards1 from '/homeCards1.png'
+import homeCards1 from '/homeCards1.webp'
 import homeCardsButton from '/homeCardsButton.svg'
-import homeCards2 from '/homeCards2.png'
+import homeCards2 from '/homeCards2.webp'
 
 </script>
 
