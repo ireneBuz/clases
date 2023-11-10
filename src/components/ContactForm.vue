@@ -1,17 +1,45 @@
 <script setup>
+import axios from 'axios';
+import { ref } from 'vue';
 
+let submittedForm = ref(false);
+
+
+const formData = {
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+};
+
+
+const submitForm = async () => {
+    try {
+        await axios.post('https://formspree.io/f/xzblydjk', {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            message: formData.message,
+        });
+
+        submittedForm.value = true
+
+    } catch (error) {
+        console.error('Error submitting the form:', error);
+    }
+};
 
 </script>
 <template>
     <div class="contact-title">
         <h3 data-text="Contacto">Contacto</h3>
-        <p>Por favor, completa la información requerida para ponerte en contacto</p>
+        <p v-if="!submittedForm">Por favor, completa la información requerida para ponerte en contacto</p>
     </div>
-    <form action="https://formspree.io/f/xzblydjk" method="POST" class="form-group">
+    <form v-if="!submittedForm" @submit.prevent="submitForm" class="form-group">
         <div class="contact-name">
             <h4>Nombre*</h4>
             <label>
-                <input type="text" name="name" class="form-style" placeholder="Introduce tu nombre">
+                <input v-model="formData.name" type="text" name="name" class="form-style" placeholder="Introduce tu nombre">
             </label>
         </div>
 
@@ -19,27 +47,32 @@
             <div class="contact-email">
                 <h4>Email*</h4>
                 <label>
-                    <input type="email" name="email" class="form-style" placeholder="Introduce tu email">
+                    <input v-model="formData.email" type="email" name="email" class="form-style"
+                        placeholder="Introduce tu email">
                 </label>
             </div>
             <div class="contact-phone">
                 <h4>Teléfono*</h4>
                 <label>
-                    <input type="phone number" name="phone" class="form-style" placeholder="+34">
+                    <input v-model="formData.phone" type="phone number" name="phone" class="form-style" placeholder="+34">
                 </label>
             </div>
         </div>
         <div class="contact-message">
             <h4>Mensaje*</h4>
             <label>
-                <textarea name="message" class="form-style" placeholder="Estoy interesad@ en..."></textarea>
+                <textarea v-model="formData.message" name="message" class="form-style"
+                    placeholder="Estoy interesad@ en..."></textarea>
             </label>
         </div>
 
-
-
         <button type="submit" class="contact-btn">Contacto</button>
     </form>
+
+    <div v-if="submittedForm" class="contact-submitted-message">
+        <h4>Gracias por tu interés {{ formData.name }} </h4>
+        <p>¡Me pondré en contacto contigo en la mayor brevedad posible!</p>
+    </div>
 </template>
 
 <style scoped>
@@ -58,11 +91,8 @@
     line-height: 120%;
     margin-top: 20px;
     margin-bottom: 35px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
 }
-
-
-
-
 
 
 .contact-title p {
@@ -70,6 +100,27 @@
     color: #DE8FFF;
     text-align: center;
     font-size: 18px;
+    line-height: 100%;
+}
+
+.contact-submitted-message {
+    margin-top: 80px;
+
+}
+
+.contact-submitted-message h4 {
+    font-family: 'Founders-Grotesk-medium';
+    color: #DE8FFF;
+    text-align: center;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.contact-submitted-message p {
+    font-family: 'Founders-Grotesk-regular';
+    color: #DE8FFF;
+    text-align: center;
+    font-size: 20px;
     line-height: 100%;
 }
 

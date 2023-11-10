@@ -8,8 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@formspree/react": "^2.5.1",
-    "react": "^18.2.0",
+    "axios": "^1.6.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },

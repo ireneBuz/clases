@@ -8,7 +8,7 @@ import pianoImg from '/pianoImg.svg'
     <div class="piano-classes">
       <div class="piano-classes-info">
         <h2>
-          ¡Aprende a tocar el piano con pasion y habilidad!
+          ¡Aprende a tocar el piano con pasión y habilidad!
         </h2>
 
         <p>Clases de piano personalizadas, adaptadas a tu nivel y objetivos. Tanto si eres un principiante que sueña con
@@ -24,11 +24,11 @@ import pianoImg from '/pianoImg.svg'
         <div class="piano-classes-info-button">
 
           <div class="piano-classes-info-button-presential">
-            <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contacto' }">
+            <RouterLink to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }">
               Presencial - 25€/h</RouterLink>
           </div>
           <div class="piano-classes-info-button-remote">
-            <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contacto' }">
+            <RouterLink to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }">
               Online - 20€/h</RouterLink>
           </div>
         </div>
