@@ -3,31 +3,37 @@
 @font-face {
   font-family: 'Newake';
   src: url('./../../fonts/Newake.otf') format('opentype');
+  font-display: swap
 }
 
 @font-face {
   font-family: 'OpenSans';
   src: url('./../../fonts/OpenSans.ttf') format('truetype');
+  font-display: swap
 }
 
 @font-face {
   font-family: 'Founders-Grotesk';
   src: url('./../../fonts/FoundersGrotesk.otf') format('opentype');
+  font-display: swap
 }
 
 @font-face {
   font-family: 'Founders-Grotesk-light';
   src: url('./../../fonts/FoundersGroteskLight.otf') format('opentype');
+  font-display: swap
 }
 
 @font-face {
   font-family: 'Founders-Grotesk-medium';
   src: url('./../../fonts/FoundersGroteskMedium.otf') format('opentype');
+  font-display: swap
 }
 
 @font-face {
   font-family: 'Founders-Grotesk-regular';
   src: url('./../../fonts/FoundersGroteskRegular.otf') format('opentype');
+  font-display: swap
 }
 
 #app {
