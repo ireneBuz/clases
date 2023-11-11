@@ -137,6 +137,11 @@ section {
     align-items: center;
   }
 
+  .musical-classes-info h2 {
+    font-family: 'Newake';
+    font-weight: 500;
+  }
+
   .musical-classes-img {
     width: 60%;
     margin-left: 0;

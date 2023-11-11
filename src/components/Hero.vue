@@ -119,8 +119,8 @@ const leave = (el, done) => {
 }
 
 .hero .hero-text h1 {
-    font-family: 'Newake';
-    font-weight: 500;
+    font-family: 'Founders-Grotesk-medium';
+    font-weight: 600;
     font-size: 49px;
     line-height: 120%;
 }
@@ -210,6 +210,8 @@ const leave = (el, done) => {
     }
 
     .hero .hero-text h1 {
+        font-family: 'Newake';
+        font-weight: 500;
         font-size: 48px;
         margin-top: 0;
     }
