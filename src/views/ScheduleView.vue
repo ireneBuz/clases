@@ -5,7 +5,7 @@ import scheduleBackground2 from '/scheduleBackground2.svg'
 </script>
 
 <template>
-  <header>
+  <section id="horarios">
     <div class="schedule-info">
       <h2>
         Mis clases particulares se adaptan a tus
@@ -28,7 +28,7 @@ import scheduleBackground2 from '/scheduleBackground2.svg'
       </div>
 
     </div>
-  </header>
+  </section>
 </template>
 
 
