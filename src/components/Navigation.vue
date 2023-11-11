@@ -35,21 +35,48 @@ const handleButtonClick = () => {
     openModal()
     closeMenu()
 }
-
 const enter = (el) => {
     gsap.fromTo(el, {
         opacity: 0,
         scale: 1.4,
-    }, { duration: 0.1, opacity: 1, scale: 1, });
-}
+    }, { duration: 0.2, opacity: 1, scale: 1 });
+};
+
 const leave = (el, done) => {
+    !showModal.value ?
+        gsap.to(el, {
+            duration: 0.2,
+            scale: 1.4,
+            opacity: 0,
+            onComplete: () => {
+                done();
+            },
+        })
+        :
+        gsap.to(el, {
+            duration: 0.2,
+            opacity: 0,
+            onComplete: () => {
+                done();
+            },
+        })
+
+};
+
+const enterForm = (el) => {
+    gsap.fromTo(el, {
+        opacity: 0,
+    }, { duration: 0.3, opacity: 1 });
+};
+
+const leaveForm = (el, done) => {
     gsap.to(el, {
-        duration: 0.1,
-        scale: 1.4,
+        duration: 0.3,
         opacity: 0,
         onComplete: done,
     });
-}
+};
+
 
 
 
@@ -87,7 +114,7 @@ const leave = (el, done) => {
                     Contacto</a>
             </div>
 
-            <transition @enter="enter" @leave="leave">
+            <transition @enter="enterForm" @leave="leaveForm">
                 <div v-if="showModal">
                     <div class='modal'>
                         <div class='modal-content'>
