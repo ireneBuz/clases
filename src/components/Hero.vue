@@ -120,7 +120,6 @@ const leave = (el, done) => {
 
 .hero .hero-text h1 {
     font-family: 'Founders-Grotesk-medium';
-
     font-size: 49px;
     line-height: 120%;
 }
@@ -233,7 +232,7 @@ const leave = (el, done) => {
 
     .hero .hero-text h1 {
         font-size: 32px;
-
+        letter-spacing: -1px
     }
 
     .hero .hero-text,
