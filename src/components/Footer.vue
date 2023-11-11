@@ -44,6 +44,8 @@ import linkedInIcon from '/linkedInIcon.svg'
     justify-content: space-between;
     align-items: center;
     width: 90%;
+    max-width: 1240px;
+
 }
 
 

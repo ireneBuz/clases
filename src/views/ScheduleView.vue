@@ -6,27 +6,31 @@ import scheduleBackground2 from '/scheduleBackground2.svg'
 
 <template>
   <section id="horarios">
-    <div class="schedule-info">
-      <h2>
-        Mis clases particulares se adaptan a tus
-      </h2>
-      <h2>
-        necesidades con horarios flexibles.
-      </h2>
-      <p>De <span>lunes a viernes,</span> puedes elegir entre las mañanas, de <strong>9:00 a 12:00,</strong> para empezar
-        tu día de estudio con energía, o las tardes, de <strong>17:00 a 21:00,</strong> para repasar y consolidar lo
-        aprendido después de tus compromisos diarios. Tu éxito es mi prioridad, y mi horario se ajusta para facilitar tu
-        camino hacia el conocimiento y el crecimiento.</p>
-    </div>
-
-    <div class="schedule-info-background">
-      <div class="schedule-info-background-img1">
-        <img :src="scheduleBackground1" alt="">
-      </div>
-      <div class="schedule-info-background-img2">
-        <img :src="scheduleBackground2" alt="">
+    <div class="schedule-relative">
+      <div class="schedule-info">
+        <h2>
+          Mis clases particulares se adaptan a tus
+        </h2>
+        <h2>
+          necesidades con horarios flexibles.
+        </h2>
+        <p>De <span>lunes a viernes,</span> puedes elegir entre las mañanas, de <strong>9:00 a 12:00,</strong> para
+          empezar
+          tu día de estudio con energía, o las tardes, de <strong>17:00 a 21:00,</strong> para repasar y consolidar lo
+          aprendido después de tus compromisos diarios. Tu éxito es mi prioridad, y mi horario se ajusta para facilitar tu
+          camino hacia el conocimiento y el crecimiento.</p>
       </div>
 
+
+      <div class="schedule-info-background">
+        <div class="schedule-info-background-img1">
+          <img :src="scheduleBackground1" alt="">
+        </div>
+        <div class="schedule-info-background-img2">
+          <img :src="scheduleBackground2" alt="">
+        </div>
+
+      </div>
     </div>
   </section>
 </template>
@@ -37,18 +41,20 @@ section {
   margin: auto;
   max-width: 1440px;
   min-height: 96vh;
-  position: relative;
+}
 
+.schedule-relative {
+  display: flex;
+  flex-direction: column;
+  min-height: 96vh;
 }
 
 .schedule-info {
   font-family: 'Founders-Grotesk';
-  position: relative;
   color: #000;
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 100px;
-  z-index: 2
+  margin-top: auto;
 }
 
 .schedule-info h2 {
@@ -80,18 +86,16 @@ section {
 .schedule-info-background {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  position: absolute;
-  bottom: 0px;
-  right: 0;
+  align-items: flex-end;
+  margin-top: auto;
 
 }
 
 .schedule-info-background .schedule-info-background-img1 {
   transform: translateY(255px);
-  z-index: 1;
   margin-top: -30px;
 }
+
 
 @media (max-width: 870px) {
 
