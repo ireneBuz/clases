@@ -39,15 +39,19 @@ const handleButtonClick = () => {
 const enter = (el) => {
     gsap.fromTo(el, {
         opacity: 0,
-    }, { duration: 0.2, opacity: 1 });
+        scale: 1.4,
+    }, { duration: 0.1, opacity: 1, scale: 1, });
 }
 const leave = (el, done) => {
     gsap.to(el, {
-        duration: 0.2,
+        duration: 0.1,
+        scale: 1.4,
         opacity: 0,
         onComplete: done,
     });
 }
+
+
 
 
 
@@ -97,17 +101,20 @@ const leave = (el, done) => {
             </transition>
 
         </nav>
+        <transition @enter="enter" @leave="leave">
+            <div class="mobile-menu" v-if="isMenuOpen">
+                <RouterLink class="fade-inicio" to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }">
+                    Inicio</RouterLink>
+                <RouterLink to="/clases-horarios" @click="closeMenu"
+                    :class="{ 'active-link': $route.path === '/clases-horarios' }">Horarios
+                </RouterLink>
+                <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/cursos' }">Cursos
+                </RouterLink>
+                <a @click="handleButtonClick" :class="{ 'active-link': $route.path === '/contact' }">
+                    Contacto</a>
+            </div>
+        </transition>
 
-        <div class="mobile-menu" v-if="isMenuOpen">
-            <RouterLink to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }">Inicio</RouterLink>
-            <RouterLink to="/clases-horarios" @click="closeMenu"
-                :class="{ 'active-link': $route.path === '/clases-horarios' }">Horarios
-            </RouterLink>
-            <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/cursos' }">Cursos
-            </RouterLink>
-            <a @click="handleButtonClick" :class="{ 'active-link': $route.path === '/contact' }">
-                Contacto</a>
-        </div>
     </section>
 </template>
 
