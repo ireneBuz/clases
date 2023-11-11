@@ -249,8 +249,9 @@ section {
 
 nav a,
 .mobile-menu a {
+    font-family: 'Founders-Grotesk-medium';
+
     color: #1E1E1E;
-    font-family: 'Founders-Grotesk';
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;

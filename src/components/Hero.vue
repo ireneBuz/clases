@@ -101,7 +101,6 @@ const leave = (el, done) => {
 }
 
 .hero {
-    font-family: 'Founders-Grotesk';
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,8 +119,9 @@ const leave = (el, done) => {
 }
 
 .hero .hero-text h1 {
+    font-family: 'Founders-Grotesk-medium';
+
     font-size: 49px;
-    font-weight: 600;
     line-height: 120%;
 }
 

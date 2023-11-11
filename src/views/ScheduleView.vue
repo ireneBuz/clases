@@ -50,7 +50,7 @@ section {
 }
 
 .schedule-info {
-  font-family: 'Founders-Grotesk';
+  font-family: 'Founders-Grotesk-medium';
   color: #000;
   margin-left: 20%;
   margin-right: 20%;
