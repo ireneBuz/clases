@@ -250,12 +250,12 @@ const leave = (el, done) => {
     }
 
     .hero .hero-text .info a {
-        font-family: 'Founders-Grotesk-light';
-        font-size: 14px;
+        font-family: 'Founders-Grotesk-regular';
+        font-size: 16px;
         display: block;
         width: 100%;
         margin: 0;
-        padding: 7px 0 5px 0;
+        padding: 10px 0 5px 0;
         text-align: center;
     }
 }

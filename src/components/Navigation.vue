@@ -299,7 +299,7 @@ nav .contacto a:hover {
 
     .mobile-menu {
         position: absolute;
-        z-index: 1;
+        z-index: 10;
         transform: translateY(-40px);
         margin-left: auto;
         right: 0;
