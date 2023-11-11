@@ -4,7 +4,7 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
 </script>
 
 <template>
-  <header>
+  <section id="teoria-musical">
     <div class="musical-classes">
       <div class="musical-classes-info">
         <h2>
@@ -37,7 +37,7 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
         <img :src="musicalTheoryImg" alt="">
       </div>
     </div>
-  </header>
+  </section>
 </template>
 
 

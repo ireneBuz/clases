@@ -4,7 +4,7 @@ import pianoImg from '/pianoImg.svg'
 </script>
 
 <template>
-  <header>
+  <section id="clases-piano">
     <div class="piano-classes">
       <div class="piano-classes-info">
         <h2>
@@ -38,7 +38,7 @@ import pianoImg from '/pianoImg.svg'
         <img :src="pianoImg" alt="">
       </div>
     </div>
-  </header>
+  </section>
 </template>
 
 

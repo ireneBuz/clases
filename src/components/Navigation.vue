@@ -36,7 +36,7 @@ const handleButtonClick = () => {
 
 
 <template>
-    <header>
+    <section id="navigation">
         <nav class="nav-container">
             <div class="nav-container-mini">
                 <div class="title">
@@ -88,7 +88,7 @@ const handleButtonClick = () => {
             <a @click="handleButtonClick" :class="{ 'active-link': $route.path === '/contact' }">
                 Contacto</a>
         </div>
-    </header>
+    </section>
 </template>
 
 
@@ -138,7 +138,6 @@ const handleButtonClick = () => {
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 100vw;
     height: 124px;
 }
 
