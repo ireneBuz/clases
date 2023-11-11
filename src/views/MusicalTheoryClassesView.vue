@@ -1,5 +1,5 @@
 <script setup>
-import musicalTheoryImg from '/musicalTheoryImg.svg'
+import musicalTheoryImg from '/musicalTheoryImg.webp'
 
 </script>
 
@@ -23,11 +23,11 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
         <div class="musical-classes-info-button">
 
           <div class="musical-classes-info-button-presential">
-            <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contacto' }">
+            <RouterLink to="/">
               Presencial - 25€/h</RouterLink>
           </div>
           <div class="musical-classes-info-button-remote">
-            <RouterLink to="/contacto" @click="closeMenu" :class="{ 'active-link': $route.path === '/contacto' }">
+            <RouterLink to="/">
               Online - 20€/h</RouterLink>
           </div>
         </div>
@@ -45,6 +45,7 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
 section {
   margin: auto;
   max-width: 1440px;
+  min-height: 96vh;
 }
 
 .musical-classes {

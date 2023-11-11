@@ -1,5 +1,5 @@
 <script setup>
-import pianoImg from '/pianoImg.svg'
+import pianoImg from '/pianoImg.webp'
 
 </script>
 
@@ -24,11 +24,11 @@ import pianoImg from '/pianoImg.svg'
         <div class="piano-classes-info-button">
 
           <div class="piano-classes-info-button-presential">
-            <RouterLink to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }">
+            <RouterLink to="/">
               Presencial - 25€/h</RouterLink>
           </div>
           <div class="piano-classes-info-button-remote">
-            <RouterLink to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }">
+            <RouterLink to="/">
               Online - 20€/h</RouterLink>
           </div>
         </div>
@@ -46,6 +46,8 @@ import pianoImg from '/pianoImg.svg'
 section {
   margin: auto;
   max-width: 1440px;
+  min-height: 96vh;
+
 }
 
 .piano-classes {

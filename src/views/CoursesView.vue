@@ -1,14 +1,12 @@
 <script setup>
-import comingSoonImg from '/comingSoonImg.svg'
+import comingSoonImg from '/comingSoonImg.webp'
 
 </script>
 
 <template>
   <section>
     <div class="courses">
-      <div class="courses-img">
-        <img :src="comingSoonImg" alt="">
-      </div>
+      <img :src="comingSoonImg" alt="">
     </div>
   </section>
 </template>
@@ -18,23 +16,21 @@ import comingSoonImg from '/comingSoonImg.svg'
 section {
   margin: auto;
   max-width: 1440px;
+  min-height: 96vh;
 }
+
 
 .courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
-  margin-bottom: 40vh;
 }
 
-.courses-img img {
-  width: 100%;
+.courses img {
+  width: 40%;
 }
 
 
-
-@media (max-width: 440px) {
-  .courses {
-    margin-top: 30vh;
-    margin-bottom: 45vh;
-  }
-}
+@media (max-width: 440px) {}
 </style>
