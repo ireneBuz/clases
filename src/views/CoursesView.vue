@@ -32,5 +32,15 @@ section {
 }
 
 
-@media (max-width: 440px) {}
+@media (max-width: 740px) {
+  .courses {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 470px) {
+  .courses {
+    margin-top: 260px;
+  }
+}
 </style>
