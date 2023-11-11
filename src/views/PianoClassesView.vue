@@ -148,7 +148,7 @@ section {
   }
 
   .piano-classes-info {
-    font-family: 'Founders-Grotesk';
+    font-family: 'Founders-Grotesk-medium';
     color: #000;
     width: 100%;
   }
