@@ -5,10 +5,6 @@
   src: url('./../../fonts/Newake.otf') format('opentype');
 }
 
-@font-face {
-  font-family: 'OpenSans';
-  src: url('./../../fonts/OpenSans.ttf') format('truetype');
-}
 
 @font-face {
   font-family: 'Founders-Grotesk';
