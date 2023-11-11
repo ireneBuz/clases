@@ -82,7 +82,6 @@ onMounted(() => {
 
 <style scoped>
 .home-cards {
-    font-family: 'Founders-Grotesk';
     display: flex;
     align-items: center;
     justify-content: center;

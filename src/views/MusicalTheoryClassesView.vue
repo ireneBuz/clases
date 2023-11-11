@@ -57,7 +57,6 @@ section {
 }
 
 .musical-classes-info {
-  font-family: 'Founders-Grotesk';
   color: #000;
   width: 50%;
 }
@@ -145,7 +144,7 @@ section {
   }
 
   .musical-classes-info {
-    font-family: 'Founders-Grotesk';
+    font-family: 'Founders-Grotesk-medium';
     color: #000;
     width: 100%;
   }

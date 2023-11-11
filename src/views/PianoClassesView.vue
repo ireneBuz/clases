@@ -60,7 +60,6 @@ section {
 }
 
 .piano-classes-info {
-  font-family: 'Founders-Grotesk';
   color: #000;
   width: 50%;
 }
