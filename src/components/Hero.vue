@@ -119,7 +119,7 @@ const leave = (el, done) => {
 }
 
 .hero .hero-text h1 {
-    font-family: 'Founders-Grotesk-medium';
+    font-family: sans-serif;
 
     font-size: 49px;
     line-height: 120%;
