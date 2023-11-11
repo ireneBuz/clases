@@ -5,6 +5,9 @@ import menuIcon from '/menuicon.svg'
 import menuIconClose from '/menuiconclose.svg'
 import ContactForm from './ContactForm.vue'
 import closeModalIcon from '/closeModal.svg'
+import { gsap } from 'gsap'
+
+
 const isMenuOpen = ref(false);
 let showModal = ref(false);
 
@@ -32,6 +35,16 @@ const handleButtonClick = () => {
     openModal()
     closeMenu()
 }
+
+const enter = (el) => {
+    gsap.fromTo(el, {
+        opacity: 0,
+    }, { duration: 0.2, opacity: 1 });
+}
+
+
+
+
 </script>
 
 
@@ -64,18 +77,19 @@ const handleButtonClick = () => {
                     Contacto</a>
             </div>
 
-
-
-            <div v-if="showModal" @close="closeModal">
-                <div class='modal'>
-                    <div class='modal-content'>
-                        <span class='close' @click="closeModal">
-                            <img :src="closeModalIcon" alt="">
-                        </span>
-                        <ContactForm />
+            <transition @enter="enter">
+                <div v-if="showModal">
+                    <div class='modal'>
+                        <div class='modal-content'>
+                            <span class='close' @click="closeModal">
+                                <img :src="closeModalIcon" alt="">
+                            </span>
+                            <ContactForm />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </transition>
+
         </nav>
 
         <div class="mobile-menu" v-if="isMenuOpen">
@@ -97,6 +111,11 @@ const handleButtonClick = () => {
 
 
 <style scoped>
+section {
+    margin: auto;
+    max-width: 1440px;
+}
+
 .modal {
     display: block;
     position: fixed;

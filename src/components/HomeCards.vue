@@ -2,14 +2,50 @@
 import homeCards1 from '/homeCards1.webp'
 import homeCardsButton from '/homeCardsButton.svg'
 import homeCards2 from '/homeCards2.webp'
+import { gsap } from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { onMounted } from 'vue';
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+onMounted(() => {
+    gsap.from(".card1", {
+        opacity: 0,
+        y: 200,
+    });
+    gsap.to(".card1", {
+        scrollTrigger: ".card1",
+        duration: 1,
+        opacity: 1,
+        y: 0,
+        ease: "power2"
+    });
+    gsap.from(".card2", {
+        opacity: 0,
+        y: 200,
+    });
+    gsap.to(".card2", {
+        scrollTrigger: ".card2",
+        duration: 1,
+        ease: "power2",
+
+        opacity: 1,
+        y: 0,
+    });
+})
+
 
 </script>
 
 
 <template>
     <header>
+
         <div class="home-cards">
-            <div class="home-cards-single">
+            <div class="home-cards-single card1">
                 <img :src="homeCards1" alt="">
                 <div class="home-cards-single-h4">
                     <h4>¿Quieres aprender teoría musical?</h4>
@@ -21,7 +57,7 @@ import homeCards2 from '/homeCards2.webp'
                         Ver opciones <img :src="homeCardsButton" alt=""></RouterLink>
                 </div>
             </div>
-            <div class="home-cards-single">
+            <div class="home-cards-single card2">
                 <img :src="homeCards2" alt="">
                 <div class="home-cards-single-h4">
                     <h4>¿Quieres aprender a tocar el piano?</h4>
@@ -61,6 +97,7 @@ import homeCards2 from '/homeCards2.webp'
 }
 
 .home-cards .home-cards-single {
+    opacity: 0;
     width: 25%;
     height: 460px;
     padding-top: 50px;

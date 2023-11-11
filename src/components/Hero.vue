@@ -3,8 +3,8 @@ import heroImg from '/heroimg.webp'
 import closeModalIcon from '/closeModal.svg'
 import ContactForm from './ContactForm.vue'
 import { ref } from 'vue';
-
 let showModal = ref(false);
+
 const openModal = () => {
     showModal.value = true;
 }

@@ -2,6 +2,55 @@
 import homeInfo1 from '/homeInfo1.svg'
 import homeInfo2 from '/homeInfo2.svg'
 import homeInfo3 from '/homeInfo3.svg'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { onMounted } from 'vue';
+gsap.registerPlugin(ScrollTrigger);
+
+
+onMounted(() => {
+    gsap.from(".item1", {
+        opacity: 0,
+    });
+    gsap.to(".item1", {
+        scrollTrigger: { trigger: ".item1", start: () => "top bottom-=160" },
+        duration: 1,
+        ease: "expo.out",
+        y: 0,
+        opacity: 1,
+    });
+    gsap.from(".item2", {
+        opacity: 0,
+    });
+    gsap.to(".item2", {
+        scrollTrigger: { trigger: ".item2", start: () => "top bottom-=180" },
+        y: 0,
+        duration: 1,
+        ease: "expo.out",
+        opacity: 1,
+    });
+
+    gsap.from(".item3", {
+        opacity: 0,
+    });
+    gsap.to(".item3", {
+        scrollTrigger: { trigger: ".item3", start: () => "top bottom-=180" },
+        y: 0,
+        duration: 1,
+        ease: "expo.out",
+        opacity: 1,
+    });
+
+    gsap.from(".item4", {
+        opacity: 0
+    })
+    gsap.to(".item4", {
+        scrollTrigger: { trigger: ".item3", start: () => "top bottom-=300" },
+        duration: 1,
+        opacity: 1,
+    })
+})
+
 
 </script>
 
@@ -14,7 +63,7 @@ import homeInfo3 from '/homeInfo3.svg'
                     Solo tienes que...</h2>
             </div>
             <div class="home-info-points">
-                <div class="home-info-points-item">
+                <div class="home-info-points-item item1">
                     <div class="home-info-points-item-img">
                         <img :src="homeInfo1" alt="">
                     </div>
@@ -25,7 +74,7 @@ import homeInfo3 from '/homeInfo3.svg'
                         <p>Online o presencial, elige la forma que más se adapte a ti.</p>
                     </div>
                 </div>
-                <div class="home-info-points-item">
+                <div class="home-info-points-item item2">
                     <div class="home-info-points-item-img">
                         <img :src="homeInfo2" alt="">
                     </div>
@@ -38,7 +87,7 @@ import homeInfo3 from '/homeInfo3.svg'
                     </div>
 
                 </div>
-                <div class="home-info-points-item">
+                <div class="home-info-points-item item3">
                     <div class="home-info-points-item-img">
                         <img :src="homeInfo3" alt="">
                     </div>
@@ -51,7 +100,7 @@ import homeInfo3 from '/homeInfo3.svg'
                     </div>
                 </div>
             </div>
-            <div class="home-info-paragraph">
+            <div class="home-info-paragraph item4">
                 <p>Sumergirse en el mundo de las clases de piano y la teoría musical es una experiencia enriquecedora que va
                     más
                     alla de aprender a tocar un instrumento.</p>
@@ -85,6 +134,10 @@ import homeInfo3 from '/homeInfo3.svg'
 
 }
 
+.home-info .home-info-points .home-info-points-item {
+    opacity: 0;
+    transform: translateY(200px);
+}
 
 .home-info .home-info-points {
     text-align: center;
@@ -133,7 +186,7 @@ import homeInfo3 from '/homeInfo3.svg'
 
 .home-info .home-info-paragraph {
     font-family: 'Founders-Grotesk-medium';
-
+    opacity: 0;
     text-align: center;
     margin-top: 40px;
     width: 75%;
