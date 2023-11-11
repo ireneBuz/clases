@@ -3,6 +3,8 @@ import heroImg from '/heroimg.webp'
 import closeModalIcon from '/closeModal.svg'
 import ContactForm from './ContactForm.vue'
 import { ref } from 'vue';
+import { gsap } from 'gsap'
+
 let showModal = ref(false);
 
 const openModal = () => {
@@ -11,6 +13,21 @@ const openModal = () => {
 
 const closeModal = () => {
     showModal.value = false;
+}
+
+
+const enter = (el) => {
+    gsap.fromTo(el, {
+        opacity: 0,
+    }, { duration: 0.2, opacity: 1 });
+}
+
+const leave = (el, done) => {
+    gsap.to(el, {
+        duration: 0.2,
+        opacity: 0,
+        onComplete: done,
+    });
 }
 
 </script>
@@ -28,17 +45,18 @@ const closeModal = () => {
                         Más info</a>
                 </div>
             </div>
-
-            <div v-if="showModal" @close="closeModal">
-                <div class='modal'>
-                    <div class='modal-content'>
-                        <span class='close' @click="closeModal">
-                            <img :src="closeModalIcon" alt="">
-                        </span>
-                        <ContactForm />
+            <transition @enter="enter" @leave="leave">
+                <div v-if="showModal" @close="closeModal">
+                    <div class='modal'>
+                        <div class='modal-content'>
+                            <span class='close' @click="closeModal">
+                                <img :src="closeModalIcon" alt="">
+                            </span>
+                            <ContactForm />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </transition>
             <div class="hero-img">
                 <img :src="heroImg" alt="">
             </div>
@@ -125,7 +143,7 @@ const closeModal = () => {
     border-radius: 30px;
     font-family: 'Founders-Grotesk-medium';
 
-    background: var(--main-colors-gradient, linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%));
+    background: var(--main-colors-gradient, linear-gradient(30deg, #3D73EB 13.4%, #DE8FFF 86.6%));
     font-size: 20px;
     cursor: pointer;
 
@@ -223,13 +241,22 @@ const closeModal = () => {
         width: 85%;
     }
 
-    .hero .hero-img {}
 
     .hero .hero-text .info {
-        text-align: center;
+
         padding-top: 5px;
         margin-top: 35px;
         margin-left: 0;
+    }
+
+    .hero .hero-text .info a {
+        font-family: 'Founders-Grotesk-light';
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 7px 0 5px 0;
+        text-align: center;
     }
 }
 </style>

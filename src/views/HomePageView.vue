@@ -11,6 +11,8 @@ import Homepage from './../components/HomePage.vue';
 main {
   margin: auto;
   max-width: 1440px;
+
+  min-height: 96vh;
 }
 </style>
 

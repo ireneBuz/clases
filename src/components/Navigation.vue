@@ -41,7 +41,13 @@ const enter = (el) => {
         opacity: 0,
     }, { duration: 0.2, opacity: 1 });
 }
-
+const leave = (el, done) => {
+    gsap.to(el, {
+        duration: 0.2,
+        opacity: 0,
+        onComplete: done,
+    });
+}
 
 
 
@@ -77,7 +83,7 @@ const enter = (el) => {
                     Contacto</a>
             </div>
 
-            <transition @enter="enter">
+            <transition @enter="enter" @leave="leave">
                 <div v-if="showModal">
                     <div class='modal'>
                         <div class='modal-content'>
@@ -166,6 +172,7 @@ section {
     width: 30%;
 }
 
+
 .title p {
     font-family: Newake;
     font-size: 32px;
@@ -180,6 +187,7 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
+
 .nav-links {
     display: flex;
     justify-content: space-evenly;
@@ -188,16 +196,22 @@ section {
 }
 
 .nav-links a {
-    padding: 15px 20px 10px 20px;
+    padding: 10px;
     font-family: 'Founders-Grotesk-medium';
-
+    transition: background 3s ease-out, color 3s ease-out;
 }
 
 .nav-links a:hover:not(.active-link) {
-    border-radius: 10px;
-    background: rgba(183, 149, 255, 0.60);
-    padding: 15px 20px 10px 20px;
+    background: var(--main-colors-gradient, linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: background 3s ease-out, color 3s ease-out;
+
+    /* Hides the text on hover */
 }
+
 
 nav a,
 .mobile-menu a {
@@ -227,11 +241,20 @@ nav .contacto a {
     cursor: pointer;
 }
 
-
-
 nav .contacto a:hover {
-    background: var(--main-colors-gradient, linear-gradient(30deg, #1f53c3 13.4%, #cd59ff 75.6%));
+    background: var(--main-colors-gradient-hover, linear-gradient(30deg, #1f53c3 13.4%, #cd59ff 75.6%));
+    color: #FFFFFF;
 }
+
+.title p:hover {
+    background: linear-gradient(60deg, #6892ec 13.4%, #e7afff 86.6%);
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 
 .menu-icon {
     display: none;

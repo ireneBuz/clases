@@ -25,12 +25,9 @@ import linkedInIcon from '/linkedInIcon.svg'
 
 
 
-
-
-
 <style scoped>
 .footer {
-
+    height: 70px;
     font-family: 'Founders-Grotesk-regular';
     width: 100%;
     color: #000;
@@ -48,11 +45,6 @@ import linkedInIcon from '/linkedInIcon.svg'
     align-items: center;
     width: 90%;
 }
-
-.footer .footer-div p span {
-    font-family: 'Newake';
-}
-
 
 
 

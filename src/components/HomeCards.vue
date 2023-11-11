@@ -52,8 +52,7 @@ onMounted(() => {
                 </div>
                 <p> La teoría proporciona el marco necesario para comprender la música.</p>
                 <div class="info">
-                    <RouterLink to="/clases-teoria-musical" @click="closeMenu"
-                        :class="{ 'active-link': $route.path === '/clases-teoria-musical' }">
+                    <RouterLink to="/clases-teoria-musical">
                         Ver opciones <img :src="homeCardsButton" alt=""></RouterLink>
                 </div>
             </div>
@@ -66,8 +65,7 @@ onMounted(() => {
                 <p>El piano, con su expresividad y versatilidad, es una puerta de entrada al universo de la música.</p>
 
                 <div class="info">
-                    <RouterLink to="/clases-piano" @click="closeMenu"
-                        :class="{ 'active-link': $route.path === '/clases-piano' }">
+                    <RouterLink to="/clases-piano">
                         Ver opciones <img :src="homeCardsButton" alt=""></RouterLink>
 
                 </div>
@@ -99,7 +97,6 @@ onMounted(() => {
 .home-cards .home-cards-single {
     opacity: 0;
     width: 25%;
-    height: 460px;
     padding-top: 50px;
     padding-bottom: 30px;
     padding-right: 20px;
@@ -163,9 +160,8 @@ onMounted(() => {
 @media (max-width: 870px) {
     .home-cards .home-cards-single {
         width: 31%;
-        height: 325px;
         padding-top: 35px;
-        padding-bottom: 60px;
+        padding-bottom: 20px;
         padding-right: 20px;
         padding-left: 20px;
         border-radius: 18px;
@@ -175,14 +171,18 @@ onMounted(() => {
 
     .home-cards .home-cards-single h4 {
         font-size: 17px;
-
         height: 40px;
     }
 
     .home-cards .home-cards-single p {
         font-size: 11px;
-
         height: 30px;
+    }
+
+    .home-cards .home-cards-single a {
+
+        margin-top: 60px;
+
     }
 
 }
@@ -199,9 +199,8 @@ onMounted(() => {
 
     .home-cards .home-cards-single {
         width: 60%;
-        height: 325px;
         padding-top: 35px;
-        padding-bottom: 0px;
+        padding-bottom: 30px;
         padding-right: 20px;
         padding-left: 20px;
         margin-bottom: 15px;

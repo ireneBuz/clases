@@ -36,15 +36,19 @@ import scheduleBackground2 from '/scheduleBackground2.svg'
 section {
   margin: auto;
   max-width: 1440px;
+  min-height: 96vh;
+  position: relative;
+
 }
 
 .schedule-info {
   font-family: 'Founders-Grotesk';
+  position: relative;
   color: #000;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 100px;
-
+  z-index: 2
 }
 
 .schedule-info h2 {
@@ -77,7 +81,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+
 }
 
 .schedule-info-background .schedule-info-background-img1 {
@@ -118,10 +125,24 @@ section {
     letter-spacing: -0.18px;
   }
 
-  .schedule-info-background .schedule-info-background-img1 {
+  .schedule-info-background .schedule-info-background-img1,
+  .schedule-info-background .schedule-info-background-img2 {
+    text-align: end;
+  }
+
+  .schedule-info-background .schedule-info-background-img1 img,
+  .schedule-info-background .schedule-info-background-img2 img {
     z-index: 1;
     margin-top: 0px;
+    width: 70%;
   }
+
+  .schedule-info-background .schedule-info-background-img1 {
+    transform: translateY(180px);
+    z-index: 1;
+    margin-top: -30px;
+  }
+
 
 }
 </style>
