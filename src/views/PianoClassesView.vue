@@ -73,8 +73,8 @@ section {
 }
 
 .piano-classes-info h2 {
+  font-family: 'Founders-Grotesk-medium';
   margin: 0;
-  align-self: stretch;
   font-size: 48px;
   font-weight: 600;
   line-height: 56px;
@@ -83,6 +83,8 @@ section {
 
 
 .piano-classes-info h3 {
+  font-family: 'Founders-Grotesk-medium';
+
   font-size: 22px;
 }
 
@@ -102,6 +104,8 @@ section {
 }
 
 .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a {
+  font-family: 'Founders-Grotesk-medium';
+
   padding: 8px 12.344px 6px 12.344px;
   border-radius: 18.517px;
   border: 1.003px solid #A392F6;
@@ -120,6 +124,8 @@ section {
 
 .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a,
 .piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote a {
+  font-family: 'Founders-Grotesk-medium';
+
   text-decoration: none;
   color: #FFF;
   font-size: 14.042px;
