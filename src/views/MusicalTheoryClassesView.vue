@@ -42,6 +42,11 @@ import musicalTheoryImg from '/musicalTheoryImg.svg'
 
 
 <style scoped>
+section {
+  margin: auto;
+  max-width: 1440px;
+}
+
 .musical-classes {
   display: flex;
   margin-top: 100px;

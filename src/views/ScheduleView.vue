@@ -33,6 +33,11 @@ import scheduleBackground2 from '/scheduleBackground2.svg'
 
 
 <style scoped>
+section {
+  margin: auto;
+  max-width: 1440px;
+}
+
 .schedule-info {
   font-family: 'Founders-Grotesk';
   color: #000;

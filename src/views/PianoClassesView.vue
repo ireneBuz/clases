@@ -43,6 +43,11 @@ import pianoImg from '/pianoImg.svg'
 
 
 <style scoped>
+section {
+  margin: auto;
+  max-width: 1440px;
+}
+
 .piano-classes {
   display: flex;
   margin-top: 100px;
