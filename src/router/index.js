@@ -30,12 +30,17 @@ const router = createRouter({
       name: 'courses',
       component: () => import('../views/CoursesView.vue')
     },
-    // {
-    //   path: '/contacto',
-    //   name: 'contacto',
-    //   component: () => import('../views/ContactView.vue')
-    // }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'auto',
+      };
+    } else {
+      return { top: 0, behavior: 'auto' };
+    }
+  },
 })
 
 export default router

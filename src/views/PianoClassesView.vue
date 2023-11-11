@@ -1,6 +1,7 @@
 <script setup>
 import pianoImg from '/pianoImg.webp'
 
+
 </script>
 
 <template>
