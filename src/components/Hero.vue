@@ -183,6 +183,11 @@ const leave = (el, done) => {
         text-align: center;
     }
 
+    .hero .hero-text h1 {
+
+        margin-top: 0;
+    }
+
     .hero .hero-text,
     .hero .hero-img {
         width: 90%;
@@ -209,12 +214,6 @@ const leave = (el, done) => {
 
     }
 
-    /* .hero .hero-text h1 {
-        font-family: 'Newake';
-        font-weight: 500;
-        font-size: 48px;
-        margin-top: 0;
-    } */
 
     .hero .hero-text p {
         font-size: 24px;
@@ -234,7 +233,9 @@ const leave = (el, done) => {
     }
 
     .hero .hero-text h1 {
-        font-size: 36px;
+        font-size: 34px;
+        line-height: 34px;
+
     }
 
     .hero .hero-text,
