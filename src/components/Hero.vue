@@ -234,8 +234,7 @@ const leave = (el, done) => {
     }
 
     .hero .hero-text h1 {
-        font-size: 32px;
-        font-weight: 500;
+        font-size: 36px;
     }
 
     .hero .hero-text,
@@ -247,7 +246,7 @@ const leave = (el, done) => {
     .hero .hero-text .info {
 
         padding-top: 5px;
-        margin-top: 35px;
+        margin-top: 15px;
         margin-left: 0;
     }
 
