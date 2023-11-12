@@ -105,10 +105,10 @@ section {
     margin-top: 130px;
   }
 
-  .schedule-info h2 {
+  /* .schedule-info h2 {
     font-family: 'Newake';
     font-weight: 500;
-  }
+  } */
 
   .schedule-info-background .schedule-info-background-img1 {
     margin-top: 30px;
