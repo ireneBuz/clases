@@ -143,10 +143,6 @@ section {
     align-items: center;
   }
 
-  /* .piano-classes-info h2 {
-    font-family: 'Newake';
-    font-weight: 500;
-  } */
 
   .piano-classes-img {
     width: 40%;
