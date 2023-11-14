@@ -1,11 +1,52 @@
 <script setup>
 import pianoImg from '/pianoImg.webp'
+import closeModalIcon from '/closeModal.svg'
+import ContactForm from './../components/contactform.vue'
+import { ref } from 'vue';
+import { gsap } from 'gsap'
 
+let showModal = ref(false);
+
+const openModal = () => {
+  showModal.value = true;
+}
+
+const closeModal = () => {
+  showModal.value = false;
+}
+
+
+const enter = (el) => {
+  gsap.fromTo(el, {
+    opacity: 0,
+  }, { duration: 0.2, opacity: 1 });
+}
+
+const leave = (el, done) => {
+  gsap.to(el, {
+    duration: 0.2,
+    opacity: 0,
+    onComplete: done,
+  });
+}
 
 </script>
 
 <template>
   <section id="clases-piano">
+
+    <transition @enter="enter" @leave="leave">
+      <div v-if="showModal" @close="closeModal">
+        <div class='modal'>
+          <div class='modal-content'>
+            <span class='close' @click="closeModal">
+              <img :src="closeModalIcon" alt="">
+            </span>
+            <ContactForm />
+          </div>
+        </div>
+      </div>
+    </transition>
     <div class="piano-classes">
       <div class="piano-classes-info">
         <h2>
@@ -21,19 +62,19 @@ import pianoImg from '/pianoImg.webp'
           A medida que se avanzan en las lecciones, se exploran piezas clásicas, contemporáneas y composiciones propias,
           desafiando la destreza y la creatividad de quien está al mando del piano.</p>
 
-        <h3>¡Apuntarme!</h3>
+        <h3>Presencial - 25€/h</h3>
+        <h3>Online - 20€/h</h3>
         <div class="piano-classes-info-button">
 
           <div class="piano-classes-info-button-presential">
-            <RouterLink to="/">
-              Presencial - 25€/h</RouterLink>
+            <a @click="openModal">
+              Quiero saber más</a>
           </div>
-          <div class="piano-classes-info-button-remote">
-            <RouterLink to="/">
-              Online - 20€/h</RouterLink>
-          </div>
+
         </div>
       </div>
+
+
 
       <div class="piano-classes-img">
         <img :src="pianoImg" alt="">
@@ -44,6 +85,38 @@ import pianoImg from '/pianoImg.webp'
 
 
 <style scoped>
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 3% auto;
+  padding: 20px;
+  width: 47.25rem;
+  height: 43.0625rem;
+  border-radius: 40px;
+}
+
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  transform: translateY(15px) translateX(-15px);
+}
+
+
+
+
+
 section {
   margin: auto;
   max-width: 1440px;
@@ -84,7 +157,7 @@ section {
 
 .piano-classes-info h3 {
   font-family: 'Founders-Grotesk-medium';
-
+  color: #715AFF;
   font-size: 22px;
 }
 
@@ -105,31 +178,29 @@ section {
 
 .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a {
   font-family: 'Founders-Grotesk-medium';
-
-  padding: 8px 12.344px 6px 12.344px;
+  padding: 10px 12.344px 6px 12.344px;
   border-radius: 18.517px;
-  border: 1.003px solid #A392F6;
-  background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
+  border: 1.003px solid #F85786;
+  background: linear-gradient(60deg, #F85786 13.4%, #F85786 86.6%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 18.042px;
+  cursor: pointer;
 }
 
-.piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote a {
-  padding: 9px 12.344px 7px 12.344px;
+.piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a:hover {
+  padding: 11px 13.344px 7px 13.344px;
+  border: none;
   border-radius: 18.517px;
+  color: #FFF;
+  -webkit-text-fill-color: white;
   background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
 }
 
 
-.piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a,
-.piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote a {
-  font-family: 'Founders-Grotesk-medium';
-
-  text-decoration: none;
-  color: #FFF;
-  font-size: 14.042px;
-}
 
 
 
@@ -198,18 +269,13 @@ section {
   .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a {
     padding-left: 97px;
     padding-right: 97px;
-
-
   }
 
-  .piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote a {
-    padding-left: 110px;
-    padding-right: 110px;
-
+  .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a:hover {
+    padding-left: 97px;
+    padding-right: 97px;
   }
 
-  .piano-classes-info .piano-classes-info-button .piano-classes-info-button-remote {
-    margin-top: 25px;
-  }
+
 }
 </style>
