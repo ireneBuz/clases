@@ -188,7 +188,11 @@ section {
   background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
 }
 
-
+@media (max-width:900px) {
+  .modal-content {
+    width: 37.25rem;
+  }
+}
 
 @media (max-width: 870px) {
   .musical-classes {
@@ -216,7 +220,18 @@ section {
 
 }
 
+@media (max-width:645px) {
+  .modal-content {
+    width: 25.25rem;
+  }
+}
+
 @media (max-width: 440px) {
+
+  .modal-content {
+    width: 21.5rem;
+  }
+
   .musical-classes {
     margin-top: 20px;
     margin-left: 8%;
