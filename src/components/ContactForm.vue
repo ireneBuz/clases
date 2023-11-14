@@ -33,7 +33,9 @@ const submitForm = async () => {
 <template>
     <div class="contact-title">
         <h3 data-text="Contacto">Contacto</h3>
-        <p v-if="!submittedForm">Por favor, completa la información requerida para ponerte en contacto</p>
+
+        <p v-if="!submittedForm">Llámame al <a href="tel:654140710">654 14 07 10</a> ó completa la información para ponerte
+            en contacto</p>
     </div>
     <form v-if="!submittedForm" @submit.prevent="submitForm" class="form-group">
         <div class="contact-name">
@@ -90,10 +92,24 @@ const submitForm = async () => {
     -webkit-text-fill-color: transparent;
     line-height: 120%;
     margin-top: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
 }
 
+.contact-title a {
+    font-family: 'Founders-Grotesk-medium';
+    color: #F85786;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 11px 9.344px 7px 9px;
+
+}
+
+.contact-title a:hover {
+    color: #ff7ca3;
+
+}
 
 .contact-title p {
     font-family: 'Founders-Grotesk-medium';
@@ -101,6 +117,8 @@ const submitForm = async () => {
     text-align: center;
     font-size: 18px;
     line-height: 100%;
+    margin-bottom: 0;
+
 }
 
 .contact-submitted-message {
@@ -128,6 +146,7 @@ const submitForm = async () => {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 0 !important;
 
 }
 
@@ -156,6 +175,7 @@ const submitForm = async () => {
     line-height: 140%;
     margin-bottom: 5px;
 }
+
 
 .contact-name,
 .contact-email-or-phone,
