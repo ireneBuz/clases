@@ -1,7 +1,7 @@
 <script setup>
 import pianoImg from '/pianoImg.webp'
 import closeModalIcon from '/closeModal.svg'
-import ContactForm from './../components/contactform.vue'
+import ContactForm from './../components/ContactForm.vue'
 import { ref } from 'vue';
 import { gsap } from 'gsap'
 
