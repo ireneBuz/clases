@@ -44,7 +44,7 @@ onMounted(() => {
 <template>
     <header>
 
-        <div class="home-cards">
+        <div class="home-cards" :class="{ 'dark-mode': isDarkMode }">
             <div class="home-cards-single card1">
                 <img :src="homeCards1" alt="">
                 <div class="home-cards-single-h4">
@@ -104,6 +104,11 @@ onMounted(() => {
     border-radius: 24px;
     background: #FFF;
     box-shadow: 0px 13px 28px 0px rgba(0, 0, 0, 0.10), 0px 50px 50px 0px rgba(0, 0, 0, 0.09), 0px 113px 68px 0px rgba(0, 0, 0, 0.05), 0px 201px 80px 0px rgba(0, 0, 0, 0.01), 0px 314px 88px 0px rgba(0, 0, 0, 0.00);
+}
+
+.dark-mode .home-cards .home-cards-single {
+    background-color: #5c3c69;
+    color: white;
 }
 
 .home-cards .home-cards-single img {
