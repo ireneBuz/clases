@@ -26,6 +26,8 @@ onMounted(() => {
 
 const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value;
+  const themeColorMeta = document.getElementById('theme-color-meta');
+  themeColorMeta.content = isDarkMode.value ? '#151515' : '#ffffff';
 };
 
 </script>
