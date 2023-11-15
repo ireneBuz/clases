@@ -5,7 +5,7 @@ import scheduleBackground2 from '/scheduleBackground2.svg'
 </script>
 
 <template>
-  <section id="horarios">
+  <section id="horarios" :class="{ 'dark-mode': isDarkMode }">
     <div class="schedule-relative">
       <div class="schedule-info">
         <h2>
@@ -96,6 +96,10 @@ section {
   margin-top: -30px;
 }
 
+.dark-mode h2,
+.dark-mode p {
+  color: #e6e6e6;
+}
 
 @media (max-width: 870px) {
 
