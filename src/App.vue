@@ -13,7 +13,10 @@ const updateThemeColor = () => {
   themeColorMeta.content = isDarkMode.value ? '#151515' : '#ffffff';
 };
 onMounted(() => {
+
   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  isDarkMode.value = darkModeMediaQuery.matches;
+
   darkModeMediaQuery.addEventListener('change', () => {
     isDarkMode.value = darkModeMediaQuery.matches;
     updateThemeColor();
