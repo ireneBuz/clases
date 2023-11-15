@@ -161,6 +161,8 @@ onMounted(() => {
     width: 15px;
 }
 
+
+
 @media (max-width: 870px) {
     .home-cards .home-cards-single {
         width: 31%;

@@ -7,7 +7,7 @@ import linkedInIcon from '/linkedInIcon.svg'
 
 <template>
     <header>
-        <div class="footer">
+        <div class="footer" :class="{ 'dark-mode': isDarkMode }">
             <div class="footer-div">
                 <div>
                     <p><span>Irene Buceta</span> ⓒ 2023. All Rights Reserved</p>
@@ -48,7 +48,14 @@ import linkedInIcon from '/linkedInIcon.svg'
 
 }
 
+.dark-mode .footer .footer-div img {
+    filter: invert(100%);
+}
 
+.dark-mode .footer {
+    background-color: #262626;
+    color: #e6e6e6;
+}
 
 @media (max-width: 870px) {
     .footer {

@@ -92,6 +92,10 @@ const leave = (el, done) => {
     border-radius: 40px;
 }
 
+.dark-mode .modal-content {
+    background-color: #434343;
+    color: #e6e6e6;
+}
 
 .close {
     display: flex;

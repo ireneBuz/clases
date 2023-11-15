@@ -32,7 +32,7 @@ const leave = (el, done) => {
 </script>
 
 <template>
-  <section id="teoria-musical">
+  <section id="teoria-musical" :class="{ 'dark-mode': isDarkMode }">
     <transition @enter="enter" @leave="leave">
       <div v-if="showModal" @close="closeModal">
         <div class='modal'>
@@ -97,6 +97,11 @@ const leave = (el, done) => {
   width: 47.25rem;
   height: 43.0625rem;
   border-radius: 40px;
+}
+
+.dark-mode .modal-content {
+  background-color: #434343;
+  color: #e6e6e6;
 }
 
 
@@ -186,6 +191,11 @@ section {
   color: #FFF;
   -webkit-text-fill-color: white;
   background: linear-gradient(60deg, #3D73EB 13.4%, #DE8FFF 86.6%);
+}
+
+.dark-mode h2,
+.dark-mode p {
+  color: #e6e6e6;
 }
 
 @media (max-width:900px) {

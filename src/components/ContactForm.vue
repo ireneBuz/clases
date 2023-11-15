@@ -31,49 +31,54 @@ const submitForm = async () => {
 
 </script>
 <template>
-    <div class="contact-title">
-        <h3 data-text="Contacto">Contacto</h3>
+    <div :class="{ 'dark-mode': isDarkMode }">
+        <div class="contact-title">
+            <h3 data-text="Contacto">Contacto</h3>
 
-        <p v-if="!submittedForm">Llámame al <a href="tel:654140710">654 14 07 10</a> ó completa la información para ponerte
-            en contacto</p>
-    </div>
-    <form v-if="!submittedForm" @submit.prevent="submitForm" class="form-group">
-        <div class="contact-name">
-            <h4>Nombre*</h4>
-            <label>
-                <input v-model="formData.name" type="text" name="name" class="form-style" placeholder="Introduce tu nombre">
-            </label>
+            <p v-if="!submittedForm">Llámame al <a href="tel:654140710">654 14 07 10</a> ó completa la información para
+                ponerte
+                en contacto</p>
         </div>
-
-        <div class="contact-email-or-phone">
-            <div class="contact-email">
-                <h4>Email*</h4>
+        <form v-if="!submittedForm" @submit.prevent="submitForm" class="form-group">
+            <div class="contact-name">
+                <h4>Nombre*</h4>
                 <label>
-                    <input v-model="formData.email" type="email" name="email" class="form-style"
-                        placeholder="Introduce tu email">
+                    <input v-model="formData.name" type="text" name="name" class="form-style"
+                        placeholder="Introduce tu nombre">
                 </label>
             </div>
-            <div class="contact-phone">
-                <h4>Teléfono*</h4>
+
+            <div class="contact-email-or-phone">
+                <div class="contact-email">
+                    <h4>Email*</h4>
+                    <label>
+                        <input v-model="formData.email" type="email" name="email" class="form-style"
+                            placeholder="Introduce tu email">
+                    </label>
+                </div>
+                <div class="contact-phone">
+                    <h4>Teléfono*</h4>
+                    <label>
+                        <input v-model="formData.phone" type="phone number" name="phone" class="form-style"
+                            placeholder="+34">
+                    </label>
+                </div>
+            </div>
+            <div class="contact-message">
+                <h4>Mensaje*</h4>
                 <label>
-                    <input v-model="formData.phone" type="phone number" name="phone" class="form-style" placeholder="+34">
+                    <textarea v-model="formData.message" name="message" class="form-style"
+                        placeholder="Estoy interesad@ en..."></textarea>
                 </label>
             </div>
-        </div>
-        <div class="contact-message">
-            <h4>Mensaje*</h4>
-            <label>
-                <textarea v-model="formData.message" name="message" class="form-style"
-                    placeholder="Estoy interesad@ en..."></textarea>
-            </label>
-        </div>
 
-        <button type="submit" class="contact-btn">Contacto</button>
-    </form>
+            <button type="submit" class="contact-btn">Contacto</button>
+        </form>
 
-    <div v-if="submittedForm" class="contact-submitted-message">
-        <h4>Gracias por tu interés {{ formData.name }} </h4>
-        <p>¡Me pondré en contacto contigo en la mayor brevedad posible!</p>
+        <div v-if="submittedForm" class="contact-submitted-message">
+            <h4>Gracias por tu interés {{ formData.name }} </h4>
+            <p>¡Me pondré en contacto contigo en la mayor brevedad posible!</p>
+        </div>
     </div>
 </template>
 
@@ -165,7 +170,16 @@ const submitForm = async () => {
     font-family: 'Founders-Grotesk-light';
     font-size: 16px;
     width: 100%;
+}
 
+.dark-mode .form-style {
+    background-color: #707070;
+    color: white
+}
+
+.dark-mode .form-style::placeholder {
+    color: rgb(232, 187, 255);
+    /* Set the placeholder color for dark mode */
 }
 
 .form-group h4 {
@@ -186,7 +200,6 @@ const submitForm = async () => {
 
 input,
 textarea {
-
     padding-right: 0 !important;
     padding-left: 0 !important;
     text-indent: 10px
@@ -225,7 +238,6 @@ textarea {
 .contact-btn:hover {
     background: var(--main-colors-gradient, linear-gradient(30deg, #1f53c3 13.4%, #cd59ff 75.6%));
 }
-
 
 
 

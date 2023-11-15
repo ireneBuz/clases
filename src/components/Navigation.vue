@@ -77,7 +77,7 @@ const leaveForm = (el, done) => {
     });
 };
 
-const { isDarkMode, toggleDarkMode } = defineProps(['isDarkMode', 'toggleDarkMode']);
+const { toggleDarkMode } = defineProps(['toggleDarkMode']);
 
 
 
@@ -92,7 +92,6 @@ const { isDarkMode, toggleDarkMode } = defineProps(['isDarkMode', 'toggleDarkMod
                     <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }">
                         <p>IRENE BUCETA</p>
                     </RouterLink>
-
                 </div>
 
                 <label class="mode-light">
@@ -107,9 +106,11 @@ const { isDarkMode, toggleDarkMode } = defineProps(['isDarkMode', 'toggleDarkMod
                         </div>
                     </div>
                 </label>
+
                 <div class="menu-icon" :class="{ 'with-shadow': isMenuOpen }" @click="toggleMenu">
                     <img :src="menuIconSource" alt="Hamburger Menu">
                 </div>
+
             </div>
 
             <div class="nav-links">
@@ -169,44 +170,41 @@ const { isDarkMode, toggleDarkMode } = defineProps(['isDarkMode', 'toggleDarkMod
 <style scoped>
 .mode-light {
     margin-left: 20px;
-
 }
 
 .toggle-checkbox {
     position: absolute;
     opacity: 0;
-
 }
 
 .toggle-slot {
     cursor: pointer;
-
     position: relative;
-    height: 1em;
-    width: 3em;
+    height: 18px;
+    width: 40px;
     border: 3px solid #e4e7ec;
-    border-radius: 10em;
+    border-radius: 18px;
     background-color: white;
     box-shadow: 0px 0px 25px #e4e7ec;
     transition: background-color 250ms;
 }
 
-.toggle-checkbox:checked~.toggle-slot {
+.dark-mode .toggle-slot {
     background-color: #374151;
 }
 
 .toggle-button {
-    transform: translate(1.75em, 0.1em);
+    transform: translate(23px, 2px);
     position: absolute;
-    height: 0.8em;
-    width: 0.8em;
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
     background-color: #ffeccf;
-    box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
-    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
+    box-shadow: inset 0px 0px 0px 0.75em #9a52ff;
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(0.26, 2, 2, .71);
 }
 
-.toggle-checkbox:checked~.toggle-slot .toggle-button {
+.dark-mode .toggle-slot .toggle-button {
     background-color: #485367;
     box-shadow: inset 0px 0px 0px 0.75em white;
     transform: translate(0.2em, 0.1em);
@@ -214,56 +212,39 @@ const { isDarkMode, toggleDarkMode } = defineProps(['isDarkMode', 'toggleDarkMod
 
 .sun-icon {
     position: absolute;
-    height: 0.8em;
-    width: 0.8em;
-    color: #ffbb52;
+    height: 14px;
+    width: 14px;
+    color: #9a52ff;
 }
 
 .sun-icon-wrapper {
     position: absolute;
-    height: 1em;
-    width: 1em;
+    height: 14px;
+    width: 14px;
     opacity: 1;
-    transform: translate(0.2em, 0.1em) rotate(15deg);
-    transform-origin: 50% 50%;
-    transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
+    transform: translate(-3px, 0px) rotate(15deg);
 }
 
-.toggle-checkbox:checked~.toggle-slot .sun-icon-wrapper {
-    opacity: 0;
-    transform: translate(3em, 2em) rotate(0deg);
-}
 
 .moon-icon {
     position: absolute;
-    height: 0.8em;
-    width: 0.8em;
+    height: 14px;
+    width: 14px;
     color: white;
 }
 
 .moon-icon-wrapper {
-    position: absolute;
-    height: 0.8em;
-    width: 0.8em;
     opacity: 0;
-    transform: translate(1em, 1em) rotate(0deg);
-    transform-origin: 50% 50%;
-    transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2.5, .46, .71);
 }
 
-.toggle-checkbox:checked~.toggle-slot .moon-icon-wrapper {
+.dark-mode .toggle-slot .moon-icon-wrapper {
     opacity: 1;
-    transform: translate(1.8em, 0.05em) rotate(-15deg);
+    transform: translate(1px, 3px) rotate(-15deg);
 }
 
 
 
-.dark-mode {
-    /* Footer dark mode styles go here */
-    background-color: #151515;
-    color: #e6e6e6;
-}
-
+.dark-mode,
 .dark-mode a {
     color: #e6e6e6;
 }
@@ -282,8 +263,10 @@ section {
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+
 
 .modal-content {
     background-color: #ffffff;
@@ -292,6 +275,11 @@ section {
     width: 47.25rem;
     height: 43.0625rem;
     border-radius: 40px;
+}
+
+.dark-mode .modal-content {
+    background-color: #434343;
+    color: #e6e6e6;
 }
 
 
@@ -320,6 +308,7 @@ section {
 
 .nav-container-mini {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     text-align: start;
     margin-left: 5%;
@@ -423,7 +412,7 @@ nav .contacto a:hover {
     }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 950px) {
 
     .nav-container-mini {
         display: flex;
