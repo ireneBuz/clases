@@ -357,7 +357,6 @@ section {
 nav a,
 .mobile-menu a {
     font-family: 'Founders-Grotesk-medium';
-
     color: #1E1E1E;
     font-size: 20px;
     text-decoration: none;
@@ -475,6 +474,15 @@ nav .contacto a:hover {
     .mobile-menu a:hover:not(.active-link) {
         border-radius: 10px;
         background: rgba(183, 149, 255, 0.60);
+    }
+
+    .dark-mode .mobile-menu {
+        background: #1E1E1E;
+    }
+
+    .dark-mode .mobile-menu a {
+        color: rgb(229, 229, 229);
+
     }
 }
 
