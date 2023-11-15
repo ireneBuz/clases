@@ -8,14 +8,19 @@ const isDarkModeEnabled = () => {
 }
 const isDarkMode = ref(isDarkModeEnabled());
 
-
-
+const updateThemeColor = () => {
+  const themeColorMeta = document.getElementById('theme-color-meta');
+  themeColorMeta.content = isDarkMode.value ? '#151515' : '#ffffff';
+};
 onMounted(() => {
   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
   darkModeMediaQuery.addEventListener('change', () => {
     isDarkMode.value = darkModeMediaQuery.matches;
+    updateThemeColor();
   });
 });
+
+
 const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value;
 };
