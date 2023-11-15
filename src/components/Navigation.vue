@@ -199,7 +199,6 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background-color: #ffeccf;
     box-shadow: inset 0px 0px 0px 0.75em #9a52ff;
     transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(0.26, 2, 2, .71);
 }
@@ -207,7 +206,7 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
 .dark-mode .toggle-slot .toggle-button {
     background-color: #485367;
     box-shadow: inset 0px 0px 0px 0.75em white;
-    transform: translate(0.2em, 0.1em);
+    transform: translate(4px, 2px);
 }
 
 .sun-icon {
@@ -222,9 +221,13 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
     height: 14px;
     width: 14px;
     opacity: 1;
-    transform: translate(-3px, 0px) rotate(15deg);
+    transform: translate(4px, 2px) rotate(15deg);
 }
 
+
+.dark-mode .toggle-slot .sun-icon-wrapper {
+    opacity: 0;
+}
 
 .moon-icon {
     position: absolute;
@@ -239,10 +242,8 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
 
 .dark-mode .toggle-slot .moon-icon-wrapper {
     opacity: 1;
-    transform: translate(1px, 3px) rotate(-15deg);
+    transform: translate(20px, -2px) rotate(-15deg);
 }
-
-
 
 .dark-mode,
 .dark-mode a {
@@ -264,9 +265,6 @@ section {
     width: 100%;
     height: 100vh;
 }
-
-
-
 
 .modal-content {
     background-color: #ffffff;
@@ -413,6 +411,13 @@ nav .contacto a:hover {
 }
 
 @media (max-width: 950px) {
+    .dark-mode .toggle-slot .moon-icon-wrapper {
+        transform: translate(1px, 3px) rotate(-15deg);
+    }
+
+    .sun-icon-wrapper {
+        transform: translate(-3px, 0px) rotate(15deg);
+    }
 
     .nav-container-mini {
         display: flex;
