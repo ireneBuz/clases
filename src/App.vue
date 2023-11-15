@@ -23,7 +23,7 @@ const toggleDarkMode = () => {
 </script>
 
 <template>
-  <div :class="{ 'dark-mode': isDarkMode }">
+  <div :class="{ 'dark-mode': isDarkMode }" class="transition-container">
     <header>
       <Navigation :isDarkMode="isDarkMode" :toggleDarkMode="toggleDarkMode" />
       <router-view v-slot="{ Component }">
@@ -38,10 +38,16 @@ const toggleDarkMode = () => {
 
 
 <style scoped>
+.transition-container {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
 .dark-mode {
   background-color: #151515;
   color: #e6e6e6;
 }
+
+
 
 
 .route-enter-from {
