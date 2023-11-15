@@ -57,8 +57,8 @@ onMounted(() => {
 
 <template>
     <header>
-        <div class="home-info">
-            <div class="home-info-title">
+        <div class="home-info" :class="{ 'dark-mode': isDarkMode }">
+            <div class=" home-info-title">
                 <h2>¡Aprender música ahora es muy fácil!
                     Solo tienes que...</h2>
             </div>
@@ -117,6 +117,16 @@ onMounted(() => {
 
 
 <style scoped>
+.dark-mode {
+    background-color: #151515;
+    color: #e6e6e6;
+}
+
+.dark-mode a,
+.dark-mode h2 {
+    color: #e6e6e6;
+}
+
 .home-info {
     font-family: 'Founders-Grotesk-medium';
     display: flex;
@@ -124,8 +134,6 @@ onMounted(() => {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    color: #000;
-
 }
 
 .home-info .home-info-title {
@@ -147,6 +155,10 @@ onMounted(() => {
     background: #FFE7FF;
     justify-content: center;
     gap: 50px;
+}
+
+.dark-mode .home-info .home-info-points {
+    background: #4f014f;
 }
 
 .home-info .home-info-title h2 {

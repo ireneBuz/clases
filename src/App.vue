@@ -1,22 +1,49 @@
 <script setup>
 import Navigation from './components/Navigation.vue';
 import Footer from './components/Footer.vue';
+import { ref, onMounted } from 'vue';
+
+const isDarkModeEnabled = () => {
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+const isDarkMode = ref(isDarkModeEnabled());
+
+
+
+onMounted(() => {
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  darkModeMediaQuery.addEventListener('change', () => {
+    isDarkMode.value = darkModeMediaQuery.matches;
+  });
+});
+const toggleDarkMode = () => {
+  isDarkMode.value = !isDarkMode.value;
+};
 
 </script>
 
 <template>
-  <header>
-    <Navigation />
-    <router-view v-slot="{ Component }">
-      <transition name="route" mode="out-in">
-        <component :is="Component"></component>
-      </transition>
-    </router-view>
-    <Footer />
-  </header>
+  <div :class="{ 'dark-mode': isDarkMode }">
+    <header>
+      <Navigation :isDarkMode="isDarkMode" :toggleDarkMode="toggleDarkMode" />
+      <router-view v-slot="{ Component }">
+        <transition name="route" mode="out-in">
+          <component :is="Component" :isDarkMode="isDarkMode"></component>
+        </transition>
+      </router-view>
+      <Footer :isDarkMode="isDarkMode" />
+    </header>
+  </div>
 </template>
 
+
 <style scoped>
+.dark-mode {
+  background-color: #151515;
+  color: #e6e6e6;
+}
+
+
 .route-enter-from {
   opacity: 0;
   transform: translateX(50px);

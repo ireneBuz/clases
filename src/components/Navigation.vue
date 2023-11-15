@@ -77,8 +77,7 @@ const leaveForm = (el, done) => {
     });
 };
 
-
-
+const { isDarkMode, toggleDarkMode } = defineProps(['isDarkMode', 'toggleDarkMode']);
 
 
 
@@ -86,7 +85,7 @@ const leaveForm = (el, done) => {
 
 
 <template>
-    <section id="navigation">
+    <section id="navigation" :class="{ 'dark-mode': isDarkMode }">
         <nav class="nav-container">
             <div class="nav-container-mini">
                 <div class="title">
@@ -95,6 +94,19 @@ const leaveForm = (el, done) => {
                     </RouterLink>
 
                 </div>
+
+                <label class="mode-light">
+                    <input class='toggle-checkbox' type='checkbox' @change="toggleDarkMode" />
+                    <div class='toggle-slot'>
+                        <div class='sun-icon-wrapper'>
+                            <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+                        </div>
+                        <div class='toggle-button'></div>
+                        <div class='moon-icon-wrapper'>
+                            <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+                        </div>
+                    </div>
+                </label>
                 <div class="menu-icon" :class="{ 'with-shadow': isMenuOpen }" @click="toggleMenu">
                     <img :src="menuIconSource" alt="Hamburger Menu">
                 </div>
@@ -108,6 +120,10 @@ const leaveForm = (el, done) => {
                     Cursos
                 </RouterLink>
             </div>
+
+
+
+
 
             <div class="contacto">
                 <a @click="openModal">
@@ -151,6 +167,108 @@ const leaveForm = (el, done) => {
 
 
 <style scoped>
+.mode-light {
+    margin-left: 20px;
+
+}
+
+.toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+
+}
+
+.toggle-slot {
+    cursor: pointer;
+
+    position: relative;
+    height: 1em;
+    width: 3em;
+    border: 3px solid #e4e7ec;
+    border-radius: 10em;
+    background-color: white;
+    box-shadow: 0px 0px 25px #e4e7ec;
+    transition: background-color 250ms;
+}
+
+.toggle-checkbox:checked~.toggle-slot {
+    background-color: #374151;
+}
+
+.toggle-button {
+    transform: translate(1.75em, 0.1em);
+    position: absolute;
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 50%;
+    background-color: #ffeccf;
+    box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
+}
+
+.toggle-checkbox:checked~.toggle-slot .toggle-button {
+    background-color: #485367;
+    box-shadow: inset 0px 0px 0px 0.75em white;
+    transform: translate(0.2em, 0.1em);
+}
+
+.sun-icon {
+    position: absolute;
+    height: 0.8em;
+    width: 0.8em;
+    color: #ffbb52;
+}
+
+.sun-icon-wrapper {
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    opacity: 1;
+    transform: translate(0.2em, 0.1em) rotate(15deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
+}
+
+.toggle-checkbox:checked~.toggle-slot .sun-icon-wrapper {
+    opacity: 0;
+    transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon {
+    position: absolute;
+    height: 0.8em;
+    width: 0.8em;
+    color: white;
+}
+
+.moon-icon-wrapper {
+    position: absolute;
+    height: 0.8em;
+    width: 0.8em;
+    opacity: 0;
+    transform: translate(1em, 1em) rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2.5, .46, .71);
+}
+
+.toggle-checkbox:checked~.toggle-slot .moon-icon-wrapper {
+    opacity: 1;
+    transform: translate(1.8em, 0.05em) rotate(-15deg);
+}
+
+
+
+.dark-mode {
+    /* Footer dark mode styles go here */
+    background-color: #151515;
+    color: #e6e6e6;
+}
+
+.dark-mode a {
+    color: #e6e6e6;
+}
+
+
 section {
     margin: auto;
     max-width: 1440px;
@@ -201,6 +319,8 @@ section {
 }
 
 .nav-container-mini {
+    display: flex;
+    align-items: center;
     text-align: start;
     margin-left: 5%;
     width: 30%;
