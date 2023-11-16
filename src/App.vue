@@ -10,7 +10,8 @@ const isDarkMode = ref(isDarkModeEnabled())
 
 const updateThemeColor = () => {
   const themeColorMeta = document.getElementById('theme-color-meta')
-  themeColorMeta.content = isDarkMode.value ? '#151515' : '#ffffff'
+  themeColorMeta.content === '#ffffff' ? '#151515' : '#ffffff'
+
 }
 onMounted(() => {
   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
@@ -21,6 +22,7 @@ onMounted(() => {
     isDarkMode.value = darkModeMediaQuery.matches
     updateThemeColor()
   })
+
 })
 
 const toggleDarkMode = () => {
