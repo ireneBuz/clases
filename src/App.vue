@@ -3,15 +3,12 @@ import Navigation from './components/Navigation.vue'
 import Footer from './components/Footer.vue'
 import { ref, onMounted } from 'vue'
 
-const isDarkModeEnabled = () => {
-  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-}
-const isDarkMode = ref(isDarkModeEnabled())
+
+const isDarkMode = ref(false)
 
 const updateThemeColor = () => {
   const themeColorMeta = document.getElementById('theme-color-meta')
   themeColorMeta.content = isDarkMode.value ? '#151515' : '#ffffff'
-  console.log(themeColorMeta.content)
 }
 onMounted(() => {
   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
