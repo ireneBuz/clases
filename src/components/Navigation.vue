@@ -111,7 +111,7 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
             </div>
 
             <div class="nav-links">
-                <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }" aria-label="Home">Inicio</RouterLink>
+                <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }" aria-label="Inio">Inicio</RouterLink>
                 <RouterLink to="/clases-horarios" :class="{ 'active-link': $route.path === '/clases-horarios' }"
                     aria-label="Horarios">
                     Horarios
@@ -142,7 +142,7 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
         <transition @enter="enter" @leave="leave">
             <div class="mobile-menu" v-if="isMenuOpen" aria-hidden="true">
                 <RouterLink class="fade-inicio" to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }"
-                    aria-label="Home">
+                    aria-label="Inicio">
                     Inicio
                 </RouterLink>
                 <RouterLink to="/clases-horarios" @click="closeMenu"
