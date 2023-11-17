@@ -82,85 +82,85 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
 
 
 </script>
-
-
 <template>
     <section id="navigation" :class="{ 'dark-mode': isDarkMode }">
         <nav class="nav-container">
             <div class="nav-container-mini">
                 <div class="title">
-                    <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }">
+                    <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }" aria-label="Home">
                         <p>IRENE BUCETA</p>
                     </RouterLink>
                 </div>
 
-                <label class="mode-light">
-                    <input class='toggle-checkbox' type='checkbox' @change="toggleDarkMode" />
-                    <div class='toggle-slot'>
-                        <div class='sun-icon-wrapper'>
+                <label class="mode-light" aria-label="Toggle Dark Mode">
+                    <input class="toggle-checkbox" type="checkbox" @change="toggleDarkMode" />
+                    <div class="toggle-slot">
+                        <div class="sun-icon-wrapper">
                             <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
                         </div>
-                        <div class='toggle-button'></div>
-                        <div class='moon-icon-wrapper'>
+                        <div class="toggle-button"></div>
+                        <div class="moon-icon-wrapper">
                             <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
                         </div>
                     </div>
                 </label>
 
-                <div class="menu-icon" :class="{ 'with-shadow': isMenuOpen }" @click="toggleMenu">
+                <div class="menu-icon" :class="{ 'with-shadow': isMenuOpen }" @click="toggleMenu" aria-label="Toggle Menu">
                     <img :src="menuIconSource" alt="Hamburger Menu">
                 </div>
-
             </div>
 
             <div class="nav-links">
-                <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }">Inicio</RouterLink>
-                <RouterLink to="/clases-horarios" :class="{ 'active-link': $route.path === '/clases-horarios' }">Horarios
+                <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }" aria-label="Home">Inicio</RouterLink>
+                <RouterLink to="/clases-horarios" :class="{ 'active-link': $route.path === '/clases-horarios' }"
+                    aria-label="Horarios">
+                    Horarios
                 </RouterLink>
-                <RouterLink to="/cursos" :class="{ 'active-link': $route.path === '/cursos' }">
+                <RouterLink to="/cursos" :class="{ 'active-link': $route.path === '/cursos' }" aria-label="Cursos">
                     Cursos
                 </RouterLink>
             </div>
 
-
-
-
-
             <div class="contacto">
-                <a @click="openModal">
-                    Contacto</a>
+                <a @click="openModal" role="button" aria-label="Contacto">Contacto</a>
             </div>
 
             <transition @enter="enterForm" @leave="leaveForm">
                 <div v-if="showModal">
-                    <div class='modal'>
-                        <div class='modal-content'>
-                            <span class='close' @click="closeModal">
-                                <img :src="closeModalIcon" alt="">
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close" @click="closeModal" role="button" aria-label="Close Modal">
+                                <img :src="closeModalIcon" alt="Close Modal">
                             </span>
                             <ContactForm />
                         </div>
                     </div>
                 </div>
             </transition>
-
         </nav>
+
         <transition @enter="enter" @leave="leave">
-            <div class="mobile-menu" v-if="isMenuOpen">
-                <RouterLink class="fade-inicio" to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }">
-                    Inicio</RouterLink>
+            <div class="mobile-menu" v-if="isMenuOpen" aria-hidden="true">
+                <RouterLink class="fade-inicio" to="/" @click="closeMenu" :class="{ 'active-link': $route.path === '/' }"
+                    aria-label="Home">
+                    Inicio
+                </RouterLink>
                 <RouterLink to="/clases-horarios" @click="closeMenu"
-                    :class="{ 'active-link': $route.path === '/clases-horarios' }">Horarios
+                    :class="{ 'active-link': $route.path === '/clases-horarios' }" aria-label="Horarios">
+                    Horarios
                 </RouterLink>
-                <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/cursos' }">Cursos
+                <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/cursos' }"
+                    aria-label="Cursos">
+                    Cursos
                 </RouterLink>
-                <a @click="handleButtonClick" :class="{ 'active-link': $route.path === '/contact' }">
-                    Contacto</a>
+                <a @click="handleButtonClick" :class="{ 'active-link': $route.path === '/contact' }" aria-label="Contacto">
+                    Contacto
+                </a>
             </div>
         </transition>
-
     </section>
 </template>
+
 
 
 

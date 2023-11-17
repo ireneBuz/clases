@@ -4,24 +4,26 @@ import linkedInIcon from '/linkedInIcon.svg'
 
 </script>
 
-
 <template>
     <header>
         <div class="footer" :class="{ 'dark-mode': isDarkMode }">
             <div class="footer-div">
                 <div>
-                    <p><span>Irene Buceta</span> ⓒ 2023. All Rights Reserved</p>
+                    <p>
+                        <span>© 2023 Irene Buceta</span> All Rights Reserved
+                    </p>
                 </div>
                 <div>
-                    <a href='https://www.linkedin.com/in/irene-buceta-aloc%C3%A9n/' target='_blank' role="menuitem">
-                        <img :src="linkedInIcon" alt="">
+                    <a href="https://www.linkedin.com/in/irene-buceta-aloc%C3%A9n/" target="_blank"
+                        rel="noopener noreferrer" role="menuitem" aria-label="LinkedIn Profile">
+                        <img :src="linkedInIcon" alt="LinkedIn Icon">
                     </a>
-
                 </div>
             </div>
         </div>
     </header>
 </template>
+
 
 
 
