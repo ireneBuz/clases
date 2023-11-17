@@ -289,15 +289,27 @@ section {
 
 
   .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a {
-    padding-left: 97px;
-    padding-right: 97px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 
   .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a:hover {
-    padding-left: 97px;
-    padding-right: 97px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 
 
+}
+
+@media (max-width: 400px) {
+  .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .piano-classes-info .piano-classes-info-button .piano-classes-info-button-presential a:hover {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 </style>
