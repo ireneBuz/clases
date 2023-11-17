@@ -111,7 +111,7 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
             </div>
 
             <div class="nav-links">
-                <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }" aria-label="Inio">Inicio</RouterLink>
+                <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }" aria-label="Inicio">Inicio</RouterLink>
                 <RouterLink to="/clases-horarios" :class="{ 'active-link': $route.path === '/clases-horarios' }"
                     aria-label="Horarios">
                     Horarios
