@@ -87,7 +87,7 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
         <nav class="nav-container">
             <div class="nav-container-mini">
                 <div class="title">
-                    <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }" aria-label="Home">
+                    <RouterLink to="/" :class="{ 'active-link': $route.path === '/' }" aria-label="Irene Bucceta">
                         <p>IRENE BUCETA</p>
                     </RouterLink>
                 </div>

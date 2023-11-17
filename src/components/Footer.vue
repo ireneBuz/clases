@@ -10,12 +10,12 @@ import linkedInIcon from '/linkedInIcon.svg'
             <div class="footer-div">
                 <div>
                     <p>
-                        <span>© 2023 Irene Buceta</span> All Rights Reserved
+                        © 2023 Irene Buceta All Rights Reserved
                     </p>
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/in/irene-buceta-aloc%C3%A9n/" target="_blank"
-                        rel="noopener noreferrer" role="menuitem" aria-label="LinkedIn Profile">
+                        rel="noopener noreferrer" role="link" aria-label="LinkedIn Profile Link">
                         <img :src="linkedInIcon" alt="LinkedIn Icon">
                     </a>
                 </div>
@@ -23,6 +23,7 @@ import linkedInIcon from '/linkedInIcon.svg'
         </div>
     </header>
 </template>
+
 
 
 
@@ -49,6 +50,8 @@ import linkedInIcon from '/linkedInIcon.svg'
     max-width: 1240px;
 
 }
+
+
 
 .dark-mode .footer .footer-div img {
     filter: invert(100%);
