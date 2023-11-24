@@ -79,9 +79,9 @@ const leaveForm = (el, done) => {
 
 const { toggleDarkMode } = defineProps(['toggleDarkMode']);
 
-
-
 </script>
+
+
 <template>
     <section id="navigation" :class="{ 'dark-mode': isDarkMode }">
         <nav class="nav-container">
@@ -116,6 +116,27 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
                     aria-label="Horarios">
                     Horarios
                 </RouterLink>
+                <p>Clases</p>
+
+                <div class='dropdown'>
+                    <div class="dropdown-links">
+                        <RouterLink to="/clases-piano" :class="{ 'active-link': $route.path === '/clases-piano' }"
+                            aria-label="Piano">
+                            Piano
+                        </RouterLink>
+                    </div>
+                    <div class="dropdown-links">
+                        <RouterLink to="/clases-teoria-musical"
+                            :class="{ 'active-link': $route.path === '/clases-teoria-musical' }"
+                            aria-label="Teoría musical">
+                            Teoría musical
+                        </RouterLink>
+                    </div>
+                </div>
+
+
+
+
                 <RouterLink to="/cursos" :class="{ 'active-link': $route.path === '/cursos' }" aria-label="Cursos">
                     Cursos
                 </RouterLink>
@@ -149,22 +170,26 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
                     :class="{ 'active-link': $route.path === '/clases-horarios' }" aria-label="Horarios">
                     Horarios
                 </RouterLink>
-                <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/cursos' }"
+                <RouterLink to="/clases-piano" @click="closeMenu"
+                    :class="{ 'active-link': $route.path === '/clases-piano' }" aria-label="Clases de piano">
+                    Clases de piano
+                </RouterLink>
+                <RouterLink to="/clases-teoria-musical" @click="closeMenu"
+                    :class="{ 'active-link': $route.path === '/clases-teoria-musical' }"
+                    aria-label="Clases de teoría musical">
+                    Clases de teoría musical
+                </RouterLink>
+                <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/courses' }"
                     aria-label="Cursos">
                     Cursos
                 </RouterLink>
-                <a @click="handleButtonClick" :class="{ 'active-link': $route.path === '/contact' }" aria-label="Contacto">
+                <a @click="handleButtonClick" :class="{ 'active-link': $route.path === '/contacto' }" aria-label="Contacto">
                     Contacto
                 </a>
             </div>
         </transition>
     </section>
 </template>
-
-
-
-
-
 
 
 <style scoped>
@@ -192,6 +217,9 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
 .dark-mode .toggle-slot {
     background-color: #374151;
 }
+
+
+
 
 .toggle-button {
     transform: translate(23px, 2px);
@@ -246,7 +274,8 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
 }
 
 .dark-mode,
-.dark-mode a {
+.dark-mode a,
+.dark-mode p {
     color: #e6e6e6;
 }
 
@@ -255,6 +284,7 @@ section {
     margin: auto;
     max-width: 1440px;
 }
+
 
 .modal {
     display: block;
@@ -265,11 +295,12 @@ section {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
 
 }
 
 .modal-content {
-    background-color: #ffffff;
+    background-color: #eeeeee;
     margin: 3% auto;
     padding: 20px;
     width: 47.25rem;
@@ -338,10 +369,15 @@ section {
 
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links p {
     padding: 10px;
     font-family: 'Founders-Grotesk-medium';
     transition: background 3s ease-out, color 3s ease-out;
+}
+
+.nav-links p {
+    margin: 0;
 }
 
 .nav-links a:hover:not(.active-link) {
@@ -351,19 +387,17 @@ section {
     -webkit-text-fill-color: transparent;
     color: transparent;
     transition: background 3s ease-out, color 3s ease-out;
-
-    /* Hides the text on hover */
 }
 
 
 nav a,
-.mobile-menu a {
+.mobile-menu a,
+nav p {
     font-family: 'Founders-Grotesk-medium';
     color: #1E1E1E;
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
-
 }
 
 
@@ -405,6 +439,40 @@ nav .contacto a:hover {
     width: 47px;
 }
 
+.dropdown {
+    cursor: pointer;
+    transition: all 0.4s;
+    overflow: hidden;
+    position: absolute;
+    width: 170px;
+    height: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translate(70px, 40px);
+    background-color: rgb(142, 142, 142);
+}
+
+.dropdown .dropdown-links {
+    margin-top: 10px;
+}
+
+.nav-links p:hover~.dropdown,
+.dropdown:hover {
+    padding-top: 10px;
+    height: 80px;
+    box-shadow: 0px 3px 1px 1px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.dark-mode .dropdown:hover,
+.dark-mode .nav-links p:hover~.dropdown {
+    box-shadow: 0px 3px 3px 1px rgba(202, 202, 202, 0.1);
+    background-color: #151515;
+
+}
+
 @media (max-width:900px) {
     .modal-content {
         width: 37.25rem;
@@ -432,15 +500,11 @@ nav .contacto a:hover {
     .menu-icon {
         display: block;
         margin-right: 30px;
+        z-index: 11;
+
     }
 
-    .menu-icon.with-shadow {
 
-        width: 50px;
-        height: 50px;
-        border-radius: 6px;
-        box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);
-    }
 
     .nav-links,
     .contacto {
@@ -449,24 +513,21 @@ nav .contacto a:hover {
 
     .mobile-menu {
         position: absolute;
+        top: 0;
         z-index: 10;
-        transform: translateY(-40px);
-        margin-left: auto;
-        right: 0;
         display: flex;
-        width: 40%;
-        padding: 50px 30px;
+        width: 100vw;
+        height: 100vh;
         flex-direction: column;
         align-items: center;
-        gap: 50px;
-        border-radius: 24px;
+        justify-content: center;
+        gap: 10px;
         background: #FFF;
-        box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.10), 0px 36px 36px 0px rgba(0, 0, 0, 0.09), 0px 81px 48px 0px rgba(0, 0, 0, 0.05), 0px 143px 57px 0px rgba(0, 0, 0, 0.01), 0px 224px 63px 0px rgba(0, 0, 0, 0.00);
     }
 
     .mobile-menu a {
         display: flex;
-        width: 90%;
+        width: 80%;
         padding: 16px;
         justify-content: center;
         align-items: center;
@@ -510,11 +571,6 @@ nav .contacto a:hover {
 
     .nav-container {
         height: 90px;
-    }
-
-    .mobile-menu {
-        transform: translateY(-25px);
-
     }
 }
 </style>

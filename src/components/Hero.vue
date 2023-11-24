@@ -81,10 +81,12 @@ const leave = (el, done) => {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+
 }
 
 .modal-content {
-    background-color: #ffffff;
+    background-color: #eeeeee;
     margin: 3% auto;
     padding: 20px;
     width: 47.25rem;

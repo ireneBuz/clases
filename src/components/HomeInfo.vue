@@ -59,8 +59,8 @@ onMounted(() => {
     <header>
         <div class="home-info" :class="{ 'dark-mode': isDarkMode }">
             <div class=" home-info-title">
-                <h2>¡Aprender música ahora es muy fácil!
-                    Solo tienes que...</h2>
+                <h2>¡Aprender música ahora es muy fácil!</h2>
+                <h2>Solo tienes que...</h2>
             </div>
             <div class="home-info-points">
                 <div class="home-info-points-item item1">
@@ -137,7 +137,7 @@ onMounted(() => {
 }
 
 .home-info .home-info-title {
-    width: 55%;
+    width: 90%;
     text-align: center;
 
 }
@@ -164,7 +164,7 @@ onMounted(() => {
 .home-info .home-info-title h2 {
     font-size: 49px;
     font-weight: 500;
-    line-height: 55px;
+    line-height: 20px;
 }
 
 .home-info .home-info-points .home-info-points-item {
@@ -210,12 +210,12 @@ onMounted(() => {
 
 @media (max-width: 870px) {
     .home-info .home-info-title {
-        width: 80%;
-        margin-bottom: 25px;
+        width: 90%;
+        margin-bottom: 15px;
     }
 
     .home-info .home-info-points {
-        gap: 0;
+        gap: 10px;
         justify-content: center;
     }
 
@@ -245,18 +245,41 @@ onMounted(() => {
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 620px) {
+    .home-info .home-info-title h2 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .home-info .home-info-title {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .home-info .home-info-title h2 {
+        font-size: 28px;
+        line-height: 20px;
+    }
+
+    .home-info .home-info-title {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 475px) {
 
 
     .home-info .home-info-title {
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
 
     .home-info .home-info-title h2 {
         font-size: 22px;
-        line-height: 35px;
-
+        line-height: 15px;
     }
 
     .home-info .home-info-points {
