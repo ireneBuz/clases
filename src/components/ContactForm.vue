@@ -34,10 +34,9 @@ const submitForm = async () => {
     <div :class="{ 'dark-mode': isDarkMode }">
         <div class="contact-title">
             <h3 data-text="Contacto">Contacto</h3>
-
-            <p v-if="!submittedForm">Llámame al <a href="tel:654140710">654 14 07 10</a> ó completa la información para
-                ponerte
-                en contacto</p>
+            <p v-if="!submittedForm"><a class="tlf" href="tel:654140710">+34 654 14 07 10</a> /<a class="whatsapp"
+                    href="https://api.whatsapp.com/send?phone=+34654140710">WhatsApp</a></p>
+            <p v-if="!submittedForm">Si prefieres puedes contactar mediante este formulario</p>
         </div>
         <form v-if="!submittedForm" @submit.prevent="submitForm" class="form-group">
             <div class="contact-name">
@@ -82,6 +81,7 @@ const submitForm = async () => {
     </div>
 </template>
 
+
 <style scoped>
 .contact-title {
     text-align: center;
@@ -96,6 +96,7 @@ const submitForm = async () => {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 120%;
+    background-size: 700px;
     margin-top: 20px;
     margin-bottom: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
@@ -103,27 +104,49 @@ const submitForm = async () => {
 
 .contact-title a {
     font-family: 'Founders-Grotesk-medium';
-    color: #F85786;
+    color: #2d2d2d;
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
     padding: 11px 9.344px 7px 9px;
-
 }
 
-.contact-title a:hover {
-    color: #ff7ca3;
+.dark-mode .contact-title a {
+    color: #d0d0d0;
+}
 
+
+.contact-title .whatsapp {
+    color: #0aab07;
+}
+
+.dark-mode .contact-title .whatsapp {
+    color: #21fa1eb1;
+}
+
+.contact-title .tlf:hover {
+    color: #606060;
+}
+
+.dark-mode .contact-title .tlf:hover {
+    color: #f7f7f7;
+}
+
+.contact-title .whatsapp:hover {
+    color: #62ff5f;
 }
 
 .contact-title p {
     font-family: 'Founders-Grotesk-medium';
-    color: #DE8FFF;
+    color: #9f00e2;
     text-align: center;
     font-size: 18px;
     line-height: 100%;
     margin-bottom: 0;
+}
 
+.dark-mode .contact-title p {
+    color: #f0cdff;
 }
 
 .contact-submitted-message {
@@ -133,18 +156,26 @@ const submitForm = async () => {
 
 .contact-submitted-message h4 {
     font-family: 'Founders-Grotesk-medium';
-    color: #DE8FFF;
+    color: #9f00e2;
     text-align: center;
     font-size: 24px;
     line-height: 100%;
 }
 
+.dark-mode .contact-submitted-message h4 {
+    color: #f0cdff;
+}
+
 .contact-submitted-message p {
     font-family: 'Founders-Grotesk-regular';
-    color: #DE8FFF;
+    color: #9f00e2;
     text-align: center;
     font-size: 20px;
     line-height: 100%;
+}
+
+.dark-mode .contact-submitted-message p {
+    color: #f0cdff;
 }
 
 .form-group {
@@ -166,7 +197,7 @@ const submitForm = async () => {
     gap: 6.172px;
     border-radius: 7.715px;
     border: 1px solid #697077;
-    background: #FFF;
+    background: #f3f3f3;
     font-family: 'Founders-Grotesk-light';
     font-size: 16px;
     width: 100%;
@@ -184,12 +215,15 @@ const submitForm = async () => {
 
 .form-group h4 {
     font-family: 'Founders-Grotesk-medium';
-    color: #DE8FFF;
+    color: #9f00e2;
     font-size: 21px;
     line-height: 140%;
     margin-bottom: 5px;
 }
 
+.dark-mode .form-group h4 {
+    color: #f0cdff;
+}
 
 .contact-name,
 .contact-email-or-phone,

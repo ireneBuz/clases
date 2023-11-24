@@ -181,14 +181,12 @@ onMounted(() => {
     }
 
     .home-cards .home-cards-single p {
-        font-size: 11px;
+        font-size: 14px;
         height: 30px;
     }
 
     .home-cards .home-cards-single a {
-
         margin-top: 60px;
-
     }
 
 }
@@ -227,7 +225,7 @@ onMounted(() => {
 
     .home-cards .home-cards-single p {
         margin-top: 50px;
-        font-size: 11px;
+        font-size: 14px;
         height: 20px;
     }
 }
