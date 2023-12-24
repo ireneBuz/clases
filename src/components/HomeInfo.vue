@@ -118,7 +118,6 @@ onMounted(() => {
 
 <style scoped>
 .dark-mode {
-    background-color: #151515;
     color: #e6e6e6;
 }
 
