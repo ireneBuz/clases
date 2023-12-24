@@ -84,7 +84,7 @@ export default {
                             </div>
                             <div class="bottom-text">
                                 <a href="#">LEER MÁS</a>
-                                <h4>10 - Noviembre - 2023</h4>
+                                <h4>23 - Noviembre - 2023</h4>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -95,17 +95,15 @@ export default {
                             </div>
                             <div class="middle-text">
                                 <a href="#">Beneficios cognitivos de la teoría musical</a>
-                                <p>La elección de la música adecuada es esencial para cualquier pianista, independientemente
-                                    de su
-                                    nivel de habilidad. Tocar una pieza que se adapte a tu nivel no solo te ayudará a
-                                    mejorar tu
-                                    destreza, sino que también te permitirá disfrutar más del proceso de aprendizaje. Aquí
-                                    te damos
-                                    algunos consejos para encontrar la pieza perfecta:</p>
+                                <p>La música es mucho más que una forma de expresión artística; también tiene beneficios
+                                    significativos para el desarrollo cognitivo. Estudiar teoría musical no solo te permite
+                                    comprender mejor la música, sino que también puede mejorar tus habilidades mentales y
+                                    emocionales. Aquí te presentamos algunos de los beneficios cognitivos de adentrarte en
+                                    el mundo de la teoría musical:</p>
                             </div>
                             <div class="bottom-text">
                                 <a href="#">LEER MÁS</a>
-                                <h4>23 - Noviembre - 2023</h4>
+                                <h4>10 - Noviembre - 2023</h4>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -125,7 +123,7 @@ export default {
                             </div>
                             <div class="bottom-text">
                                 <a href="#">LEER MÁS</a>
-                                <h4>10 - Noviembre - 2023</h4>
+                                <h4>18 - Octubre - 2023</h4>
                             </div>
                         </div>
                     </SwiperSlide>
