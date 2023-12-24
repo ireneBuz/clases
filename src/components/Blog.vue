@@ -1,15 +1,9 @@
 <script>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
-
-// Import Swiper styles
 import 'swiper/css';
-
 import 'swiper/css/pagination';
-
-
-// import required modules
-import { Pagination } from 'swiper/modules';
+import 'swiper/css/autoplay';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 export default {
     components: {
@@ -18,20 +12,14 @@ export default {
     },
     setup() {
         return {
-            modules: [Pagination],
+            modules: [Pagination, Autoplay],
         };
     },
 };
 </script>
 
-
-
 <template>
     <header>
-
-
-
-
         <div class="home-blog" :class="{ 'dark-mode': isDarkMode }">
             <div class="title">
                 <h2>BLOG MUSICAL</h2>
@@ -40,24 +28,23 @@ export default {
                 <p>"La música es una revelación más alta que cualquier filosofía." - Beethoven</p>
             </div>
 
-
-
-
             <div class="cards">
                 <Swiper :slidesPerView="1" :spaceBetween="10" :pagination="{
                     clickable: true,
-                }" :breakpoints="{
+                }" :autoplay="{
+    delay: 5000,
+}" :breakpoints="{
     '640': {
         slidesPerView: 2,
+        spaceBetween: 10,
+
     },
-    '980': {
+    '1150': {
         slidesPerView: 3,
-        spaceBetween: 20,
+        spaceBetween: 30,
+
     },
-    '1024': {
-        slidesPerView: 3,
-        spaceBetween: 20,
-    },
+
 }" :modules="modules" class="mySwiper">
                     <SwiperSlide>
                         <div class="card">
@@ -80,10 +67,31 @@ export default {
                             </div>
                         </div>
                     </SwiperSlide>
+
                     <SwiperSlide>
                         <div class="card">
                             <div class="image">
                                 <img src="/blog2.webp" alt="">
+                            </div>
+                            <div class="middle-text">
+                                <a href="#">Mejora tu técnica de piano</a>
+                                <p>La técnica es un aspecto fundamental en el aprendizaje del piano. Una sólida técnica no
+                                    solo te
+                                    permitirá tocar con precisión y expresión, sino que también te abrirá las puertas a un
+                                    repertorio más amplio y desafiante. Aquí te ofrecemos algunos consejos para mejorar tu
+                                    técnica:
+                                </p>
+                            </div>
+                            <div class="bottom-text">
+                                <a href="#">LEER MÁS</a>
+                                <h4>10 - Noviembre - 2023</h4>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div class="card">
+                            <div class="image">
+                                <img src="/blog3.webp" alt="">
                             </div>
                             <div class="middle-text">
                                 <a href="#">Beneficios cognitivos de la teoría musical</a>
@@ -104,15 +112,15 @@ export default {
                     <SwiperSlide>
                         <div class="card">
                             <div class="image">
-                                <img src="/blog3.webp" alt="">
+                                <img src="/blog4.webp" alt="">
                             </div>
                             <div class="middle-text">
-                                <a href="#">Mejora tu técnica de piano</a>
-                                <p>La técnica es un aspecto fundamental en el aprendizaje del piano. Una sólida técnica no
-                                    solo te
-                                    permitirá tocar con precisión y expresión, sino que también te abrirá las puertas a un
-                                    repertorio más amplio y desafiante. Aquí te ofrecemos algunos consejos para mejorar tu
-                                    técnica:
+                                <a href="#">Diferentes estilos en el piano</a>
+                                <p>El piano es un instrumento versátil que te permite sumergirte en una amplia gama de
+                                    estilos musicales. La exploración de diferentes estilos no solo enriquecerá tu
+                                    repertorio, sino que también te brindará una comprensión más profunda de la música en su
+                                    conjunto. Aquí te presentamos algunos de los estilos musicales que puedes explorar en el
+                                    piano:
                                 </p>
                             </div>
                             <div class="bottom-text">
@@ -121,6 +129,7 @@ export default {
                             </div>
                         </div>
                     </SwiperSlide>
+
                 </Swiper>
             </div>
         </div>
@@ -130,17 +139,35 @@ export default {
 
 
 
+<style>
+.swiper-pagination-bullet {
+    background: #5a5a5a;
+    color: white;
+    height: 15px;
+    width: 15px;
+}
 
+.dark-mode .swiper-pagination-bullet {
+    background: #ffffff;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px
+    }
+}
+</style>
 
 <style scoped>
 .swiper {
     width: 100%;
     height: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .swiper-slide {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,6 +193,8 @@ export default {
 
 .title {
     padding-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -192,7 +221,7 @@ export default {
 }
 
 .cards {
-    width: 90vw;
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -333,13 +362,6 @@ export default {
 @media (max-width: 970px) {
     .cards {
         width: 90vw;
-    }
-
-    .title {
-        padding-top: 80px;
-        margin-left: 10px;
-        margin-right: 10px;
-
     }
 
     .sub-title {
