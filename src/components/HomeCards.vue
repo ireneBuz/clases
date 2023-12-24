@@ -107,7 +107,7 @@ onMounted(() => {
 }
 
 .dark-mode .home-cards .home-cards-single {
-    background-color: #5c3c69;
+    background-color: #222222;
     color: white;
 }
 
