@@ -117,18 +117,14 @@ onMounted(() => {
 
 .home-cards .home-cards-single h4 {
     font-family: 'Founders-Grotesk-medium';
-
     font-size: 25px;
-    font-weight: 500;
     line-height: 23.702px;
     height: 40px;
 }
 
 .home-cards .home-cards-single p {
     font-family: 'Founders-Grotesk-regular';
-
     font-size: 16px;
-    font-weight: 400;
     line-height: 18.5px;
     height: 40px;
 }
