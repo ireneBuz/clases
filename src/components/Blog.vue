@@ -106,6 +106,9 @@ export default {
     align-items: center;
 }
 
+.dark-mode .home-blog {
+    background-color: #4f014f;
+}
 
 .title {
     padding-top: 50px;
@@ -124,8 +127,16 @@ export default {
     margin-bottom: 20px;
 }
 
+.dark-mode .title h2 {
+    color: #e6e6e6
+}
+
 .sub-title {
     text-align: center;
+}
+
+.dark-mode .sub-title p {
+    color: #bebebe;
 }
 
 .sub-title p {
