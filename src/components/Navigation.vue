@@ -282,7 +282,7 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
 
 section {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1470px;
 }
 
 

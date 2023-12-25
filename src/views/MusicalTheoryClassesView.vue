@@ -116,7 +116,7 @@ const leave = (el, done) => {
 
 section {
   margin: auto;
-  max-width: 1440px;
+  max-width: 1470px;
   min-height: 96vh;
 }
 
