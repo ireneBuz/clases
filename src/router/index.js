@@ -31,8 +31,13 @@ const router = createRouter({
       component: () => import('../views/CoursesView.vue')
     },
     {
-      path: '/blog/por-donde-empezar',
-      name: 'blog',
+      path: '/blog-musical',
+      name: 'blog-musical',
+      component: () => import('../views/BlogView.vue')
+    },
+    {
+      path: '/blog-musical/por-donde-empezar',
+      name: 'blog-1',
       component: () => import('../views/BlogViews/PorDondeEmpezarBlogView.vue')
     },
   ],

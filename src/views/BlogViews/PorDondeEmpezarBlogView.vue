@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <section id="por-donde-empezar-blog" :class="{ 'dark-mode': isDarkMode }">
     <div class="blog-header">
