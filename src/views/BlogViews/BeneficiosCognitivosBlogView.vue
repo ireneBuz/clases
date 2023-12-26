@@ -45,7 +45,7 @@ import '/src/assets/blog.css'
           permite apreciar y comprender mejor la música que escuchas.</p>
         <p><b>9. Fomento de la creatividad:</b> La música es una forma de expresión artística que fomenta la creatividad y
           la expresión personal.</p>
-        <p><b>10. ora de la autoestima:</b> A medida que progresas en el estudio de la teoría musical y el piano,
+        <p><b>10. Mejora de la autoestima:</b> A medida que progresas en el estudio de la teoría musical y el piano,
           experimentas un sentido de logro que puede impulsar tu autoestima y confianza en ti mismo.</p>
 
         <p>En resumen, estudiar teoría musical no solo te acerca a la música de una manera más profunda, sino que también
