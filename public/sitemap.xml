@@ -31,6 +31,21 @@
     <priority>0.6</priority>
   </url>
     <url>
+    <loc>https://clasespianomadrid.com/blog-musical/diferentes-estilos-musicales-en-el-piano</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+    <url>
+    <loc>https://clasespianomadrid.com/blog-musical/beneficios-cognitivos-de-estudiar-teoria-musical</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+    <url>
+    <loc>https://clasespianomadrid.com/blog-musical/mejora-tu-tecnica-de-piano</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+      <url>
     <loc>https://clasespianomadrid.com/blog-musical/por-donde-empezar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
