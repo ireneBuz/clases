@@ -6,6 +6,8 @@ import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
 import BlogCards from './BlogCards.vue';
 import { slides } from './../utils/slides.js'
+import { RouterLink } from 'vue-router';
+
 export default {
     components: {
         Swiper,
@@ -32,7 +34,10 @@ export default {
     <header>
         <div class="home-blog" :class="{ 'dark-mode': isDarkMode }">
             <div class="title">
-                <h2>BLOG MUSICAL</h2>
+                <RouterLink to="/blog-musical" aria-label="BLOG MUSICAL">
+                    <h2>BLOG MUSICAL</h2>
+                </RouterLink>
+
             </div>
             <div class="sub-title">
                 <p>"La música es una revelación más alta que cualquier filosofía." - Beethoven</p>
@@ -88,7 +93,9 @@ export default {
     margin-right: 10px;
 }
 
-
+.title a {
+    text-decoration: none;
+}
 
 .title h2 {
     color: rgb(23, 23, 23);
