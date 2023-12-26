@@ -30,6 +30,11 @@ const router = createRouter({
       name: 'courses',
       component: () => import('../views/CoursesView.vue')
     },
+    {
+      path: '/blog/por-donde-empezar',
+      name: 'blog',
+      component: () => import('../views/BlogViews/PorDondeEmpezarBlogView.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {

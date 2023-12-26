@@ -1,23 +1,19 @@
 <script setup>
-import Homepage from './../components/HomePage.vue';
+import BlogHomePage from '/src/components/BlogHomePage.vue';
+import Hero from '/src/components/Hero.vue'
+import HomeCards from '/src/components/HomeCards.vue';
+import HomeInfo from '/src/components/HomeInfo.vue'
+
 </script>
 
 <template>
-  <main>
-    <Homepage />
-  </main>
+  <section>
+    <Hero />
+    <HomeInfo />
+    <HomeCards />
+    <BlogHomePage />
+  </section>
 </template>
-<style scoped>
-main {
-  margin: auto;
-  max-width: 1470px;
-  min-height: 96vh;
-}
-</style>
 
 
-
-
-
-
-
+<style scoped></style>

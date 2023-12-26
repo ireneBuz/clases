@@ -4,21 +4,26 @@
             <img :src="imageSrc" alt="">
         </div>
         <div class="middle-text">
-            <a :href="readMoreLink">{{ title }}</a>
+            <RouterLink :to="readMoreLink" aria-label="TITLE">
+                {{ title }}
+            </RouterLink>
             <p>{{ excerpt }}</p>
         </div>
         <div class="bottom-text">
-            <a :href="readMoreLink">LEER MÁS</a>
+            <RouterLink :to="readMoreLink" aria-label="LEER MÁS">
+                LEER MÁS
+            </RouterLink>
             <h4>{{ date }}</h4>
         </div>
     </div>
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
 
 export default {
 
-    name: 'BlogSlide',
+    name: 'BlogCards',
     props: {
         imageSrc: String,
         title: String,
@@ -84,7 +89,8 @@ export default {
     overflow: hidden;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-
+    align-items: center;
+    display: flex;
 }
 
 .middle-text {
@@ -110,7 +116,6 @@ export default {
 
 .card img {
     width: 100%;
-    transform: translateY(-25%);
 }
 
 .middle-text a {

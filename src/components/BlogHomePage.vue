@@ -4,12 +4,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
-import BlogSlide from './BlogSlide.vue';
+import BlogCards from './BlogCards.vue';
 export default {
     components: {
         Swiper,
         SwiperSlide,
-        BlogSlide,
+        BlogCards,
     },
     data() {
         return {
@@ -18,7 +18,7 @@ export default {
                     imageSrc: '/blog1.webp',
                     title: 'Por dónde empezar',
                     excerpt: 'La elección de la música adecuada es esencial para cualquier pianista, independientemente de su nivel de habilidad.Tocar una pieza que se adapte a tu nivel no solo te ayudará a mejorar tu destreza, sino que también te permitirá disfrutar más del proceso de aprendizaje.Aquí te damos algunos consejos para encontrar la pieza perfecta',
-                    readMoreLink: '#',
+                    readMoreLink: '/blog/por-donde-empezar',
                     date: '15 - Diciembre - 2023'
                 },
                 {
@@ -40,7 +40,7 @@ export default {
                     title: 'Diferentes estilos en el piano',
                     excerpt: 'El piano es un instrumento versátil que te permite sumergirte en una amplia gama de estilos musicales.La exploración de diferentes estilos no solo enriquecerá tu repertorio, sino que también te brindará una comprensión más profunda de la música en su conjunto.Aquí te presentamos algunos de los estilos musicales que puedes explorar en el piano: ',
                     readMoreLink: '#',
-                    date: '15 - Diciembre - 2023'
+                    date: '18 - Octubre - 2023'
                 },
             ]
         };
@@ -85,9 +85,9 @@ export default {
 
 }" :modules="modules" class="mySwiper">
                     <SwiperSlide v-for="(slide, index) in slides" :key="index">
-                        <BlogSlide :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
+                        <BlogCards :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
                             :read-more-link="slide.readMoreLink" :date="slide.date">
-                        </BlogSlide>
+                        </BlogCards>
                     </SwiperSlide>
                 </Swiper>
             </div>
