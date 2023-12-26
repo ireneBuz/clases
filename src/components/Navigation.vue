@@ -137,9 +137,9 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
 
 
 
-                <!-- <RouterLink to="/cursos" :class="{ 'active-link': $route.path === '/cursos' }" aria-label="Cursos">
+                <RouterLink to="/cursos" :class="{ 'active-link': $route.path === '/cursos' }" aria-label="Cursos">
                     Cursos
-                </RouterLink> -->
+                </RouterLink>
                 <RouterLink to="/blog-musical" :class="{ 'active-link': $route.path === '/blog-musical' }"
                     aria-label="Blog-musical">
                     Blog
@@ -183,10 +183,10 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
                     aria-label="Clases de teoría musical">
                     Clases de teoría musical
                 </RouterLink>
-                <!-- <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/courses' }"
+                <RouterLink to="/cursos" @click="closeMenu" :class="{ 'active-link': $route.path === '/courses' }"
                     aria-label="Cursos">
                     Cursos
-                </RouterLink> -->
+                </RouterLink>
                 <RouterLink to="/blog-musical" @click="closeMenu"
                     :class="{ 'active-link': $route.path === '/blog-musical' }" aria-label="Blog-musical">
                     Blog
@@ -413,7 +413,7 @@ nav p {
 nav .contacto {
     text-align: end;
     margin-right: 5%;
-    width: 20%;
+    width: 10%;
 }
 
 nav .contacto a {

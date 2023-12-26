@@ -5,12 +5,12 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-   <url>
+    <url>
     <loc>https://clasespianomadrid.com/clases-piano</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+    <url>
     <loc>https://clasespianomadrid.com/clases-teoria-musical</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -20,9 +20,18 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-    </url>
+    <url>
+    <loc>https://clasespianomadrid.com/blog-musical</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
     <url>
     <loc>https://clasespianomadrid.com/cursos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+    <url>
+    <loc>https://clasespianomadrid.com/blog-musical/por-donde-empezar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

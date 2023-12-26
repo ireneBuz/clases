@@ -36,10 +36,28 @@ const router = createRouter({
       component: () => import('../views/BlogView.vue')
     },
     {
-      path: '/blog-musical/por-donde-empezar',
+      path: '/blog-musical/diferentes-estilos-musicales-en-el-piano',
       name: 'blog-1',
+      component: () => import('../views/BlogViews/DiferentesEstilosBlogView.vue')
+    },
+    {
+      path: '/blog-musical/beneficios-cognitivos-de-estudiar-teoria-musical',
+      name: 'blog-2',
+      component: () => import('../views/BlogViews/BeneficiosCognitivosBlogView.vue')
+    },
+    {
+      path: '/blog-musical/mejora-tu-tecnica-de-piano',
+      name: 'blog-3',
+      component: () => import('../views/BlogViews/MejoraTuTecnicaBlogView.vue')
+    },
+    {
+      path: '/blog-musical/por-donde-empezar',
+      name: 'blog-4',
       component: () => import('../views/BlogViews/PorDondeEmpezarBlogView.vue')
     },
+
+
+
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
