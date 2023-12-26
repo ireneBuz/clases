@@ -1,25 +1,13 @@
 <script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import { Pagination, Autoplay } from 'swiper/modules';
-import BlogCards from './BlogCards.vue';
+import BlogCards from './../components/BlogCards.vue';
 import { slides } from './../utils/slides.js'
 export default {
     components: {
-        Swiper,
-        SwiperSlide,
         BlogCards,
     },
     data() {
         return {
             slides: slides
-        };
-    },
-    setup() {
-        return {
-            modules: [Pagination, Autoplay],
         };
     },
 };
@@ -39,29 +27,11 @@ export default {
             </div>
 
             <div class="cards">
-                <Swiper :slidesPerView="1" :spaceBetween="10" :pagination="{
-                    clickable: true,
-                }" :autoplay="{
-    delay: 5000,
-}" :breakpoints="{
-    '640': {
-        slidesPerView: 2,
-        spaceBetween: 10,
-
-    },
-    '1150': {
-        slidesPerView: 3,
-        spaceBetween: 30,
-
-    },
-
-}" :modules="modules" class="mySwiper">
-                    <SwiperSlide v-for="(slide, index) in slides" :key="index">
-                        <BlogCards :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
-                            :read-more-link="slide.readMoreLink" :date="slide.date">
-                        </BlogCards>
-                    </SwiperSlide>
-                </Swiper>
+                <div v-for="(slide, index) in slides" :key="index">
+                    <BlogCards :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
+                        :read-more-link="slide.readMoreLink" :date="slide.date">
+                    </BlogCards>
+                </div>
             </div>
         </div>
     </header>
