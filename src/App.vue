@@ -33,7 +33,7 @@ const toggleDarkMode = () => {
     <header>
       <Navigation :isDarkMode="isDarkMode" :toggleDarkMode="toggleDarkMode" />
       <router-view v-slot="{ Component }">
-        <transition name="route" mode="out-in">
+        <transition name="route" mode="out-in" class="components">
           <component :is="Component" :isDarkMode="isDarkMode"></component>
         </transition>
       </router-view>
@@ -46,6 +46,13 @@ const toggleDarkMode = () => {
 <style scoped>
 .transition-container {
   transition: background-color 0.4s ease, color 0.4s ease;
+
+}
+
+.components {
+  margin: auto;
+  max-width: 1470px;
+  min-height: 96vh;
 }
 
 .dark-mode {
