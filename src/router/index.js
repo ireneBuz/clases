@@ -1,6 +1,56 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePageView from '../views/HomePageView.vue'
 
+const locations = ['Vitoria-Gasteiz',
+  'Albacete',
+  'Alicante',
+  'Almeria',
+  'Oviedo',
+  'Avila',
+  'Badajoz',
+  'Barcelona',
+  'Bilbao',
+  'Burgos',
+  'Caceres',
+  'Cadiz',
+  'Santander',
+  'Castellon',
+  'Ciudad-Real',
+  'Cordoba',
+  'Cuenca',
+  'Girona',
+  'Granada',
+  'Guadalajara',
+  'San-Sebastian',
+  'Huelva',
+  'Huesca',
+  'Ibiza',
+  'Jaen',
+  'Logroño',
+  'Las-Palmas',
+  'Leon',
+  'Lleida',
+  'Lugo',
+  'Malaga',
+  'Mallorca',
+  'Murcia',
+  'Menorca',
+  'Pamplona',
+  'Ourense',
+  'Palencia',
+  'Pontevedra',
+  'Salamanca',
+  'Tenerife',
+  'Segovia',
+  'Sevilla',
+  'Soria',
+  'Tarragona',
+  'Teruel',
+  'Toledo',
+  'Valencia',
+  'Valladolid',
+  'Zamora',
+  'Zaragoza'];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,14 +67,26 @@ const router = createRouter({
     },
     {
       path: '/clases-piano',
-      name: 'piano classes',
+      name: 'piano-classes',
       component: () => import('../views/PianoClassesView.vue')
     },
+    ...locations.map((location) => ({
+      path: `/clases-piano/${location}`,
+      name: `piano-classes-${location}`,
+      component: () => import('../views/PianoClassesLocationView.vue'),
+      props: { location }
+    })),
     {
       path: '/clases-teoria-musical',
-      name: 'musical theory classes',
+      name: 'musical-theory-classes',
       component: () => import('../views/MusicalTheoryClassesView.vue')
     },
+    ...locations.map((location) => ({
+      path: `/clases-teoria-musical/${location}`,
+      name: `musical-theory-classes-${location}`,
+      component: () => import('../views/MusicalTheoryClassesLocationView.vue'),
+      props: { location }
+    })),
     {
       path: '/cursos',
       name: 'courses',
