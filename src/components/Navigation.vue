@@ -341,7 +341,7 @@ section {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 124px;
 }
 
@@ -456,7 +456,7 @@ nav .contacto a:hover {
     height: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    transform: translate(70px, 40px);
+    transform: translate(10px, 40px);
     background-color: rgb(142, 142, 142);
 }
 
