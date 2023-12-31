@@ -51,13 +51,10 @@ const router = createRouter({
       component: () => import('../views/BlogViews/MejoraTuTecnicaBlogView.vue')
     },
     {
-      path: '/blog-musical/por-donde-empezar',
+      path: '/blog-musical/por-donde-empezar-a-tocar-piano',
       name: 'blog-4',
       component: () => import('../views/BlogViews/PorDondeEmpezarBlogView.vue')
     },
-
-
-
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {

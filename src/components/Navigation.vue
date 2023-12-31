@@ -226,9 +226,6 @@ const { toggleDarkMode } = defineProps(['toggleDarkMode']);
     background-color: #374151;
 }
 
-
-
-
 .toggle-button {
     transform: translate(23px, 2px);
     position: absolute;

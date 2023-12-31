@@ -1,7 +1,10 @@
 <template>
     <div class="card">
         <div class="image">
-            <img :src="imageSrc" alt="">
+            <RouterLink :to="readMoreLink">
+                <img :src="imageSrc" alt="">
+            </RouterLink>
+
         </div>
         <div class="middle-text">
             <RouterLink :to="readMoreLink" aria-label="TITLE">
@@ -116,6 +119,13 @@ export default {
 
 .card img {
     width: 100%;
+    transition: all 0.3s ease;
+
+}
+
+.card img:hover {
+    scale: 1.2;
+    transition: all 0.3s ease;
 }
 
 .middle-text a {

@@ -1,9 +1,10 @@
 export const slides = [
+
     {
         imageSrc: '/blog4.webp',
         title: 'Por dónde empezar',
         excerpt: 'La elección de la música adecuada es esencial para cualquier pianista, independientemente de su nivel de habilidad.Tocar una pieza que se adapte a tu nivel no solo te ayudará a mejorar tu destreza, sino que también te permitirá disfrutar más del proceso de aprendizaje.Aquí te damos algunos consejos para encontrar la pieza perfecta',
-        readMoreLink: '/blog-musical/por-donde-empezar',
+        readMoreLink: '/blog-musical/por-donde-empezar-a-tocar-piano',
         date: '15 - Diciembre - 2023'
     },
     {
@@ -27,4 +28,5 @@ export const slides = [
         readMoreLink: '/blog-musical/diferentes-estilos-musicales-en-el-piano',
         date: '18 - Octubre - 2023'
     },
+
 ];
