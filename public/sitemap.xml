@@ -1,60 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://clasespianomadrid.com/</loc>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/clases-piano</loc>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/clases-teoria-musical</loc>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/clases-horarios</loc>
-<changefreq>weekly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/blog-musical</loc>
-<changefreq>weekly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/cursos</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/blog-musical/diferentes-estilos-musicales-en-el-piano</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/blog-musical/beneficios-cognitivos-de-estudiar-teoria-musical</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/blog-musical/mejora-tu-tecnica-de-piano</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/blog-musical/por-donde-empezar-a-tocar-piano</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://clasespianomadrid.com/clases-piano/Vitoria-Gasteiz</loc>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://clasespianomadrid.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://clasespianomadrid.com/clases-piano</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://clasespianomadrid.com/clases-horarios</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+    </url>
+    <url>
+    <loc>https://clasespianomadrid.com/cursos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+      <url>
+    <loc>https://clasespianomadrid.com/blog/por-donde-empezar-a-tocar-piano</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+        <url>
+    <loc>https://clasespianomadrid.com/blog/mejora-tu-tecnica-de-piano</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+        <url>
+    <loc>https://clasespianomadrid.com/blog/diferentes-estilos-musicales-en-el-piano</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+        <url>
+    <loc>https://clasespianomadrid.com/blog/beneficios-cognitivos-de-estudiar-teoria-musical</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
 <loc>https://clasespianomadrid.com/clases-piano/Albacete</loc>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -299,8 +291,6 @@
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
-
-
 <url>
 <loc>https://clasespianomadrid.com/clases-teoria-musical/Vitoria-Gasteiz</loc>
 <changefreq>monthly</changefreq>
@@ -551,286 +541,286 @@
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
-</url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Palma-de-mallorca</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Palma-de-mallorca</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Vigo</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Vigo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Gijon</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Gijon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Elche</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Elche</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Cartagena</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Cartagena</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Jerez-de-la-frontera</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Jerez-de-la-frontera</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Sabadell</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Sabadell</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Mostoles</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Mostoles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Terrassa</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Terrassa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Leganes</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Leganes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Castellon-de-la-plana</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Castellon-de-la-plana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Getafe</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Getafe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Alcorcon</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Alcorcon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Logrono</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Logrono</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Lerida</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Lerida</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Marbella</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Marbella</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Tarrasa</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Tarrasa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Santa-cruz-de-tenerife</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Santa-cruz-de-tenerife</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Algeciras</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Algeciras</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Ourense</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Ourense</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Reus</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Reus</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Telde</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Telde</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Barakaldo</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Barakaldo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Gerona</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Gerona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Santiago-de-compostela</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Santiago-de-compostela</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/Lorca</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/Lorca</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/coslada</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/coslada</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-teoria-musical/talavera-de-la-reina</loc>
+    <loc>https://clasespianomadrid.com/clases-teoria-musical/talavera-de-la-reina</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Palma-de-mallorca</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Palma-de-mallorca</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Vigo</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Vigo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Gijon</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Gijon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Elche</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Elche</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Cartagena</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Cartagena</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Jerez-de-la-frontera</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Jerez-de-la-frontera</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Sabadell</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Sabadell</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Mostoles</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Mostoles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Terrassa</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Terrassa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Leganes</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Leganes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Castellon-de-la-plana</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Castellon-de-la-plana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Getafe</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Getafe</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Alcorcon</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Alcorcon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Logrono</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Logrono</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Lerida</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Lerida</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Marbella</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Marbella</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Tarrasa</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Tarrasa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Santa-cruz-de-tenerife</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Santa-cruz-de-tenerife</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Algeciras</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Algeciras</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Ourense</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Ourense</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Reus</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Reus</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Telde</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Telde</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Barakaldo</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Barakaldo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Gerona</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Gerona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Santiago-de-compostela</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Santiago-de-compostela</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/Lorca</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/Lorca</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/coslada</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/coslada</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://pianolessonsmadrid.com/clases-piano/talavera-de-la-reina</loc>
+    <loc>https://clasespianomadrid.com/clases-piano/talavera-de-la-reina</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 
 </urlset>
+

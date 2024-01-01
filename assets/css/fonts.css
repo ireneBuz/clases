@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Newake';
+    src: url('~/assets/fonts/Newake.otf') format('opentype');
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Founders-Grotesk-light';
+    src: url('~/assets/fonts/FoundersGroteskLight.otf') format('opentype');
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Founders-Grotesk-medium';
+    src: url('~/assets/fonts/FoundersGroteskMedium.otf') format('opentype');
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Founders-Grotesk-regular';
+    src: url('~/assets/fonts/FoundersGroteskRegular.otf') format('opentype');
+    font-display: block;
+}
