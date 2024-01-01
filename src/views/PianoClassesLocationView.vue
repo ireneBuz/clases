@@ -3,9 +3,18 @@ import pianoImg from '/pianoImg.webp'
 import closeModalIcon from '/closeModal.svg'
 import ContactForm from './../components/ContactForm.vue'
 import { gsap } from 'gsap'
-import { ref, defineProps } from 'vue';
+import { ref, onMounted } from 'vue'
 
-const { location } = defineProps(['location']);
+const { location } = defineProps(['location'])
+const metaDescription = document.querySelector('meta[name="description"]')
+const metaKeywords = document.querySelector('meta[name="keywords"]')
+onMounted(() => {
+
+  document.title = `Clases de piano en ${location}`;
+  metaKeywords.setAttribute("content", `clases de música, clases de teoría musical, clases de piano, ${location}, clases en ${location}, clases online, Irene Buceta`);
+  metaDescription.setAttribute("content", `Clases de piano en ${location}. Clases de teoría musical y de piano online. ¡Aprende música con nosotros!. Escuela Irene Buceta`);
+});
+
 let showModal = ref(false);
 
 const openModal = () => {
