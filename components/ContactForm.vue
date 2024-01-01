@@ -113,7 +113,7 @@ const submitForm = async () => {
     padding: 20px;
     width: 47.25rem;
     height: 43.0625rem;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .dark-mode .modal-content {
