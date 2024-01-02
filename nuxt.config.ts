@@ -33,7 +33,7 @@ export default defineNuxtConfig(() => {
           },
           {
             name: 'keywords',
-            content: 'clases de música, clases de teoría musical, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música'
+            content: 'clases de música, escuela de piano, clases de teoría musical, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música'
           }
         ],
         link: [
@@ -56,7 +56,7 @@ export default defineNuxtConfig(() => {
           //   },
           //   isProduction && { src: 'https://www.googletagmanager.com/gtag/js?id=G-XRT72ZGBB4', defer: true }
         ].filter(Boolean),
-        title: 'Clases de Piano - Clases Teoría Musical - Escuela de Música Irene Buceta',
+        title: 'Clases de Piano y Teoría Musical en Madrid - Irene Buceta Escuela de Piano',
         htmlAttrs: {
           lang: 'es-ES'
         },
