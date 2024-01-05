@@ -23,30 +23,37 @@
     </url>
     <url>
     <loc>https://clasespianomadrid.com/cursos</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+        <url>
+    <loc> https://clasespianomadrid.com/blog-musical</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
       <url>
     <loc>https://clasespianomadrid.com/blog/por-donde-empezar-a-tocar-piano</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
         <url>
     <loc>https://clasespianomadrid.com/blog/mejora-tu-tecnica-de-piano</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
         <url>
     <loc>https://clasespianomadrid.com/blog/diferentes-estilos-musicales-en-el-piano</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
         <url>
     <loc>https://clasespianomadrid.com/blog/beneficios-cognitivos-de-estudiar-teoria-musical</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
+
+ 
+  <!-- <url>
 <loc>https://clasespianomadrid.com/clases-piano/Albacete</loc>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -820,7 +827,7 @@
     <loc>https://clasespianomadrid.com/clases-piano/talavera-de-la-reina</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-</url>
+</url> -->
 
 </urlset>
 
