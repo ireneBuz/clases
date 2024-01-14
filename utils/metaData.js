@@ -1,21 +1,30 @@
-export const pianoMetaData = (locationId) => {
-    return ({
-        title: `Clases de Piano en ${locationId} - Escuela de piano Irene Buceta`,
-        meta: [
-            { name: 'description', content: `Clases de piano en ${locationId}. Presenciales y online. ¡Aprende música con nosotros!. Escuela de música Irene Buceta` },
-            { name: 'keywords', content: `clases de música, clases de piano, ${locationId}, clases presenciales, clases online, Irene Buceta Escuela de música` }
-        ]
-    })
+export const indexMetaData = {
+    title: `Clases de Piano y Teoría Musical en Madrid - Irene Buceta Escuela de Piano`,
+    meta: [
+        { name: 'description', content: `Clases de piano en Madrid. Clases de teoría musical y de piano en Madrid, presenciales y online. ¡Aprende música con nosotros!. Escuela de piano Irene Buceta` },
+        { name: 'keywords', content: `clases de música, escuela de piano, clases de teoría musical, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }
+    ]
 }
 
-export const musicalTheoryMetaData = (locationId) => {
-    return ({
-        title: `Clases de Teoría Musical en ${locationId} - Escuela de música Irene Buceta`,
-        meta: [
-            { name: 'description', content: `Clases de teoría musical en ${locationId}. Presenciales y online. ¡Aprende música con nosotros!. Escuela de música Irene Buceta` },
-            { name: 'keywords', content: `clases de música, clases de teoría musical, ${locationId}, clases presenciales, clases online, Irene Buceta Escuela de música` }
-        ]
-    })
+
+export const pianoMetaData = {
+
+    title: `Clases de Piano en Madrid - Escuela de piano Irene Buceta`,
+    meta: [
+        { name: 'description', content: `Clases de piano en Madrid. Presenciales y online. ¡Aprende música con nosotros!. Escuela de música Irene Buceta` },
+        { name: 'keywords', content: `clases de música, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }
+    ]
+
+}
+
+export const musicalTheoryMetaData = {
+
+    title: "Clases de Teoría Musical en Madrid - Escuela de música Irene Buceta",
+    meta: [
+        { name: 'description', content: `Clases de teoría musical en Madrid. Presenciales y online. ¡Aprende música con nosotros!. Escuela de música Irene Buceta` },
+        { name: 'keywords', content: `clases de música, clases de teoría musical, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }
+    ]
+
 }
 
 export const musicalBlogMetaData = {
@@ -73,11 +82,11 @@ export const whereToStartMetaData = {
         { name: 'keywords', content: `por dónde empezar, clases de música, clases de teoría musical, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }
     ]
 }
-
-export const indexMetaData = {
-    title: `Clases de Piano y Teoría Musical en Madrid - Irene Buceta Escuela de Piano`,
+export const startIn2024MetaData = {
+    title: `Clases de Piano - Empieza 2024 tocando el piano - Escuela de piano Irene Buceta`,
     meta: [
-        { name: 'description', content: `Clases de piano en Madrid. Clases de teoría musical y de piano en Madrid, presenciales y online. ¡Aprende música con nosotros!. Escuela de piano Irene Buceta` },
-        { name: 'keywords', content: `clases de música, escuela de piano, clases de teoría musical, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }
+        { name: 'description', content: `Empieza 2024 tocando el piano. Clases de piano en Madrid. Clases de teoría musical y de piano, presenciales y online. ¡Aprende música con nosotros!. Escuela de música Irene Buceta` },
+        { name: 'keywords', content: `Empieza 2024 tocando el piano, clases de música, clases de teoría musical, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }
     ]
 }
+

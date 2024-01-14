@@ -50,7 +50,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-
+  <url>
+    <loc>https://clasespianomadrid.com/blog/empieza-el-2024-tocando-el-piano</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
  
   <!-- <url>
 <loc>https://clasespianomadrid.com/clases-piano/Albacete</loc>

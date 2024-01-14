@@ -12,7 +12,7 @@ let locationId = route.params.location?.charAt(0).toUpperCase() + route.params.l
 if (!locationId) {
   locationId = 'Madrid'
 }
-useHead(pianoMetaData(locationId))
+useHead(pianoMetaData)
 
 
 const enter = (el) => {

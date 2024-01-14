@@ -1,4 +1,11 @@
 export const slides = [
+    {
+        imageSrc: '/images/blog5.webp',
+        title: 'Empieza el año tocando el piano',
+        excerpt: 'El comienzo de un nuevo año ofrece la oportunidad perfecta para explorar nuevas experiencias y adquirir habilidades que enriquezcan nuestras vidas.',
+        readMoreLink: '/blog/empieza-el-2024-tocando-el-piano',
+        date: '14 - Enero - 2024'
+    },
 
     {
         imageSrc: '/images/blog4.webp',
