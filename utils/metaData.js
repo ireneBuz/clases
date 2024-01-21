@@ -6,10 +6,9 @@ export const indexMetaData = {
     ]
 }
 
-
 export const pianoMetaData = {
 
-    title: `Clases de Piano en Madrid - Escuela de piano Irene Buceta`,
+    title: `Clases de Piano en Madrid - Lecciones de Refuerzo de Piano - Escuela de piano Irene Buceta`,
     meta: [
         { name: 'description', content: `Clases de piano en Madrid. Presenciales y online. ¡Aprende música con nosotros!. Escuela de música Irene Buceta` },
         { name: 'keywords', content: `clases de música, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }
@@ -19,7 +18,7 @@ export const pianoMetaData = {
 
 export const musicalTheoryMetaData = {
 
-    title: "Clases de Teoría Musical en Madrid - Escuela de música Irene Buceta",
+    title: "Clases de Teoría Musical en Madrid - Lecciones de Refuerzo de Teoría musical- Escuela de música Irene Buceta",
     meta: [
         { name: 'description', content: `Clases de teoría musical en Madrid. Presenciales y online. ¡Aprende música con nosotros!. Escuela de música Irene Buceta` },
         { name: 'keywords', content: `clases de música, clases de teoría musical, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }

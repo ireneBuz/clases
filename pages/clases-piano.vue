@@ -1,17 +1,10 @@
 <script setup>
 import { gsap } from 'gsap'
-import { useRoute } from 'vue-router';
 import { openModal, closeModal, showModal } from '~/utils/modal'
 import { pianoMetaData } from './../utils/metaData.js'
 
 const { isDarkMode } = defineProps(['isDarkMode']);
 
-const route = useRoute()
-
-let locationId = route.params.location?.charAt(0).toUpperCase() + route.params.location?.slice(1)
-if (!locationId) {
-  locationId = 'Madrid'
-}
 useHead(pianoMetaData)
 
 
@@ -42,7 +35,7 @@ const leave = (el, done) => {
     <div class="piano-classes">
       <div class="piano-classes-info">
         <h2>
-          ¡Aprende a tocar el piano con pasión y habilidad {{ locationId !== 'Madrid' ? `desde ${locationId}` : '' }}!
+          ¡Aprende a tocar el piano con pasión y habilidad !
         </h2>
 
         <p>Clases de piano personalizadas, adaptadas a tu nivel y objetivos. Tanto si eres un principiante que sueña con
@@ -53,10 +46,9 @@ const leave = (el, done) => {
           interpretación.
           A medida que se avanzan en las lecciones, se exploran piezas clásicas, contemporáneas y composiciones propias,
           desafiando la destreza y la creatividad de quien está al mando del piano.</p>
+          <p>Además, ofrezco lecciones de refuerzo para ayudarte a dominar conceptos difíciles y superar desafíos, asegurando tu progreso y éxito en tus clases de piano.</p>
 
-        <p v-if="locationId !== 'Madrid'">Comienza tus clases desde {{ locationId }}.</p>
-
-        <h3 v-if="locationId === 'Madrid'">Presencial - 25€/h</h3>
+        <h3>Presencial - 25€/h</h3>
         <h3>Online - 20€/h</h3>
         <div class="piano-classes-info-button">
 
