@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { routes } from './utils/routes'
 
 export default defineNuxtConfig(() => {
   const isProduction = process.env.NODE_ENV === 'production';
@@ -11,9 +10,6 @@ export default defineNuxtConfig(() => {
       '~/assets/css/fonts.css',
       '~/assets/css/blog.css'
     ],
-    generate: {
-      routes: routes
-    },
     app: {
       pageTransition: { name: 'page', mode: 'out-in' },
       head: {
@@ -44,17 +40,17 @@ export default defineNuxtConfig(() => {
         ],
         script: [
           { src: 'https://code.iconify.design/1/1.0.4/iconify.min.js', defer: true },
-          //   isProduction && {
-          //     innerHTML: `
-          //       window.dataLayer = window.dataLayer || [];
-          //       function gtag(){ dataLayer.push(arguments); }
-          //       gtag('js', new Date());
-          //       gtag('config', 'G-W78CG5BNY4');
-          //     `,
-          //     type: 'text/javascript',
-          //     defer: true
-          //   },
-          //   isProduction && { src: 'https://www.googletagmanager.com/gtag/js?id=G-W78CG5BNY4', defer: true }
+            isProduction && {
+              innerHTML: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-W78CG5BNY4');
+              `,
+              type: 'text/javascript',
+              defer: true
+            },
+            isProduction && { src: 'https://www.googletagmanager.com/gtag/js?id=G-W78CG5BNY4', defer: true }
         ].filter(Boolean),
         title: 'Clases de Piano y Teoría Musical en Madrid - Irene Buceta Escuela de Piano',
         htmlAttrs: {
