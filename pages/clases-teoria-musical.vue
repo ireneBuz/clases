@@ -1,19 +1,11 @@
 <script setup>
 import { gsap } from 'gsap'
-import { useRoute } from 'vue-router';
 import { openModal, closeModal, showModal } from '~/utils/modal'
 import { musicalTheoryMetaData } from './../utils/metaData.js'
 
 const { isDarkMode } = defineProps(['isDarkMode']);
 
-const route = useRoute()
-
-let locationId = route.params.location?.charAt(0).toUpperCase() + route.params.location?.slice(1)
-if (!locationId) {
-  locationId = 'Madrid'
-}
 useHead(musicalTheoryMetaData)
-
 
 const enter = (el) => {
   gsap.fromTo(el, {
@@ -40,7 +32,7 @@ const leave = (el, done) => {
     <div class="musical-classes">
       <div class="musical-classes-info">
         <h2>
-          ¡Descubre el fascinante mundo de la teoría musical {{ locationId !== 'Madrid' ? `desde ${locationId}` : '' }}!
+          ¡Descubre el fascinante mundo de la teoría musical !
         </h2>
 
         <p>¿Siempre has soñado con comprender la música en un nivel más profundo? ¿Te gustaría leer partituras, componer
@@ -50,10 +42,9 @@ const leave = (el, done) => {
         <p>Ofrezco clases de teoría musical diseñadas para principiantes y aquellos que desean llevar su conocimiento
           musical al siguiente nivel. Mi objetivo es hacer que la teoría musical sea accesible y emocionante para todos,
           sin importar tu nivel de experiencia</p>
+          <p>Además, ofrezco lecciones de refuerzo para ayudarte a dominar conceptos difíciles y superar desafíos, asegurando tu progreso y éxito en tus estudios musicales.</p>
 
-        <p v-if="locationId !== 'Madrid'">Comienza tus clases desde {{ locationId }}.</p>
-
-        <h3 v-if="locationId === 'Madrid'">Presencial - 25€/h</h3>
+        <h3>Presencial - 25€/h</h3>
         <h3>Online - 20€/h</h3>
         <div class="musical-classes-info-button">
 
