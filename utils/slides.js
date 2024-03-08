@@ -1,5 +1,12 @@
 export const slides = [
     {
+        imageSrc: '/images/blog6.webp',
+        title: 'Por qué estudiar piano y teoría musical a cualquier edad',
+        excerpt: 'La música es maravillosa y no se rige por el tiempo. Es un arte que acoge a todos, sin importar la edad que se tenga al empezar su estudio.',
+        readMoreLink: '/blog/por-que-estudiar-piano-y-teoria-musical-a-cualquier-edad',
+        date: '8 - Marzo - 2024'
+    },
+    {
         imageSrc: '/images/blog5.webp',
         title: 'Empieza el año tocando el piano',
         excerpt: 'El comienzo de un nuevo año ofrece la oportunidad perfecta para explorar nuevas experiencias y adquirir habilidades que enriquezcan nuestras vidas.',
