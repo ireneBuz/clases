@@ -13,7 +13,7 @@ useHead(whereToStartMetaData)
         <img src="/images/blog6.webp" alt="music-woman">
       </div>
       <div class="title-header">
-        <h2>Por qué estudiar piano y teoría musical a cualquier edad</h2>
+        <h2>¿Música a cualquier edad?</h2>
         <p>La música es un arte que acoge a todos, sin importar la edad que se tenga al empezar su estudio. Ya sea que estés en tus años de formación temprana o buscando nuevas pasiones en tu vida adulta, aprender piano y teoría musical puede ser una experiencia transformadora y enriquecedora.
 
 </p>
