@@ -14,7 +14,7 @@ useHead(whereToStartMetaData)
       </div>
       <div class="title-header">
         <h2>Por qué estudiar piano y teoría musical a cualquier edad</h2>
-        <p>La música es maravillosa y no se rige por el tiempo. Es un arte que acoge a todos, sin importar la edad que se tenga al empezar su estudio. Ya sea que estés en tus años de formación temprana o buscando nuevas pasiones en tu vida adulta, aprender piano y teoría musical puede ser una experiencia transformadora y enriquecedora. Aquí te cuento por qué nunca es tarde ni demasiado temprano para sumergirte en ella.
+        <p>La música es un arte que acoge a todos, sin importar la edad que se tenga al empezar su estudio. Ya sea que estés en tus años de formación temprana o buscando nuevas pasiones en tu vida adulta, aprender piano y teoría musical puede ser una experiencia transformadora y enriquecedora.
 
 </p>
       </div>
