@@ -23,7 +23,6 @@ useHead(compositionBenefitsMetaData)
         </div>
         <div class="blog-text">
             <div class="blog-paragraph">
-                <p>**Comenzando desde Cero:**</p>
                 <p><b>Familiarízate con el Piano:</b> No necesitas tener experiencia previa para empezar a componer. Te
                     ayudaré a
                     familiarizarte con el teclado, aprendiendo las posiciones básicas de las manos y algunos acordes
@@ -45,7 +44,6 @@ useHead(compositionBenefitsMetaData)
                     espontáneamente.
                 </p>
 
-                <p>**Beneficios de la Composición y la Improvisación:**</p>
                 <p><b>Desarrollo de la Creatividad:</b> Componer e improvisar te permite explorar tu creatividad y
                     expresarte de
                     maneras únicas. Este proceso te ayudará a desarrollar un estilo propio y a descubrir nuevas facetas
@@ -67,7 +65,7 @@ useHead(compositionBenefitsMetaData)
                     disfrutes del proceso
                     y te beneficies emocionalmente.</p>
 
-                <p>**Emulando tus Composiciones Favoritas:**</p>
+                <p><b>Emulando tus Composiciones Favoritas:</b></p>
                 <p>Una excelente manera de aprender a componer es emulando tus piezas favoritas. En nuestras clases,
                     analizaremos
                     juntos las canciones que amas, desglosando sus acordes y progresiones. Te enseñaré a tocar partes de
@@ -76,7 +74,7 @@ useHead(compositionBenefitsMetaData)
                     educativo, sino
                     también inspirador y motivador.</p>
 
-                <p>**Conectar con Otros Músicos:**</p>
+                <p><b>Conectar con Otros Músicos:</b></p>
                 <p>Una vez que te sientas más cómodo componiendo e improvisando, te animaré a compartir tu música con
                     otros. Ofrezco
                     oportunidades para tocar en grupos, participar en recitales y colaborar con otros estudiantes. La
@@ -85,7 +83,7 @@ useHead(compositionBenefitsMetaData)
                     experiencia social
                     enriquecedora.</p>
 
-                <p>**Conclusión:**</p>
+                <p><b>Conclusión:</b></p>
                 <p>Aprender a componer e improvisar al piano es accesible para todos, y estoy aquí para guiarte en cada
                     paso del
                     camino. Desde el desarrollo de la creatividad hasta el bienestar emocional, estas habilidades pueden
