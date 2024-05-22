@@ -13,7 +13,7 @@ useHead(compositionBenefitsMetaData)
                 <img src="/images/blog7.webp" alt="piano-image">
             </div>
             <div class="title-header">
-                <h2>Aprende a Componer tus Propias Piezas de Piano Fácilmente</h2>
+                <h2>Aprende a componer tus propias piezas de piano fácilmente</h2>
                 <p>La composición y la improvisación al piano pueden parecer habilidades reservadas para músicos
                     avanzados, pero
                     la realidad es que cualquier persona, incluso sin conocimientos previos, puede aprender a crear sus
