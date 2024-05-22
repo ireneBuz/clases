@@ -88,4 +88,11 @@ export const startIn2024MetaData = {
         { name: 'keywords', content: `Empieza 2024 tocando el piano, clases de música, clases de teoría musical, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }
     ]
 }
+export const compositionBenefitsMetaData = {
+    title: `Clases de Piano - Aprende a Componer tus Propias Piezas de Piano Fácilmente - Escuela de piano Irene Buceta`,
+    meta: [
+        { name: 'description', content: `Aprende a Componer tus Propias Piezas de Piano Fácilmente. Clases de piano en Madrid. Clases de teoría musical y de piano, presenciales y online. ¡Aprende música con nosotros!. Escuela de música Irene Buceta` },
+        { name: 'keywords', content: `Aprende a Componer tus Propias Piezas de Piano Fácilmente, clases de música, clases de teoría musical, clases de piano, Madrid, clases presenciales, clases online, Irene Buceta Escuela de música` }
+    ]
+}
 
