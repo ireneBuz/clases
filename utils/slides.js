@@ -1,4 +1,11 @@
 export const slides = [
+    {
+        imageSrc: '/images/blog7.webp',
+        title: 'Aprende a Componer tus Propias Piezas de Piano Fácilmente',
+        excerpt: 'La composición y la improvisación al piano pueden parecer habilidades reservadas para músicos avanzados, pero la realidad es que cualquier persona, incluso sin conocimientos previos, puede aprender a crear sus propias piezas.',
+        readMoreLink: '/blog/composicion-e-improvisacion-al-piano',
+        date: '22 - Mayo - 2024'
+    },
 
     {
         imageSrc: '/images/blog6.webp',
@@ -43,5 +50,6 @@ export const slides = [
         readMoreLink: '/blog/diferentes-estilos-musicales-en-el-piano',
         date: '18 - Octubre - 2023'
     },
+
 
 ];
