@@ -44,8 +44,8 @@ const submitForm = async () => {
                 <div class="contact-title">
                     <h3 data-text="Contacto">Contacto</h3>
 
-                    <p v-if="!submittedForm"><a class="tlf" href="tel:654140710">+34 654 14 07 10</a> / <a class="whatsapp"
-                            href="https://api.whatsapp.com/send?phone=+34654140710">WhatsApp</a></p>
+                    <p v-if="!submittedForm"><a class="tlf" href="tel:654140710">+34 654 14 07 10</a> / <a
+                            class="whatsapp" href="https://api.whatsapp.com/send?phone=34654140710">WhatsApp</a></p>
                     <p v-if="!submittedForm">Si prefieres puedes contactar mediante este formulario</p>
                 </div>
                 <form v-if="!submittedForm" @submit.prevent="submitForm" class="form-group">
