@@ -1,9 +1,20 @@
 <script setup>
-import { slides } from './../utils/slides.js';
+import { ref } from 'vue';
 import { musicalBlogMetaData } from './../utils/metaData.js'
+import blogsService from './../api/blogsService'
+
 const { isDarkMode } = defineProps(['isDarkMode']);
 
 useHead(musicalBlogMetaData)
+
+const slides = ref([]);
+
+blogsService.getAllBlogsCards()
+    .then(({ data }) => {
+        console.log(data)
+        return slides.value = data;
+    })
+    .catch(err => console.log('ERROR AL TRAER EL BLOG'))
 </script>
 
 
@@ -19,8 +30,8 @@ useHead(musicalBlogMetaData)
 
             <div class="cards">
                 <div v-for="(slide, index) in slides" :key="index">
-                    <BlogCards :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
-                        :read-more-link="slide.readMoreLink" :date="slide.date">
+                    <BlogCards :image-src="slide.imageSrc" :title="slide.titleCardSpa" :excerpt="slide.excerptSpa"
+                        :read-more-link="'/blog/' + slide.readMoreLinkSpa" :date="slide.dateSpa">
                     </BlogCards>
                 </div>
             </div>
