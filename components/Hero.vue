@@ -165,7 +165,6 @@ const leave = (el, done) => {
     }
 
     .hero .hero-text .info {
-
         padding-top: 5px;
         margin-top: 15px;
         margin-left: 0;

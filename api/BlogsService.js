@@ -4,7 +4,8 @@ class BlogsService {
     api
     constructor() {
         this.api = axios.create({
-            baseURL: `http://localhost:5005/api/blog`
+            // baseURL: `http://localhost:5005/api/blog`
+            baseURL: `https://pianoback.fly.dev/api/blog`
         })
 
 

@@ -5,13 +5,22 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
 import BlogCards from './BlogCards.vue';
-import { slides } from './../utils/slides.js';
 import { RouterLink } from 'vue-router';
+import { ref } from 'vue';
+import blogsService from './../api/blogsService'
+
 
 const { isDarkMode } = defineProps(['isDarkMode']);
 
 const modules = [Pagination, Autoplay];
-const slidesData = ref(slides);
+const isLoading = ref(true);
+const slides = ref([]);
+blogsService.getAllBlogsCards()
+    .then(({ data }) => {
+         slides.value = data;
+        return isLoading.value = false
+    })
+    .catch(err => console.log('ERROR AL TRAER EL BLOG'))
 </script>
 
 <template>
@@ -25,7 +34,7 @@ const slidesData = ref(slides);
             <div class="sub-title">
                 <p>"La música es una revelación más alta que cualquier filosofía." - Beethoven</p>
             </div>
-            <div class="cards">
+            <div class="cards" v-if="!isLoading">
                 <Swiper :slidesPerView="1" :spaceBetween="10" :pagination="{
                     clickable: true,
                 }" :autoplay="{
@@ -43,9 +52,9 @@ const slidesData = ref(slides);
     },
 
 }" :modules="modules" class="mySwiper">
-                    <SwiperSlide v-for="(slide, index) in slidesData" :key="index">
-                        <BlogCards :image-src="slide.imageSrc" :title="slide.title" :excerpt="slide.excerpt"
-                            :read-more-link="slide.readMoreLink" :date="slide.date">
+                    <SwiperSlide  v-for="(slide, index) in slides" :key="index">
+                        <BlogCards :image-src="slide.imageSrc" :title="slide.titleCardSpa" :excerpt="slide.excerptSpa"
+                            :read-more-link="'/blog/' + slide.readMoreLinkSpa" :date="slide.dateSpa">
                         </BlogCards>
                     </SwiperSlide>
                 </Swiper>

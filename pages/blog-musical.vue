@@ -11,7 +11,6 @@ const slides = ref([]);
 
 blogsService.getAllBlogsCards()
     .then(({ data }) => {
-        console.log(data)
         return slides.value = data;
     })
     .catch(err => console.log('ERROR AL TRAER EL BLOG'))
