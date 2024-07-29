@@ -55,7 +55,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-
+  <url>
+    <loc>https://clasespianomadrid.com/blog/empieza-a-tocar-el-piano-en-septiembre</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
 </urlset>
 
