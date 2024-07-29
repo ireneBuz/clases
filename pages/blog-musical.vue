@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { musicalBlogMetaData } from './../utils/metaData.js'
-import blogsService from './../api/blogsService'
+import blogsService from './../api/BlogsService'
 
 const { isDarkMode } = defineProps(['isDarkMode']);
 
