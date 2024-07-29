@@ -38,6 +38,7 @@
     font-family: 'Founders-Grotesk-regular';
     font-size: 24px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .blog-text {
@@ -65,10 +66,10 @@
 .blog-header .title-header .info a,
 .blog-info .info-end a {
     text-decoration: none;
-    color: #ffaff8;
+    color: #fc81f2;
     padding: 13px 19px 8px 19px;
     border-radius: 30px;
-    border: 1px solid #ffaff8;
+    border: 1px solid #fc81f2;
     font-family: 'Founders-Grotesk-medium';
     font-size: 20px;
     cursor: pointer;
@@ -77,15 +78,14 @@
 .blog-header .title-header .info a:hover,
 .blog-info .info-end a:hover {
     color: #2d2d2d;
-    background: var(--main-colors-gradient, linear-gradient(30deg, #ffaff8 13.4%, #cd59ff 75.6%));
+    background: var(--main-colors-gradient, linear-gradient(30deg, #fc81f2 13.4%, #cd59ff 75.6%));
 }
 
 .blog-header .title-header .info,
 .blog-info .info-end {
     display: flex;
     justify-content: end;
-    margin-top: 55px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     margin-left: 10px;
 }
 
