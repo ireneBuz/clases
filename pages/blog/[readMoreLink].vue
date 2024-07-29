@@ -3,25 +3,35 @@ import blogsService from './../api/BlogsService'
 
 const { isDarkMode } = defineProps(['isDarkMode'])
 const route = useRoute()
-const slides = ref([]);
+const slides = ref([])
+const metaData = ref({
+  title: '',
+  meta: []
+})
 
 blogsService.getAllBlogsArticles(route.params.readMoreLink)
   .then(({ data }) => {
-    const cognitiveBenefitsMetaData = {
+    slides.value = data
+    metaData.value = {
       title: data.metaDataTitleSpa,
       meta: [
         { name: 'description', content: data.metaDataDescriptionSpa },
         { name: 'keywords', content: data.metaDataKeywordsSpa }
       ]
     }
-    useHead(cognitiveBenefitsMetaData)
-    return slides.value = data;
   })
-  .catch(err => console.log('ERROR AL TRAER EL BLOG'))
+  .catch(err => console.log('ERROR AL TRAER EL BLOG', err))
+
+watchEffect(() => {
+  if (metaData.value.title) {
+    useHead(metaData.value)
+  }
+})
 </script>
 
+
 <template>
-  <section :id=route.readMoreLink :class="[{ 'dark-mode': isDarkMode }, 'blog-info']">
+  <section v-if="slides.articleSpa" :id=route.readMoreLink :class="[{ 'dark-mode': isDarkMode }, 'blog-info']">
     <div class="blog-header">
       <div class="image-header">
         <img :src=slides.imageSrc alt="">
