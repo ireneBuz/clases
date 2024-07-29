@@ -7,7 +7,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import BlogCards from './BlogCards.vue';
 import { RouterLink } from 'vue-router';
 import { ref } from 'vue';
-import blogsService from './../api/blogsService'
+import blogsService from './../api/BlogsService'
 
 
 const { isDarkMode } = defineProps(['isDarkMode']);
@@ -17,7 +17,7 @@ const isLoading = ref(true);
 const slides = ref([]);
 blogsService.getAllBlogsCards()
     .then(({ data }) => {
-         slides.value = data;
+        slides.value = data;
         return isLoading.value = false
     })
     .catch(err => console.log('ERROR AL TRAER EL BLOG'))
@@ -36,23 +36,23 @@ blogsService.getAllBlogsCards()
             </div>
             <div class="cards" v-if="!isLoading">
                 <Swiper :slidesPerView="1" :spaceBetween="10" :pagination="{
-                    clickable: true,
-                }" :autoplay="{
-    delay: 5000,
-}" :breakpoints="{
-    '640': {
-        slidesPerView: 2,
-        spaceBetween: 10,
+            clickable: true,
+        }" :autoplay="{
+            delay: 5000,
+        }" :breakpoints="{
+            '640': {
+                slidesPerView: 2,
+                spaceBetween: 10,
 
-    },
-    '1150': {
-        slidesPerView: 3,
-        spaceBetween: 30,
+            },
+            '1150': {
+                slidesPerView: 3,
+                spaceBetween: 30,
 
-    },
+            },
 
-}" :modules="modules" class="mySwiper">
-                    <SwiperSlide  v-for="(slide, index) in slides" :key="index">
+        }" :modules="modules" class="mySwiper">
+                    <SwiperSlide v-for="(slide, index) in slides" :key="index">
                         <BlogCards :image-src="slide.imageSrc" :title="slide.titleCardSpa" :excerpt="slide.excerptSpa"
                             :read-more-link="'/blog/' + slide.readMoreLinkSpa" :date="slide.dateSpa">
                         </BlogCards>
