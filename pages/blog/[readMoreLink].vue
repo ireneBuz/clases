@@ -1,5 +1,5 @@
 <script setup>
-import blogsService from './../api/blogsService'
+import blogsService from './../api/BlogsService'
 
 const { isDarkMode } = defineProps(['isDarkMode'])
 const route = useRoute()
@@ -21,7 +21,7 @@ blogsService.getAllBlogsArticles(route.params.readMoreLink)
 </script>
 
 <template>
-  <section :id=route.readMoreLink :class="[{'dark-mode': isDarkMode}, 'blog-info']">
+  <section :id=route.readMoreLink :class="[{ 'dark-mode': isDarkMode }, 'blog-info']">
     <div class="blog-header">
       <div class="image-header">
         <img :src=slides.imageSrc alt="">
@@ -31,7 +31,7 @@ blogsService.getAllBlogsArticles(route.params.readMoreLink)
         <p>{{ slides.excerptArticleSpa }}</p>
         <div class="info">
           <RouterLink role="button" aria-label="Más info" to="/clases-piano">
-              Más info</RouterLink>
+            Más info</RouterLink>
         </div>
       </div>
     </div>
@@ -40,8 +40,8 @@ blogsService.getAllBlogsArticles(route.params.readMoreLink)
       </div>
     </div>
     <div class="info-end">
-          <RouterLink role="button" aria-label="Más info" to="/clases-piano">
-              Quiero saber más</RouterLink>
-        </div>
+      <RouterLink role="button" aria-label="Más info" to="/clases-piano">
+        Quiero saber más</RouterLink>
+    </div>
   </section>
 </template>
